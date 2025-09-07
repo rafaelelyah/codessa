@@ -1,0 +1,36 @@
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base, 1.6);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--spacing-none);
+  margin: var(--spacing-none);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
+}
+
+ul,
+ol {
+  padding-left: var(--spacing-lg);
+  margin: var(--spacing-none);
+}
