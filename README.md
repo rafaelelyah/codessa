@@ -48,7 +48,7 @@ npm run build
 npm run preview
 
 
-### 🔍 Atualização de versão do projeto
+### 📦 Atualização de versão do projeto
 
 npm run version "alteração"
 
