@@ -1,4 +1,7 @@
-# ✨ Codessa
+<p align="center">
+  <img src="src/assets/img/logo.png" alt="Codessa logo" width="180">
+</p>
+
 
 **Codessa** é um Design System modular e escalável, criado para desenvolvedores e criativos que buscam agilidade, consistência e estilo. Com base em **Sass customizável**, **JavaScript dinâmico** e uma arquitetura pensada para **design atômico**, Codessa oferece uma estrutura leve e poderosa para construir interfaces responsivas com rapidez e controle total.
 
