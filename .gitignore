@@ -11,15 +11,38 @@ lerna-debug.log*
 node_modules/
 dist/
 dist-ssr/
+.vite/
+.cache/
 *.local
 
-# Editor config
-.vscode/*
-!.vscode/extensions.json
-.idea/
+# Sass build (caso gere CSS manualmente)
+*.css
+*.css.map
+
+# Previews e imagens geradas
+src/previews/*.png
+src/previews/*.jpg
+src/previews/*.jpeg
+
+# Arquivos temporários e de sistema
+Thumbs.db
+ehthumbs.db
 .DS_Store
+*.bak
+*.tmp
+*.orig
+*.sw?
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# Editor config
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Arquivos de ambiente
+.env
+.env.*
