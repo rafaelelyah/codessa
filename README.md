@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center style="margin: 40px 0">
   <img src="src/assets/img/logo.png" alt="Codessa logo" width="300">
 </p>
 
