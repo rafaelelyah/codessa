@@ -31,6 +31,32 @@ Codessa está em construção ativa. Futuramente, o projeto poderá incluir:
 
 ---
 
+## ⚙️ Como usar o Codessa
+
+Para rodar e manter o projeto localmente, utilize os seguintes comandos via terminal:
+
+### 🔧 Preview do src
+
+npm run dev
+
+### 🏗️ Build para produção
+
+npm run build
+
+### 🔍 Preview do build
+
+npm run preview
+
+
+### 🔍 Atualização de versão do projeto
+
+npm run version "alteração"
+
+- patch → para correções pequenas
+- minor → para novas funcionalidades sem quebra de compatibilidade
+- major → para mudanças significativas ou incompatíveis
+
+
 ## 📬 Contribuições
 
 Sugestões, melhorias e ideias são bem-vindas!  
@@ -44,4 +70,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ---
 
-Feito com por [Rafael Elyah](https://github.com/rafaelelyah)
+Feito por [Rafael Elyah](https://github.com/rafaelelyah)
