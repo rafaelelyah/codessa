@@ -3,5 +3,10 @@
     "version": "0.1.0",
     "date": "2025-09-07T21:17:57.552Z",
     "note": "Adicionando estruturas base de espaçamentos, cores e outros nos tokens"
+  },
+  {
+    "version": "0.1.1",
+    "date": "2025-09-07T21:31:01.475Z",
+    "note": "Adicionando Vite purge"
   }
 ]
