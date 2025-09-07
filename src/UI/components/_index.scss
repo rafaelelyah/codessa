@@ -1,0 +1,32 @@
+// Componentes básicos — elementos fundamentais da interface
+@forward 'buttons';         // Botões com variantes e tamanhos
+@forward 'inputs';          // Campos de texto, selects, textareas
+@forward 'forms';           // Estrutura de formulário: grupos, labels
+@forward 'lists';           // Listas de conteúdo: ordenadas, não ordenadas
+@forward 'tags';            // Elementos informativos tipo pill
+@forward 'badges';          // Indicadores visuais pequenos (status, contadores)
+
+// Componentes de navegação — estrutura e hierarquia de acesso
+@forward 'navs';            // Menus de navegação: horizontal, vertical, tabs
+@forward 'breadcrumbs';     // Navegação hierárquica entre páginas
+@forward 'pagination';      // Controle de páginas em listas ou tabelas
+@forward 'tabs';            // Navegação por seções em uma mesma área
+@forward 'dropdowns';       // Menus suspensos com interação
+
+// Componentes de layout — estrutura visual da página
+@forward 'headers';         // Cabeçalhos com variantes e responsividade
+@forward 'footers';         // Rodapés da página
+@forward 'sections';        // Blocos estruturais: hero, content, divider
+@forward 'asides';          // Blocos laterais complementares
+@forward 'cards';           // Blocos de conteúdo com borda, sombra, imagem
+@forward 'avatars';         // Imagens de perfil com variantes
+
+// Componentes de interação — comportamento e feedback
+@forward 'modals';          // Janelas flutuantes com overlay
+@forward 'accordions';      // Conteúdo expansível e colapsável
+@forward 'alerts';          // Feedback visual: sucesso, erro, aviso, info
+@forward 'galleries';       // Exibição de imagens ou conteúdo visual
+@forward 'tables';          // Tabelas com cabeçalho, zebra, responsividade
+@forward 'tooltips';        // Dicas flutuantes em hover/focus
+@forward 'steppers';        // Navegação em etapas (ex: checkout, formulários)
+@forward 'loaders';         // Indicadores de carregamento (spinner, barra)

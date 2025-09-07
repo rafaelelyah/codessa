@@ -1,0 +1,28 @@
+// Mixins visuais — aplicam estilos baseados nos tokens
+@forward 'border-radius';   // Radius padronizados para bordas
+@forward 'elevations';      // Sombras e profundidade visual
+@forward 'theme-color';     // Cores baseadas em variantes e temas
+@forward 'fluid-typography';// Tipografia responsiva com clamp()
+
+// Mixins tipográficos — estilos semânticos de texto e links
+@forward 'typography';      // Estilos de texto: headings, body, caption
+@forward 'headings';        // Títulos e subtítulos com hierarquia visual
+@forward 'links';           // Estilização de links com hover e foco
+
+// Mixins de componentes — blocos reutilizáveis
+@forward 'buttons';         // Botões com variantes e tamanhos
+@forward 'fields';          // Inputs, selects, textareas
+@forward 'forms';           // Labels, grupos, espaçamentos de formulário
+@forward 'lists';           // Estrutura e reset de listas
+
+// Mixins estruturais — layout e responsividade
+@forward 'containers';      // Largura máxima, centralização, padding
+@forward 'grids';           // Grid flexível baseado nos tokens
+@forward 'media';           // Media queries com breakpoints
+@forward 'responsive';      // Estilos que se adaptam ao viewport
+
+// Mixins funcionais — utilitários e comportamentos
+@forward 'utils';           // Truncate, center, clearfix, etc.
+@forward 'animations';      // Transições, fades, keyframes
+@forward 'states';          // Hover, focus, disabled, active
+@forward 'accessibility';   // Foco visível, leitura de tela, contraste
