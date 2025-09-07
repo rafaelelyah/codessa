@@ -1,29 +1,5 @@
-// Tokens
-@use 'tokens/colors';
-@use 'tokens/typography';
-@use 'tokens/spacings';
-@use 'tokens/borders';
-@use 'tokens/zindex';
-@use 'tokens/breakpoints';
-@use 'tokens/grid-systems';
-@use 'tokens/functions';
-@use 'tokens/mixins';
-
-// Base
-@use 'base/reset';
-@use 'base/base';
-
-// Components
-@use 'components/navs';
-@use 'components/buttons';
-@use 'components/galleries';
-@use 'components/headers';
-@use 'components/footers';
-@use 'components/sections';
-
-// Pages
-@use 'pages/home';
-@use 'pages/about';
-
-// Themes
-@use 'themes/dark';
+@forward 'tokens/index';
+@forward 'base/index';
+@forward 'components/index';
+@forward 'pages/index';
+@forward 'themes/index';
