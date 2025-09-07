@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/img/logo.png" alt="Codessa logo" width="180">
+  <img src="src/assets/img/logo.png" alt="Codessa logo" width="300">
 </p>
 
 
