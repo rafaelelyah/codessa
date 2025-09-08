@@ -1,0 +1,102 @@
+@use '../mixins/index' as mixins;
+
+// Botão principal
+.button-primary {
+  @include mixins.button();
+}
+
+// Botão secundário
+.button-secondary {
+  @include mixins.button(
+    $bg: var(--color-bg),
+    $color: var(--color-text),
+    $border: 1px solid,
+    $border-color: var(--color-border),
+    $hover-bg: var(--color-bg-alt),
+    $hover-border-color: var(--color-brand-3)
+  );
+}
+
+// Botão de erro
+.button-danger {
+  @include mixins.button(
+    $bg: var(--color-error-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-error-5)
+  );
+}
+
+// Botão de sucesso
+.button-success {
+  @include mixins.button(
+    $bg: var(--color-success-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-success-5)
+  );
+}
+
+// Botão de aviso
+.button-warning {
+  @include mixins.button(
+    $bg: var(--color-warning-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-warning-5)
+  );
+}
+
+// Botão informativo
+.button-info {
+  @include mixins.button(
+    $bg: var(--color-info-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-info-5)
+  );
+}
+
+// Botão fantasma (ghost)
+.button-ghost {
+  @include mixins.button(
+    $bg: transparent,
+    $color: var(--color-brand-5),
+    $border: 1px solid,
+    $border-color: var(--color-brand-5),
+    $hover-bg: var(--color-brand-1),
+    $hover-border-color: var(--color-brand-6)
+  );
+}
+
+// Botão com contorno (outline)
+.button-outline {
+  @include mixins.button(
+    $bg: transparent,
+    $color: var(--color-text),
+    $border: 1px solid,
+    $border-color: var(--color-border),
+    $hover-bg: var(--color-bg-alt),
+    $hover-border-color: var(--color-brand-4)
+  );
+}
+
+// Botão desabilitado
+.button-disabled {
+  @include mixins.button(
+    $bg: var(--color-border),
+    $color: var(--color-text-alt)
+  );
+  pointer-events: none;
+  opacity: var(--opacity-40);
+}
+
+// Botão apenas com ícone
+.button-icon {
+  @include mixins.button(
+    $padding-y: var(--spacing-xs),
+    $padding-x: var(--spacing-xs),
+    $radius: var(--radius-circle),
+    $font-size: var(--text-lg)
+  );
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}

@@ -26,6 +26,39 @@
   --color-highlight-6: #e62a6f;
   --color-highlight-7: #b31a52;
 
+  // Status semânticos
+  --color-success-1: #e6f9f0;
+  --color-success-2: #b3eccf;
+  --color-success-3: #80dfaf;
+  --color-success-4: #4dd28f; // base
+  --color-success-5: #26b86f;
+  --color-success-6: #1a8e55;
+  --color-success-7: #0f643b;
+
+  --color-error-1: #ffeaea;
+  --color-error-2: #ffc2c2;
+  --color-error-3: #ff9999;
+  --color-error-4: #ff6666; // base
+  --color-error-5: #e64545;
+  --color-error-6: #b33030;
+  --color-error-7: #801c1c;
+
+  --color-warning-1: #fff9e6;
+  --color-warning-2: #ffeeb3;
+  --color-warning-3: #ffe380;
+  --color-warning-4: #ffd74d; // base
+  --color-warning-5: #e6b82a;
+  --color-warning-6: #b38e1a;
+  --color-warning-7: #80640f;
+
+  --color-info-1: #e6f4ff;
+  --color-info-2: #b3dcff;
+  --color-info-3: #80c3ff;
+  --color-info-4: #4daaff; // base
+  --color-info-5: #2691e6;
+  --color-info-6: #1a6fb3;
+  --color-info-7: #0f4d80;
+
   // Fundo e texto padrão
   --color-bg: #ffffff;
   --color-bg-alt: #f9f9f9;
@@ -33,7 +66,7 @@
   --color-text-alt: #555555;
   --color-border: #e0e0e0;
   --color-focus: #005fcc;
-  
+
   // Links
   --color-link: var(--color-brand-5);
   --color-link-hover: var(--color-brand-6);

@@ -1,0 +1,22 @@
+:root {
+  // Espessuras
+  --border-none: 0;
+  --border-thin: 1px;
+  --border-base: 2px;
+  --border-thick: 4px;
+
+  // Estilos
+  --border-style: solid;
+  --border-style-dashed: dashed;
+  --border-style-dotted: dotted;
+  --border-style-double: double;
+  --border-style-none: none;
+
+  // Cores
+  --border-color: var(--color-border);
+  --border-color-focus: var(--color-focus);
+  --border-color-muted: var(--color-text-alt);
+  --border-color-brand: var(--color-brand-5);
+  --border-color-error: #e53935;
+  --border-color-success: #43a047;
+}

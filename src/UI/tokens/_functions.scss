@@ -1,0 +1,47 @@
+// Convert px to rem
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+
+// Generate fluid value between breakpoints
+@function fluid($min, $max, $min-vw: 320, $max-vw: 1280) {
+  $slope: ($max - $min) / ($max-vw - $min-vw);
+  $base: $min - ($slope * $min-vw);
+  @return calc(#{$base}px + #{$slope * 100}vw);
+}
+
+// Shade a color (darken)
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}
+
+// Tint a color (lighten)
+@function tint($color, $percent) {
+  @return mix(white, $color, $percent);
+}
+
+// Return high-contrast color (black or white)
+@function contrast($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Generate responsive font size with clamp()
+@function clamp-font($min, $max, $min-vw: 320, $max-vw: 1280) {
+  $slope: ($max - $min) / ($max-vw - $min-vw);
+  $base: $min - ($slope * $min-vw);
+  @return clamp(#{$min}px, calc(#{$base}px + #{$slope * 100}vw), #{$max}px);
+}
+
+// Modular spacing scale
+@function spacing($step) {
+  @return $step * 0.25rem;
+}
+
+// Z-index token accessor
+@function z($level) {
+  @return var(--z-index-#{$level});
+}
