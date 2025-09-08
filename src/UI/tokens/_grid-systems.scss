@@ -1,21 +1,23 @@
 :root {
-  // Grid base
+  // 🧱 Grid base
   --grid-columns: 12;
 
-  // Variações alternativas
+  // 🔁 Variações alternativas
+  --grid-columns-2: 2;
+  --grid-columns-4: 4;
   --grid-columns-6: 6;
   --grid-columns-8: 8;
   --grid-columns-16: 16;
   --grid-columns-24: 24;
 
-  // Gaps entre colunas e linhas
+  // 🔁 Gaps entre colunas e linhas
   --grid-gap-xs: var(--spacing-xs);
   --grid-gap-sm: var(--spacing-sm);
   --grid-gap-md: var(--spacing-md);
   --grid-gap-lg: var(--spacing-lg);
   --grid-gap-xl: var(--spacing-xl);
 
-  // Largura máxima de containers
+  // 📐 Largura máxima de containers
   --container-sm: 540px;
   --container-md: 720px;
   --container-lg: 960px;

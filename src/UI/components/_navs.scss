@@ -45,5 +45,5 @@
 
 // Alinhamento visual dos links à direita
 .nav-vertical-right ul li {
-  text-align: right;
+  @include layout.align-center-right;
 }

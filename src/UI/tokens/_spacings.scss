@@ -1,5 +1,5 @@
 :root {
-  // 🎯 Escala base de espaçamento
+  // Escala base
   --spacing-none: 0;
   --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
@@ -9,43 +9,9 @@
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
 
-  // 📐 Paddings derivados por contexto
-  --container-padding-inline: var(--spacing-lg);
-  --container-padding-block: var(--spacing-md);
-
-  --header-padding-inline: var(--spacing-lg);
-  --header-padding-block: var(--spacing-md);
-
-  --section-padding-inline: var(--spacing-lg);
-  --section-padding-block: var(--spacing-xl);
-
-  --card-padding-inline: var(--spacing-md);
-  --card-padding-block: var(--spacing-md);
-
-  --footer-padding-inline: var(--spacing-lg);
-  --footer-padding-block: var(--spacing-md);
-
-  // 🔁 Gaps derivados
+  // Gaps derivados
   --nav-gap-horizontal: var(--spacing-md);
   --nav-gap-vertical: var(--spacing-sm);
-
   --list-gap-horizontal: var(--spacing-sm);
   --list-gap-vertical: var(--spacing-sm);
-
-  // 📏 Alturas semânticas
-  --section-height-sm: 25vh;
-  --section-height-md: 50vh;
-  --section-height-full: 100vh;
-
-  --header-height-sm: 4rem;
-  --header-height-md: 6rem;
-  --header-height-lg: 8rem;
-
-  --footer-height-sm: 4rem;
-  --footer-height-md: 6rem;
-  --footer-height-lg: 8rem;
-
-  // 📍 Offsets e posicionamento
-  --header-offset: var(--spacing-none);
-  --footer-offset: var(--spacing-none);
 }

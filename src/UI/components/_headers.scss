@@ -1,19 +1,19 @@
-@use '../mixins' as *;
+@use '../mixins/layout' as layout;
 
-// Alinhamentos horizontais
+// 🎯 Alinhamentos horizontais
 .header-left {
-  @include layout-horizontal(left);
+  @include layout.layout-horizontal(left);
 }
 
 .header-center {
-  @include layout-horizontal(center);
+  @include layout.layout-horizontal(center);
 }
 
 .header-right {
-  @include layout-horizontal(right);
+  @include layout.layout-horizontal(right);
 }
 
-// Tamanhos semânticos
+// 📏 Tamanhos semânticos
 .header-sm {
   height: var(--header-height-sm);
 }
@@ -26,7 +26,7 @@
   height: var(--header-height-lg);
 }
 
-// Variantes visuais
+// 🎨 Variantes visuais
 .header-sticky {
   position: sticky;
   top: var(--header-offset, var(--spacing-none));

@@ -18,5 +18,10 @@
     "version": "0.3.0",
     "date": "2025-09-08T04:23:59.024Z",
     "note": "Alterando tokens de lists, adicionando tokens de layout, adicionando componentes de sections, navs, headers e footers"
+  },
+  {
+    "version": "0.4.0",
+    "date": "2025-09-08T17:15:18.054Z",
+    "note": "Adicionando tokens de radius, paddings, offset e border, ajustando grid-system, alterando mixings de grids, layout e containers e adicionando components section, navs, cards e articles"
   }
 ]

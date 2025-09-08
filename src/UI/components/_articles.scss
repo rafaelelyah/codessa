@@ -2,22 +2,22 @@
 @use '../mixins/containers' as containers;
 
 // 📏 Alturas semânticas
-.card-sm {
-  height: var(--card-height-sm);
+.article-sm {
+  height: var(--article-height-sm);
 }
 
-.card-md {
-  height: var(--card-height-md);
+.article-md {
+  height: var(--article-height-md);
 }
 
-.card-lg {
-  height: var(--card-height-lg);
+.article-lg {
+  height: var(--article-height-lg);
 }
 
 // 📐 Estrutura base
-.card {
-  padding-inline: var(--card-padding-inline);
-  padding-block: var(--card-padding-block);
+.article {
+  padding-inline: var(--article-padding-inline);
+  padding-block: var(--article-padding-block);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -27,12 +27,12 @@
 }
 
 // 🔁 Variante com scroll interno
-.card--scroll {
+.article--scroll {
   @include containers.scroll-vertical(20rem);
 }
 
 // 🎯 Variante com alinhamento central
-.card--centered {
+.article--centered {
   @include layout.align-center-column;
-    @extend .card;
+  @extend .article;
 }

@@ -8,6 +8,10 @@
 @forward 'zindex';         // Hierarquia de empilhamento (camadas)
 @forward 'opacity';        // Níveis de transparência para estados visuais
 @forward 'shadows';        // Sombras reutilizáveis para elevação
+@forward 'spacings';       // Escala base e gaps derivados
+@forward 'paddings';        // Paddings contextuais por componente
+@forward 'heights';        // Alturas semânticas para layout
+@forward 'offsets';        // Offsets para posicionamento fixo/sticky
 
 // Tokens de layout — definem estrutura e responsividade
 @forward 'breakpoints';    // Tamanhos de tela para media queries

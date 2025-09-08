@@ -1,0 +1,19 @@
+:root {
+  --container-padding-inline: var(--spacing-lg);
+  --container-padding-block: var(--spacing-md);
+
+  --header-padding-inline: var(--spacing-lg);
+  --header-padding-block: var(--spacing-md);
+
+  --section-padding-inline: var(--spacing-lg);
+  --section-padding-block: var(--spacing-xl);
+
+  --card-padding-inline: var(--spacing-md);
+  --card-padding-block: var(--spacing-md);
+
+  --footer-padding-inline: var(--spacing-lg);
+  --footer-padding-block: var(--spacing-md);
+
+  --article-padding-inline: var(--card-padding-inline);
+  --article-padding-block: var(--card-padding-block);
+}
