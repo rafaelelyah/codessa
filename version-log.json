@@ -13,5 +13,10 @@
     "version": "0.2.0",
     "date": "2025-09-08T01:34:24.618Z",
     "note": "Adicionando principais tokens, criando mixings de botão padrão e primeiros componentes de botão"
+  },
+  {
+    "version": "0.3.0",
+    "date": "2025-09-08T04:23:59.024Z",
+    "note": "Alterando tokens de lists, adicionando tokens de layout, adicionando componentes de sections, navs, headers e footers"
   }
 ]

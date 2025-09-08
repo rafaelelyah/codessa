@@ -13,6 +13,25 @@ body {
   margin: var(--spacing-none);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-lg);
+}
+
+header,
+footer {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-lg);
+}
+
+
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -31,6 +50,7 @@ a {
 
 ul,
 ol {
-  padding-left: var(--spacing-lg);
+  padding-left: var(--spacing-none);
   margin: var(--spacing-none);
+  list-style: none;
 }

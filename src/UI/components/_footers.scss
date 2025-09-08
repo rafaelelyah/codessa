@@ -1,0 +1,35 @@
+@use '../mixins/layout' as layout;
+
+// 📏 Tamanhos semânticos
+.footer-sm {
+  height: var(--footer-height-sm);
+}
+
+.footer-md {
+  height: var(--footer-height-md);
+}
+
+.footer-lg {
+  height: var(--footer-height-lg);
+}
+
+// 🎯 Alinhamentos horizontais
+.footer-left {
+  @include layout.align-center-left;
+}
+
+.footer-center {
+  @include layout.align-center;
+}
+
+.footer-right {
+  @include layout.align-center-right;
+}
+
+// 📐 Conteúdo interno empilhado
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  @include layout.align-center;
+}

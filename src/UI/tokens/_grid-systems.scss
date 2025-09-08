@@ -21,4 +21,6 @@
   --container-lg: 960px;
   --container-xl: 1140px;
   --container-xxl: 1320px;
+
+  --container-max-width: var(--container-xl); // padrão para desktop
 }

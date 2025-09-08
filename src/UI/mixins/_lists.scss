@@ -1,0 +1,11 @@
+@mixin list-horizontal($gap: var(--nav-gap-horizontal)) {
+  display: flex;
+  flex-direction: row;
+  gap: #{$gap};
+}
+
+@mixin list-vertical($gap: var(--nav-gap-vertical)) {
+  display: flex;
+  flex-direction: column;
+  gap: #{$gap};
+}

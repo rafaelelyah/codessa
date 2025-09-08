@@ -20,6 +20,7 @@
 @forward 'grids';           // Grid flexível baseado nos tokens
 @forward 'media';           // Media queries com breakpoints
 @forward 'responsive';      // Estilos que se adaptam ao viewport
+@forward 'layout';          // Estrutura do Layout: header, footer, main
 
 // Mixins funcionais — utilitários e comportamentos
 @forward 'utils';           // Truncate, center, clearfix, etc.

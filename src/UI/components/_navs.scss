@@ -1,0 +1,49 @@
+@use '../mixins/layout' as layout;
+@use '../mixins/lists' as lists;
+
+// Navegação principal no header
+.nav-primary {
+  @include layout.nav-horizontal(var(--nav-gap-horizontal), left);
+  font-size: var(--text-md);
+  font-weight: var(--font-medium);
+  color: var(--color-text);
+}
+
+// Navegação secundária (ex: footer, submenus)
+.nav-secondary {
+  @include layout.nav-horizontal(var(--nav-gap-vertical), center);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+// Navegação alinhada à direita (ex: login/logout, perfil)
+.nav-right {
+  @include layout.nav-horizontal(var(--nav-gap-horizontal), right);
+}
+
+// Navegação vertical (ex: sidebar, mobile menu)
+.nav-vertical {
+  @include layout.nav-vertical(var(--nav-gap-vertical), left);
+}
+
+.nav-vertical-right {
+  @include layout.nav-vertical(var(--nav-gap-vertical), right);
+}
+
+// Listas horizontais
+.nav-primary ul,
+.nav-secondary ul,
+.nav-right ul {
+  @include lists.list-horizontal(var(--nav-gap-horizontal));
+}
+
+// Listas verticais
+.nav-vertical ul,
+.nav-vertical-right ul {
+  @include lists.list-vertical(var(--nav-gap-vertical));
+}
+
+// Alinhamento visual dos links à direita
+.nav-vertical-right ul li {
+  text-align: right;
+}

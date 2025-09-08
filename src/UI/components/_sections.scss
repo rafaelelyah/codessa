@@ -1,1 +1,37 @@
-@use '../mixins/index' as mixins;
+@use '../mixins/layout' as layout;
+
+// Seção curta (25vh)
+.short-section {
+  height: var(--section-height-sm);
+  padding-inline: var(--section-padding-inline);
+  padding-block: var(--section-padding-block);
+}
+
+// Seção média (50vh)
+.mid-section {
+  height: var(--section-height-md);
+  padding-inline: var(--section-padding-inline);
+  padding-block: var(--section-padding-block);
+}
+
+// Seção fullscreen (100vh)
+.fullscreen-section {
+  height: var(--section-height-full);
+  padding-inline: var(--section-padding-inline);
+  padding-block: var(--section-padding-block);
+}
+.fullscreen-section .content,
+.mid-section .content,
+.short-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.banner {
+  @extend .fullscreen-section;
+  @include layout.align-center;
+}
+.banner .content {
+  @include layout.align-center;
+}

@@ -1,0 +1,53 @@
+@use '../mixins' as *;
+
+// Alinhamentos horizontais
+.header-left {
+  @include layout-horizontal(left);
+}
+
+.header-center {
+  @include layout-horizontal(center);
+}
+
+.header-right {
+  @include layout-horizontal(right);
+}
+
+// Tamanhos semânticos
+.header-sm {
+  height: var(--header-height-sm);
+}
+
+.header-md {
+  height: var(--header-height-md);
+}
+
+.header-lg {
+  height: var(--header-height-lg);
+}
+
+// Variantes visuais
+.header-sticky {
+  position: sticky;
+  top: var(--header-offset, var(--spacing-none));
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-fixed {
+  position: fixed;
+  top: var(--header-offset, var(--spacing-none));
+  left: var(--spacing-none);
+  right: var(--spacing-none);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-md);
+}
+
+.header-transparent {
+  position: absolute;
+  top: var(--header-offset, var(--spacing-none));
+  left: var(--spacing-none);
+  right: var(--spacing-none);
+  background-color: transparent;
+  color: var(--color-light);
+}
