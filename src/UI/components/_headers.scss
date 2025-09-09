@@ -1,4 +1,5 @@
 @use '../mixins/layout' as layout;
+@use '../mixins/theme-color' as theme;
 
 // 📏 Tamanhos semânticos
 .header-sm {
@@ -55,4 +56,14 @@
 .header--transparent {
   background-color: transparent;
   color: var(--color-light);
+}
+
+// Componentes estilizados
+
+.main-header{
+  @extend .header--sticky;
+  @include theme.theme-color(
+    $bg: var(--color-brand-4),
+    $text: var(--color-brand-1),
+  );
 }

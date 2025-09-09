@@ -16,69 +16,25 @@
     
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section>
-            <div>
+        <section id="home" class="section-principal">
+
                 <h1>Bem-vindo ao Codessa</h1>
                 <p>Seu framework de desenvolvimento web moderno e eficiente.</p>
-            </div>
-        </section>
 
-        <section>
-            <div>
-            <h2>Recursos do Codessa</h2>
-            <div>
-            <article>
-                <h3>Recursos Principais</h3>
-                <ul>
-                    <li>Design Responsivo</li>
-                    <li>Componentes Reutilizáveis</li>
-                    <li>Fácil de Usar</li>
-                    <li>Documentação Completa</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Recursos Principais</h3>
-                <ul>
-                    <li>Design Responsivo</li>
-                    <li>Componentes Reutilizáveis</li>
-                    <li>Fácil de Usar</li>
-                    <li>Documentação Completa</li>
-                </ul>
-            </article>
-                        <article>
-                <h3>Recursos Principais</h3>
-                <ul>
-                    <li>Design Responsivo</li>
-                    <li>Componentes Reutilizáveis</li>
-                    <li>Fácil de Usar</li>
-                    <li>Documentação Completa</li>
-                </ul>
-            </article>
-                        <article>
-                <h3>Recursos Principais</h3>
-                <ul>
-                    <li>Design Responsivo</li>
-                    <li>Componentes Reutilizáveis</li>
-                    <li>Fácil de Usar</li>
-                    <li>Documentação Completa</li>
-                </ul>
-            </article>
-        </div>
-            </div>
         </section>
-
-        <section>
+        <section id="about">
             <div>
             <h2>Sobre o Codessa</h2>
             <p>O Codessa é um framework de desenvolvimento web que facilita a criação de sites modernos e responsivos. Com uma variedade de componentes pré-construídos e uma estrutura flexível, o Codessa é ideal para desenvolvedores de todos os níveis.</p>
@@ -86,7 +42,37 @@
 
             </div>
     </section>
-    <section>
+        <section id="features">
+
+            <h2>Recursos do Codessa</h2>
+
+                <div class="features-content">
+                    <article class="feature-card">
+                        <h3>Design Responsivo</h3>
+                        <p>Adapta-se perfeitamente a qualquer dispositivo, garantindo acessibilidade e fluidez.</p>
+                    </article>
+
+                    <article class="feature-card-2">
+                        <h3>Componentes Reutilizáveis</h3>
+                        <p>Construa interfaces consistentes com elementos modulares e personalizáveis.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Fácil de Usar</h3>
+                        <p>Arquitetura intuitiva e documentação clara para desenvolvedores e designers.</p>
+                    </article>
+
+                    <article class="feature-card-2">
+                        <h3>Documentação Completa</h3>
+                        <p>Referência detalhada com exemplos práticos e guias de integração.</p>
+                    </article>
+                </div>
+
+            
+        </section>
+
+
+    <section id="contact">
         <h2>Formulário de Contato</h2>
         <form class="form-group">
   <!-- Nome -->
@@ -115,10 +101,10 @@
 
     </section>
     </main>
-    <footer>
-        <div>
+    <footer class="footer-center">
+        <div class="footer-content">
             <p>Conecte-se conosco nas redes sociais:</p>
-            <nav>
+            <nav class="nav--horizontal">
                 <ul>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
@@ -126,8 +112,8 @@
                 </ul>
             </nav>
             <p>&copy; 2025 <a href="https://github.com/rafaelelyah" target="_blank">Rafael Elyah</a>. Todos os direitos reservados.</p>
+
         </div>
-        
     </footer>
 </body>
 </html>

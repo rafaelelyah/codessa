@@ -1,6 +1,7 @@
 @use '../mixins/scroll' as scroll;
 @use '../mixins/layout' as layout;
 @use '../mixins/grids' as grid;
+@use '../tokens/breakpoints' as breakpoints;
 
 // 📏 Tamanhos semânticos
 .section-sm {
@@ -31,4 +32,22 @@
 // 🔁 Scroll horizontal genérico
 .section--scroll-horizontal {
   @include scroll.scroll-horizontal(100%);
+}
+
+// Componentes estilizados
+
+.section-principal{
+  @extend .section-full;
+  @include layout.layout-horizontal(center);
+}
+
+.features-content {
+  @include grid.grid;
+  @media (max-width: breakpoints.$breakpoint-lg) {
+    grid-template-columns: repeat(var(--grid-columns-2), 1fr); // 💻 Tablets e desktops pequenos
+  }
+
+  @media (max-width: breakpoints.$breakpoint-sm) {
+    grid-template-columns: repeat(var(--grid-one-column), 1fr); // 📱 Mobile
+  }
 }

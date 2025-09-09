@@ -51,3 +51,7 @@
   background-color: transparent;
   color: var(--color-light);
 }
+
+.footer-content{
+  @include layout.layout-vertical(center);
+}

@@ -56,3 +56,14 @@
 .nav--vertical.nav--right ul li {
   @include layout.align-center-right;
 }
+
+// Componentes estilizados
+
+.main-nav{
+  @extend .nav--horizontal;
+  @include layout.layout-horizontal(center);
+}
+
+.main-nav a{
+  color: var(--color-brand-1);
+}

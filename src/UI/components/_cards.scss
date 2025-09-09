@@ -43,3 +43,14 @@
 .card--centered {
   @include layout.align-center-column;
 }
+
+.feature-card{
+  @extend .card--hoverable;
+  background-color: var(--color-brand-4);
+  color: var(--color-brand-1);
+}
+.feature-card-2{
+  @extend .card--hoverable;
+  background-color: var(--color-brand-1);
+  color: var(--color-brand-4);
+}
