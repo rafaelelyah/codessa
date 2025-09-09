@@ -3,7 +3,7 @@ import path from 'path';
 import purgeCss from 'vite-plugin-purgecss';
 
 export default defineConfig({
-  base: '/',
+  base: '/codessa/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

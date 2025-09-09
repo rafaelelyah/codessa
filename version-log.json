@@ -43,5 +43,10 @@
     "version": "0.4.4",
     "date": "2025-09-09T04:39:25.533Z",
     "note": "Adicionando deploy com commit automático para github"
+  },
+  {
+    "version": "0.4.5",
+    "date": "2025-09-09T04:52:27.112Z",
+    "note": "Alterando Configuração básica do encaminhamento para github pages"
   }
 ]
