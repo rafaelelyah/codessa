@@ -38,5 +38,10 @@
     "version": "0.4.3",
     "date": "2025-09-09T04:35:42.921Z",
     "note": "Adicionando novamente arquivo de deploy para github pages e alterando json para tal"
+  },
+  {
+    "version": "0.4.4",
+    "date": "2025-09-09T04:39:25.533Z",
+    "note": "Adicionando deploy com commit automático para github"
   }
 ]
