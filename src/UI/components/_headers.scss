@@ -1,18 +1,5 @@
 @use '../mixins/layout' as layout;
 
-// 🎯 Alinhamentos horizontais
-.header-left {
-  @include layout.layout-horizontal(left);
-}
-
-.header-center {
-  @include layout.layout-horizontal(center);
-}
-
-.header-right {
-  @include layout.layout-horizontal(right);
-}
-
 // 📏 Tamanhos semânticos
 .header-sm {
   height: var(--header-height-sm);
@@ -26,28 +13,46 @@
   height: var(--header-height-lg);
 }
 
-// 🎨 Variantes visuais
-.header-sticky {
+// 🎯 Alinhamentos horizontais
+.header-left {
+  @include layout.layout-horizontal(left);
+}
+
+.header-center {
+  @include layout.layout-horizontal(center);
+}
+
+.header-right {
+  @include layout.layout-horizontal(right);
+}
+
+// 🧭 Comportamentos de posicionamento
+.header--sticky {
   position: sticky;
-  top: var(--header-offset, var(--spacing-none));
+  top: var(--header-offset);
+}
+
+.header--fixed {
+  position: fixed;
+  top: var(--header-offset);
+  left: 0;
+  right: 0;
+}
+
+.header--absolute {
+  position: absolute;
+  top: var(--header-offset);
+  left: 0;
+  right: 0;
+}
+
+// 🎨 Estilos visuais
+.header--bg {
   background-color: var(--color-bg);
   box-shadow: var(--shadow-sm);
 }
 
-.header-fixed {
-  position: fixed;
-  top: var(--header-offset, var(--spacing-none));
-  left: var(--spacing-none);
-  right: var(--spacing-none);
-  background-color: var(--color-bg);
-  box-shadow: var(--shadow-md);
-}
-
-.header-transparent {
-  position: absolute;
-  top: var(--header-offset, var(--spacing-none));
-  left: var(--spacing-none);
-  right: var(--spacing-none);
+.header--transparent {
   background-color: transparent;
   color: var(--color-light);
 }

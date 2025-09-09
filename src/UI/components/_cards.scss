@@ -1,7 +1,7 @@
 @use '../mixins/layout' as layout;
 @use '../mixins/containers' as containers;
 
-// 📏 Alturas semânticas
+// 📏 Tamanhos semânticos
 .card-sm {
   height: var(--card-height-sm);
 }
@@ -14,25 +14,32 @@
   height: var(--card-height-lg);
 }
 
-// 📐 Estrutura base
-.card {
-  padding-inline: var(--card-padding-inline);
-  padding-block: var(--card-padding-block);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+// 🎨 Estilos visuais
+.card--surface {
   background-color: var(--color-surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  padding-inline: var(--card-padding-inline);
+  padding-block: var(--card-padding-block);
 }
 
-// 🔁 Variante com scroll interno
+.card--outline {
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+}
+
+.card--hoverable {
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: var(--shadow-md);
+  }
+}
+
+// 🔁 Comportamentos
 .card--scroll {
   @include containers.scroll-vertical(20rem);
 }
 
-// 🎯 Variante com alinhamento central
 .card--centered {
   @include layout.align-center-column;
-    @extend .card;
 }

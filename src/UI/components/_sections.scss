@@ -2,81 +2,33 @@
 @use '../mixins/layout' as layout;
 @use '../mixins/grids' as grid;
 
-
-// Seção curta (25vh)
-.short-section {
+// 📏 Tamanhos semânticos
+.section-sm {
   height: var(--section-height-sm);
-  padding-inline: var(--section-padding-inline);
-  padding-block: var(--section-padding-block);
 }
 
-// Seção média (50vh)
-.mid-section {
+.section-md {
   height: var(--section-height-md);
-  padding-inline: var(--section-padding-inline);
-  padding-block: var(--section-padding-block);
 }
 
-// Seção fullscreen (100vh)
-.fullscreen-section {
+.section-full {
   height: var(--section-height-full);
-  padding-inline: var(--section-padding-inline);
-  padding-block: var(--section-padding-block);
 }
 
-.custom-section {
-  padding-inline: var(--section-padding-inline);
-  padding-block: var(--section-padding-block);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
-// Conteúdo empilhado
-.fullscreen-section .content,
-.mid-section .content,
-.short-section .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
-// 🔁 Seções com scroll vertical
-.short-section--scroll {
-  @extend .short-section;
+// 🔁 Comportamentos de scroll vertical
+.section--scroll-sm {
   @include containers.scroll-vertical(var(--section-height-sm));
 }
 
-.mid-section--scroll {
-  @extend .mid-section;
+.section--scroll-md {
   @include containers.scroll-vertical(var(--section-height-md));
 }
 
-.fullscreen-section--scroll {
-  @extend .fullscreen-section;
+.section--scroll-full {
   @include containers.scroll-vertical(var(--section-height-full));
 }
 
-// 🔁 Seção com scroll horizontal (genérica)
-.section-scroll-horizontal {
+// 🔁 Scroll horizontal genérico
+.section--scroll-horizontal {
   @include containers.scroll-horizontal(100%);
-}
-
-.banner {
-  @extend .fullscreen-section;
-  @include layout.align-center;
-}
-.banner .content {
-  @include layout.align-center;
-}
-.features {
-  @extend .custom-section;
-  @include grid.grid-4;
-  
-}
-.resources-section {
-  @extend .custom-section;
-}
-.resources-section h2{
-   @include layout.align-center-column;
 }

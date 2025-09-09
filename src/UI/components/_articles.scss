@@ -1,7 +1,7 @@
 @use '../mixins/layout' as layout;
 @use '../mixins/containers' as containers;
 
-// 📏 Alturas semânticas
+// 📏 Tamanhos semânticos
 .article-sm {
   height: var(--article-height-sm);
 }
@@ -14,25 +14,12 @@
   height: var(--article-height-lg);
 }
 
-// 📐 Estrutura base
-.article {
-  padding-inline: var(--article-padding-inline);
-  padding-block: var(--article-padding-block);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  background-color: var(--color-surface);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-
-// 🔁 Variante com scroll interno
+// 🔁 Comportamento de scroll interno
 .article--scroll {
   @include containers.scroll-vertical(20rem);
 }
 
-// 🎯 Variante com alinhamento central
+// 🎯 Alinhamento central opcional
 .article--centered {
   @include layout.align-center-column;
-  @extend .article;
 }

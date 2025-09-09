@@ -9,10 +9,9 @@ body {
   line-height: var(--line-height-base, 1.6);
   background-color: var(--color-bg);
   color: var(--color-text);
-  padding: var(--spacing-none);
-  margin: var(--spacing-none);
 }
 
+// 📦 Estrutura principal
 main {
   display: flex;
   flex-direction: column;
@@ -20,18 +19,30 @@ main {
   width: 100%;
   max-width: var(--container-max-width);
   margin-inline: auto;
-  padding-inline: var(--spacing-lg);
+  padding-inline: var(--container-padding-inline);
 }
 
+// 🧭 Cabeçalho e rodapé
 header,
 footer {
   width: 100%;
   max-width: var(--container-max-width);
   margin-inline: auto;
-  padding-inline: var(--spacing-lg);
+  padding-inline: var(--container-padding-inline);
 }
 
+// 🧭 Navegação base
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--text-md);
+  font-weight: var(--font-medium);
+  color: var(--color-text);
+}
 
+// 🔗 Links
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -48,9 +59,48 @@ a {
   }
 }
 
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+// 📋 Listas
 ul,
 ol {
-  padding-left: var(--spacing-none);
-  margin: var(--spacing-none);
   list-style: none;
+}
+
+// 📝 Artigos e seções
+article,
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-inline: var(--section-padding-inline);
+  padding-block: var(--section-padding-block);
+}
+
+// 🧱 Containers genéricos
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-inline: var(--container-padding-inline);
+  padding-block: var(--container-padding-block);
+}
+
+// 📌 Títulos
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-tight);
+  margin-block: var(--spacing-sm);
+}
+
+// 📄 Parágrafos
+p {
+  margin-block: var(--spacing-sm);
+  line-height: var(--line-height-base);
 }

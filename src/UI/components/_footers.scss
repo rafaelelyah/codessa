@@ -15,21 +15,39 @@
 
 // 🎯 Alinhamentos horizontais
 .footer-left {
-  @include layout.align-center-left;
+  @include layout.layout-horizontal(left);
 }
 
 .footer-center {
-  @include layout.align-center;
+  @include layout.layout-horizontal(center);
 }
 
 .footer-right {
-  @include layout.align-center-right;
+  @include layout.layout-horizontal(right);
 }
 
-// 📐 Conteúdo interno empilhado
-footer .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  @include layout.align-center;
+// 🧭 Comportamentos opcionais
+.footer--sticky {
+  position: sticky;
+  bottom: var(--footer-offset, 0);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.footer--fixed {
+  position: fixed;
+  bottom: var(--footer-offset, 0);
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-md);
+}
+
+.footer--transparent {
+  position: absolute;
+  bottom: var(--footer-offset, 0);
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  color: var(--color-light);
 }

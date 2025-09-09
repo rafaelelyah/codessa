@@ -1,12 +1,27 @@
 @use '../mixins/index' as mixins;
 
-// Botão principal
-.button-primary {
+// 📐 Tamanhos (se quiser adicionar)
+.button-sm {
+  font-size: var(--text-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.button-md {
+  font-size: var(--text-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.button-lg {
+  font-size: var(--text-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+// 🎨 Estilos visuais
+.button--primary {
   @include mixins.button();
 }
 
-// Botão secundário
-.button-secondary {
+.button--secondary {
   @include mixins.button(
     $bg: var(--color-bg),
     $color: var(--color-text),
@@ -17,44 +32,7 @@
   );
 }
 
-// Botão de erro
-.button-danger {
-  @include mixins.button(
-    $bg: var(--color-error-4),
-    $color: var(--color-text-on-brand),
-    $hover-bg: var(--color-error-5)
-  );
-}
-
-// Botão de sucesso
-.button-success {
-  @include mixins.button(
-    $bg: var(--color-success-4),
-    $color: var(--color-text-on-brand),
-    $hover-bg: var(--color-success-5)
-  );
-}
-
-// Botão de aviso
-.button-warning {
-  @include mixins.button(
-    $bg: var(--color-warning-4),
-    $color: var(--color-text-on-brand),
-    $hover-bg: var(--color-warning-5)
-  );
-}
-
-// Botão informativo
-.button-info {
-  @include mixins.button(
-    $bg: var(--color-info-4),
-    $color: var(--color-text-on-brand),
-    $hover-bg: var(--color-info-5)
-  );
-}
-
-// Botão fantasma (ghost)
-.button-ghost {
+.button--ghost {
   @include mixins.button(
     $bg: transparent,
     $color: var(--color-brand-5),
@@ -65,8 +43,7 @@
   );
 }
 
-// Botão com contorno (outline)
-.button-outline {
+.button--outline {
   @include mixins.button(
     $bg: transparent,
     $color: var(--color-text),
@@ -77,8 +54,41 @@
   );
 }
 
-// Botão desabilitado
-.button-disabled {
+// 🎯 Estados semânticos
+.button--danger {
+  @include mixins.button(
+    $bg: var(--color-error-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-error-5)
+  );
+}
+
+.button--success {
+  @include mixins.button(
+    $bg: var(--color-success-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-success-5)
+  );
+}
+
+.button--warning {
+  @include mixins.button(
+    $bg: var(--color-warning-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-warning-5)
+  );
+}
+
+.button--info {
+  @include mixins.button(
+    $bg: var(--color-info-4),
+    $color: var(--color-text-on-brand),
+    $hover-bg: var(--color-info-5)
+  );
+}
+
+// 🚫 Estado desabilitado
+.button--disabled {
   @include mixins.button(
     $bg: var(--color-border),
     $color: var(--color-text-alt)
@@ -87,8 +97,8 @@
   opacity: var(--opacity-40);
 }
 
-// Botão apenas com ícone
-.button-icon {
+// 🎯 Botão com ícone
+.button--icon {
   @include mixins.button(
     $padding-y: var(--spacing-xs),
     $padding-x: var(--spacing-xs),

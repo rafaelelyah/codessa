@@ -1,49 +1,58 @@
 @use '../mixins/layout' as layout;
 @use '../mixins/lists' as lists;
 
-// Navegação principal no header
-.nav-primary {
-  @include layout.nav-horizontal(var(--nav-gap-horizontal), left);
-  font-size: var(--text-md);
-  font-weight: var(--font-medium);
-  color: var(--color-text);
-}
-
-// Navegação secundária (ex: footer, submenus)
-.nav-secondary {
-  @include layout.nav-horizontal(var(--nav-gap-vertical), center);
+// 📐 Tamanhos semânticos
+.nav-sm {
+  height: var(--nav-height-sm);
+  padding-inline: var(--nav-padding-inline);
+  padding-block: var(--nav-padding-block-sm);
   font-size: var(--text-sm);
-  color: var(--color-muted);
 }
 
-// Navegação alinhada à direita (ex: login/logout, perfil)
-.nav-right {
+.nav-md {
+  height: var(--nav-height-md);
+  padding-inline: var(--nav-padding-inline);
+  padding-block: var(--nav-padding-block-md);
+  font-size: var(--text-md);
+}
+
+.nav-lg {
+  height: var(--nav-height-lg);
+  padding-inline: var(--nav-padding-inline);
+  padding-block: var(--nav-padding-block-lg);
+  font-size: var(--text-lg);
+}
+
+// 🎯 Direção e alinhamento
+.nav--horizontal {
+  @include layout.nav-horizontal(var(--nav-gap-horizontal), left);
+}
+
+.nav--horizontal.nav--center {
+  @include layout.nav-horizontal(var(--nav-gap-horizontal), center);
+}
+
+.nav--horizontal.nav--right {
   @include layout.nav-horizontal(var(--nav-gap-horizontal), right);
 }
 
-// Navegação vertical (ex: sidebar, mobile menu)
-.nav-vertical {
+.nav--vertical {
   @include layout.nav-vertical(var(--nav-gap-vertical), left);
 }
 
-.nav-vertical-right {
+.nav--vertical.nav--right {
   @include layout.nav-vertical(var(--nav-gap-vertical), right);
 }
 
-// Listas horizontais
-.nav-primary ul,
-.nav-secondary ul,
-.nav-right ul {
+// 📋 Listas internas
+.nav--horizontal ul {
   @include lists.list-horizontal(var(--nav-gap-horizontal));
 }
 
-// Listas verticais
-.nav-vertical ul,
-.nav-vertical-right ul {
+.nav--vertical ul {
   @include lists.list-vertical(var(--nav-gap-vertical));
 }
 
-// Alinhamento visual dos links à direita
-.nav-vertical-right ul li {
+.nav--vertical.nav--right ul li {
   @include layout.align-center-right;
 }

@@ -23,5 +23,10 @@
     "version": "0.4.0",
     "date": "2025-09-08T17:15:18.054Z",
     "note": "Adicionando tokens de radius, paddings, offset e border, ajustando grid-system, alterando mixings de grids, layout e containers e adicionando components section, navs, cards e articles"
+  },
+  {
+    "version": "0.4.1",
+    "date": "2025-09-09T04:29:58.482Z",
+    "note": "Ajustando base e normalize para conterem todos os principais elementos html, ajustando semântica e modularização dos componentes de sections, navs, headers, footers, cards, buttons e articles"
   }
 ]

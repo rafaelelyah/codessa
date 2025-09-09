@@ -1,25 +1,85 @@
-/* Box sizing */
+/* 📦 Box sizing universal */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Remove margens padrão */
-body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
-  margin: var(--spacing-none);
+/* 🧼 Remoção de margens padrão */
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote,
+dl, dd {
+  margin: 0;
 }
 
-/* Imagens responsivas */
-img, picture {
+/* 🖼️ Mídias responsivas */
+img, picture, video, canvas, svg {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
-/* Botões e inputs sem estilo nativo */
-button, input, select, textarea {
+/* 🧑‍💻 Reset de inputs e botões */
+button,
+input,
+select,
+textarea {
   font: inherit;
   color: inherit;
-  background: none;
+  background-color: transparent;
   border: none;
-  padding: var(--spacing-none);
-  margin: var(--spacing-none);
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* 🧭 Listas sem estilo nativo */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🧾 Tabelas sem estilo nativo */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+}
+
+/* 🧠 Elementos interativos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* 🧱 Elementos semânticos */
+fieldset,
+legend {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🧠 Tipografia auxiliar */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 80%;
 }
