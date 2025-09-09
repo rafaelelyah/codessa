@@ -53,5 +53,10 @@
     "version": "0.4.6",
     "date": "2025-09-09T05:12:32.173Z",
     "note": "Alterando deploy e version para serem apenas um arquivo"
+  },
+  {
+    "version": "0.5.0-alpha",
+    "date": "2025-09-09T05:23:26.255Z",
+    "note": "Adicionando arquivo MD de changelog para controle de versão"
   }
 ]

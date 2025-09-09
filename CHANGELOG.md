@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.5.0-alpha – Adicionando arquivo MD de changelog para controle de versão
+_09/09/2025_
+
 ## v0.4.6 – Alterando deploy e version para serem apenas um arquivo
 _09/09/2025_
 
