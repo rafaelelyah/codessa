@@ -14,11 +14,6 @@ dist-ssr/
 .vite/
 .cache/
 *.local
-
-# Sass build (caso gere CSS manualmente)
-*.css
-*.css.map
-
 # Previews e imagens geradas
 src/previews/*.png
 src/previews/*.jpg
