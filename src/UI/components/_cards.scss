@@ -1,5 +1,5 @@
 @use '../mixins/layout' as layout;
-@use '../mixins/containers' as containers;
+@use '../mixins/scroll' as scroll;
 
 // 📏 Tamanhos semânticos
 .card-sm {
@@ -37,7 +37,7 @@
 
 // 🔁 Comportamentos
 .card--scroll {
-  @include containers.scroll-vertical(20rem);
+  @include scroll.scroll-vertical(20rem);
 }
 
 .card--centered {

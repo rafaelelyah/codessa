@@ -1,0 +1,51 @@
+@use '../mixins/elevations' as elevation;
+@use '../mixins/border-radius' as radius;
+@use '../mixins/states' as states;
+@use '../mixins/typography' as type;
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  @include radius.radius;
+  @include elevation.elevation-sm;
+  @include type.typography-base;
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+
+  &[data-variant='success'] {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+  }
+
+  &[data-variant='error'] {
+    background-color: var(--color-error-bg);
+    color: var(--color-error-text);
+  }
+
+  &[data-variant='warning'] {
+    background-color: var(--color-warning-1);
+    color: var(--color-warning-7);
+  }
+
+  &[data-variant='info'] {
+    background-color: var(--color-info-1);
+    color: var(--color-info-7);
+  }
+
+  .alert__close {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    color: inherit;
+
+    &:focus-visible {
+      @include states.state-focus;
+    }
+  }
+}

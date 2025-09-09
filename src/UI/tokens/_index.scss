@@ -12,6 +12,7 @@
 @forward 'paddings';        // Paddings contextuais por componente
 @forward 'heights';        // Alturas semânticas para layout
 @forward 'offsets';        // Offsets para posicionamento fixo/sticky
+@forward 'sizes';         // Tamanhos fixos e responsivos para componentes
 
 // Tokens de layout — definem estrutura e responsividade
 @forward 'breakpoints';    // Tamanhos de tela para media queries

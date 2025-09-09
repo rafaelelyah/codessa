@@ -1,0 +1,35 @@
+// 🎨 Aplica cor de fundo e texto com base no tema
+@mixin theme-color(
+  $bg: var(--color-bg),
+  $text: var(--color-text),
+  $border: null,
+  $hover-bg: null,
+  $hover-text: null,
+  $hover-border: null
+) {
+  background-color: $bg;
+  color: $text;
+
+  @if $border != null {
+    border: $border;
+  }
+
+  &:hover {
+    background-color: if($hover-bg != null, $hover-bg, $bg);
+    color: if($hover-text != null, $hover-text, $text);
+
+    @if $hover-border != null {
+      border-color: $hover-border;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+
+  &:disabled {
+    opacity: var(--opacity-40);
+    cursor: not-allowed;
+  }
+}

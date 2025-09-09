@@ -71,4 +71,13 @@
   --color-link: var(--color-brand-5);
   --color-link-hover: var(--color-brand-6);
   --color-link-visited: var(--color-brand-7);
+
+    // Status semânticos
+  --color-success-bg: var(--color-success-1);
+  --color-success-text: var(--color-success-7);
+
+  --color-error-bg: var(--color-error-1);
+  --color-error-text: var(--color-error-7);
+
+  --color-muted: var(--color-text-alt);
 }

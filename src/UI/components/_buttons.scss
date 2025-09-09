@@ -1,6 +1,6 @@
-@use '../mixins/index' as mixins;
+@use '../mixins/buttons' as button;
 
-// 📐 Tamanhos (se quiser adicionar)
+// 📐 Tamanhos
 .button-sm {
   font-size: var(--text-sm);
   padding: var(--spacing-xs) var(--spacing-sm);
@@ -18,11 +18,11 @@
 
 // 🎨 Estilos visuais
 .button--primary {
-  @include mixins.button();
+  @include button.button();
 }
 
 .button--secondary {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-bg),
     $color: var(--color-text),
     $border: 1px solid,
@@ -33,7 +33,7 @@
 }
 
 .button--ghost {
-  @include mixins.button(
+  @include button.button(
     $bg: transparent,
     $color: var(--color-brand-5),
     $border: 1px solid,
@@ -44,7 +44,7 @@
 }
 
 .button--outline {
-  @include mixins.button(
+  @include button.button(
     $bg: transparent,
     $color: var(--color-text),
     $border: 1px solid,
@@ -56,7 +56,7 @@
 
 // 🎯 Estados semânticos
 .button--danger {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-error-4),
     $color: var(--color-text-on-brand),
     $hover-bg: var(--color-error-5)
@@ -64,7 +64,7 @@
 }
 
 .button--success {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-success-4),
     $color: var(--color-text-on-brand),
     $hover-bg: var(--color-success-5)
@@ -72,7 +72,7 @@
 }
 
 .button--warning {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-warning-4),
     $color: var(--color-text-on-brand),
     $hover-bg: var(--color-warning-5)
@@ -80,7 +80,7 @@
 }
 
 .button--info {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-info-4),
     $color: var(--color-text-on-brand),
     $hover-bg: var(--color-info-5)
@@ -89,7 +89,7 @@
 
 // 🚫 Estado desabilitado
 .button--disabled {
-  @include mixins.button(
+  @include button.button(
     $bg: var(--color-border),
     $color: var(--color-text-alt)
   );
@@ -99,7 +99,7 @@
 
 // 🎯 Botão com ícone
 .button--icon {
-  @include mixins.button(
+  @include button.button(
     $padding-y: var(--spacing-xs),
     $padding-x: var(--spacing-xs),
     $radius: var(--radius-circle),

@@ -1,0 +1,82 @@
+@use '../mixins/layout' as layout;
+@use '../mixins/scroll' as scroll;
+@use '../mixins/elevations' as elevation;
+@use '../mixins/border-radius' as radius;
+@use '../mixins/z-index' as z;
+@use '../mixins/responsive' as responsive;
+@use '../mixins/states' as states;
+@use '../mixins/typography' as type;
+
+// 🔧 Estilo base do elemento <aside>
+aside {
+  @include layout.layout-vertical;
+  @include scroll.scroll-vertical(100vh);
+  @include elevation.elevation-lg;
+  @include radius.radius-lg;
+  @include z.z-index(sticky);
+  @include type.typography-base;
+
+  gap: var(--spacing-sm);
+  padding-inline: var(--container-padding-inline);
+  padding-block: var(--container-padding-block);
+  background-color: var(--color-bg);
+  transition: var(--motion-transition-base);
+  position: sticky;
+  top: 0;
+
+  @include responsive.only-mobile {
+    display: none;
+  }
+
+  &:focus-visible {
+    @include states.state-focus;
+  }
+}
+
+// 📐 Tamanhos alternativos
+aside[data-size='sm'] {
+  width: 240px;
+}
+
+aside[data-size='md'] {
+  width: 320px;
+}
+
+aside[data-size='lg'] {
+  width: 400px;
+}
+
+// 🎨 Variantes visuais
+aside[data-variant='muted'] {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-alt);
+}
+
+aside[data-variant='bordered'] {
+  border-left: 1px solid var(--color-border);
+}
+
+aside[data-variant='transparent'] {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+// 🧭 Posicionamento fixo (ex: modais ou overlays)
+aside[data-fixed='true'] {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  z-index: var(--z-index-overlay);
+  @include elevation.elevation-xl;
+}
+
+// 🧩 Área interna rolável
+aside .aside__content {
+  @include scroll.scroll-vertical(100%);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}

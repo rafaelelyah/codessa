@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.6.0-alpha – feat: componentes aside, avatar e alert + ajustes em tokens e mixins - Criação do componente <aside> com variantes via data-* (size, variant, fixed)- Refatoração do layout para evitar sobreposição com header/main- Criação dos componentes avatar e alert com estrutura semântica e responsiva- Aplicação correta dos mixins: elevation, radius, scroll, z-index, typography- Correção nos tokens de cores semânticas (success, error, warning, info)- Ajuste nos mixins de radius (uso de radius-circle e radius padrão)- Correção nos breakpoints Sass e importação nos mixins de media/responsive- Organização dos mixins: scroll extraído de containers, responsive ajustado
+_09/09/2025_
+
 ## v0.5.0-alpha – Adicionando arquivo MD de changelog para controle de versão
 _09/09/2025_
 

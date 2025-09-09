@@ -1,0 +1,6 @@
+@use '../tokens/functions' as fn;
+
+// 🔠 Aplica tipografia fluida entre breakpoints
+@mixin fluid-type($min-size, $max-size, $min-vw: $breakpoint-xs, $max-vw: $breakpoint-xl) {
+  font-size: fn.clamp-font($min-size, $max-size, $min-vw, $max-vw);
+}

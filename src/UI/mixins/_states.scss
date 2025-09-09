@@ -1,0 +1,33 @@
+// 🚫 Estado desabilitado
+@mixin state-disabled {
+  opacity: var(--opacity-40);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+// 🎯 Estado ativo
+@mixin state-active($color: var(--color-brand-5)) {
+  color: $color;
+  font-weight: var(--font-weight-bold);
+}
+
+// 👆 Estado hover
+@mixin state-hover($bg: var(--color-bg-alt), $border-color: var(--color-border)) {
+  &:hover {
+    background-color: $bg;
+    border-color: $border-color;
+  }
+}
+
+// 🔍 Estado focus
+@mixin state-focus {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+// ✅ Estado selecionado
+@mixin state-selected($bg: var(--color-brand-1), $color: var(--color-brand-6)) {
+  background-color: $bg;
+  color: $color;
+  font-weight: var(--font-weight-medium);
+}

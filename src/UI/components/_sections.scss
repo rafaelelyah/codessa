@@ -1,4 +1,4 @@
-@use '../mixins/containers' as containers;
+@use '../mixins/scroll' as scroll;
 @use '../mixins/layout' as layout;
 @use '../mixins/grids' as grid;
 
@@ -17,18 +17,18 @@
 
 // 🔁 Comportamentos de scroll vertical
 .section--scroll-sm {
-  @include containers.scroll-vertical(var(--section-height-sm));
+  @include scroll.scroll-vertical(var(--section-height-sm));
 }
 
 .section--scroll-md {
-  @include containers.scroll-vertical(var(--section-height-md));
+  @include scroll.scroll-vertical(var(--section-height-md));
 }
 
 .section--scroll-full {
-  @include containers.scroll-vertical(var(--section-height-full));
+  @include scroll.scroll-vertical(var(--section-height-full));
 }
 
 // 🔁 Scroll horizontal genérico
 .section--scroll-horizontal {
-  @include containers.scroll-horizontal(100%);
+  @include scroll.scroll-horizontal(100%);
 }

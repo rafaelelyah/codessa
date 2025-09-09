@@ -1,5 +1,3 @@
-// Nenhum @use necessário — estamos usando var() diretamente
-
 @mixin scroll-vertical($height: auto, $padding: var(--spacing-sm)) {
   overflow-y: auto;
   overflow-x: hidden;

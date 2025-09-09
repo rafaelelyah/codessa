@@ -1,0 +1,45 @@
+// 🧾 Estilos base para campos de formulário
+@mixin field-base(
+  $bg: var(--color-bg),
+  $color: var(--color-text),
+  $border: var(--border-thin) solid var(--color-border),
+  $radius: var(--radius-sm),
+  $padding-y: var(--spacing-sm),
+  $padding-x: var(--spacing-md),
+  $font: var(--font-base),
+  $font-size: var(--text-md),
+  $line-height: var(--line-height-base),
+  $transition: var(--motion-transition-base)
+) {
+  display: block;
+  width: 100%;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  padding: $padding-y $padding-x;
+  box-shadow: var(--shadow-none);
+  transition: $transition;
+  appearance: none;
+
+  &::placeholder {
+    color: var(--color-muted);
+    opacity: var(--opacity-60);
+  }
+
+  &:focus {
+    border-color: var(--border-color-focus);
+    box-shadow: var(--shadow-focus);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-alt);
+    cursor: not-allowed;
+    opacity: var(--opacity-60);
+  }
+}

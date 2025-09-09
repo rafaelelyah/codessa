@@ -1,0 +1,35 @@
+:root {
+  // 📐 Tamanhos de ícones
+  --size-icon-xs: 8px;
+  --size-icon-sm: 12px;
+  --size-icon-md: 16px;
+  --size-icon-lg: 24px;
+  --size-icon-xl: 32px;
+
+  // 👤 Tamanhos de avatar
+  --size-avatar-sm: 24px;
+  --size-avatar-md: 32px;
+  --size-avatar-lg: 48px;
+  --size-avatar-xl: 64px;
+
+  // 🔘 Tamanhos de botão
+  --size-button-sm: 32px;
+  --size-button-md: 40px;
+  --size-button-lg: 48px;
+
+  // 🧾 Tamanhos de campo/input
+  --size-input-sm: 32px;
+  --size-input-md: 40px;
+  --size-input-lg: 48px;
+
+  // 🧱 Tamanhos de elementos visuais
+  --size-thumbnail-sm: 64px;
+  --size-thumbnail-md: 96px;
+  --size-thumbnail-lg: 128px;
+
+  // 📦 Tamanhos de container (opcional)
+  --size-container-sm: 320px;
+  --size-container-md: 640px;
+  --size-container-lg: 960px;
+  --size-container-xl: 1280px;
+}

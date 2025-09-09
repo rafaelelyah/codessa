@@ -25,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section>
             <div>
@@ -84,6 +85,34 @@
             <p>Nosso objetivo é fornecer uma ferramenta poderosa que permita aos desenvolvedores focarem na criação de experiências incríveis para os usuários, sem se preocupar com os detalhes técnicos do design e da implementação.</p>
 
             </div>
+    </section>
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form class="form-group">
+  <!-- Nome -->
+  <label for="name" class="form-label-sm">Nome completo</label>
+  <input type="text" id="name" class="form-control-sm" placeholder="Digite seu nome" />
+
+  <!-- Email com erro -->
+  <label for="email" class="form-label-sm">Email</label>
+  <input type="email" id="email" class="form-control-sm" placeholder="seu@email.com" />
+
+  <!-- Seleção -->
+  <label for="role" class="form-label-sm">Função</label>
+  <select id="role" class="form-control-sm">
+    <option value="">Selecione</option>
+    <option value="dev">Desenvolvedor</option>
+    <option value="design">Designer</option>
+    <option value="pm">Product Manager</option>
+  </select>
+  <span class="form-hint">Escolha sua função atual</span>
+
+  <!-- Botão -->
+  <button type="submit" class="form-control-md" style="margin-top: var(--spacing-md); background-color: var(--color-brand-5); color: white; border-radius: var(--radius-sm); padding: var(--spacing-sm) var(--spacing-md); box-shadow: var(--shadow-sm);">
+    Enviar
+  </button>
+</form>
+
     </section>
     </main>
     <footer>

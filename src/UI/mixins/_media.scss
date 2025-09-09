@@ -1,0 +1,50 @@
+@use '../tokens/breakpoints' as bp;
+
+// 📱 Mobile muito pequeno
+@mixin media-xs {
+  @media (min-width: #{bp.$breakpoint-xs}) {
+    @content;
+  }
+}
+
+// 📱 Mobile padrão
+@mixin media-sm {
+  @media (min-width: #{bp.$breakpoint-sm}) {
+    @content;
+  }
+}
+
+// 📱 Tablet
+@mixin media-md {
+  @media (min-width: #{bp.$breakpoint-md}) {
+    @content;
+  }
+}
+
+// 💻 Desktop
+@mixin media-lg {
+  @media (min-width: #{bp.$breakpoint-lg}) {
+    @content;
+  }
+}
+
+// 💻 Telas grandes
+@mixin media-xl {
+  @media (min-width: #{bp.$breakpoint-xl}) {
+    @content;
+  }
+}
+
+// 🖥️ Telas extra largas
+@mixin media-xxl {
+  @media (min-width: #{bp.$breakpoint-xxl}) {
+    @content;
+  }
+}
+
+// 🔁 Intervalo entre dois breakpoints
+@mixin media-between($min, $max) {
+  @media (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}

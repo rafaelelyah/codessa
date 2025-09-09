@@ -16,11 +16,12 @@
 @forward 'lists';           // Estrutura e reset de listas
 
 // Mixins estruturais — layout e responsividade
-@forward 'containers';      // Largura máxima, centralização, padding
+@forward 'scroll';          // Estilos de scrollbar customizados
 @forward 'grids';           // Grid flexível baseado nos tokens
 @forward 'media';           // Media queries com breakpoints
 @forward 'responsive';      // Estilos que se adaptam ao viewport
 @forward 'layout';          // Estrutura do Layout: header, footer, main
+@forward 'z-index';         // Níveis de z-index semânticos
 
 // Mixins funcionais — utilitários e comportamentos
 @forward 'utils';           // Truncate, center, clearfix, etc.

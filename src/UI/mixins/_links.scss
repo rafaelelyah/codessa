@@ -1,0 +1,52 @@
+// 🔗 Estilo base para links
+@mixin link-base(
+  $color: var(--color-link),
+  $hover-color: var(--color-link-hover),
+  $visited-color: var(--color-link-visited),
+  $active-color: var(--color-link-active),
+  $transition: var(--motion-transition-fast),
+  $decoration: underline
+) {
+  color: $color;
+  text-decoration: $decoration;
+  transition: color $transition;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $visited-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+}
+
+// 🔗 Link sem sublinhado
+@mixin link-clean(
+  $color: var(--color-link),
+  $hover-color: var(--color-link-hover),
+  $transition: var(--motion-transition-fast)
+) {
+  color: $color;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+}

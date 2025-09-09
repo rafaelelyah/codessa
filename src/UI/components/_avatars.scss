@@ -1,0 +1,41 @@
+@use '../mixins/border-radius' as radius;
+@use '../mixins/elevations' as elevation;
+
+.avatar {
+  display: inline-block;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  @include elevation.elevation-sm;
+  background-color: var(--color-bg-alt);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &[data-shape='circle'] {
+    @include radius.radius-circle;
+  }
+
+  &[data-shape='rounded'] {
+    @include radius.radius;
+  }
+
+  &[data-size='sm'] {
+    width: 32px;
+  }
+
+  &[data-size='md'] {
+    width: 48px;
+  }
+
+  &[data-size='lg'] {
+    width: 64px;
+  }
+
+  &[data-size='xl'] {
+    width: 96px;
+  }
+}

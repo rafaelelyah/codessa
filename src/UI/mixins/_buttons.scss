@@ -13,7 +13,7 @@
   $gap: var(--spacing-xs),
   $shadow: none,
   $text-transform: none,
-  $transition: var(--motion-transition-base),
+  $transition: motion(transition-base),
   $hover-bg: null,
   $hover-border-color: null
 ) {

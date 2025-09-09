@@ -9,3 +9,17 @@
   flex-direction: column;
   gap: #{$gap};
 }
+@mixin list-none {
+  display: flex;
+  gap: 0;
+}
+@mixin list-with-icons($gap: var(--spacing-sm)) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+@mixin list-responsive($min: 12rem, $gap: var(--spacing-sm)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}

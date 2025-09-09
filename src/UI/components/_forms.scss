@@ -1,0 +1,62 @@
+@use '../mixins/forms' as form;
+
+// 🧱 Agrupamento de campos
+.form-group {
+  @include form.form-group(stack);
+}
+
+.form-inline {
+  @include form.form-group(inline);
+}
+
+.form-row {
+  @include form.form-group(grid);
+}
+
+// 🏷️ Labels
+.form-label-sm {
+  @include form.form-label(sm);
+}
+
+.form-label-md {
+  @include form.form-label(md);
+}
+
+.form-label-lg {
+  @include form.form-label(lg);
+}
+
+// 📏 Tamanhos de campos
+.form-control-sm {
+  @include form.form-control(sm);
+}
+
+.form-control-md {
+  @include form.form-control(md);
+}
+
+.form-control-lg {
+  @include form.form-control(lg);
+}
+
+// 🎯 Estados visuais
+.form-control--error {
+  @include form.form-state(error);
+}
+
+.form-control--success {
+  @include form.form-state(success);
+}
+
+.form-control--disabled {
+  @include form.form-state(disabled);
+}
+
+// 💬 Mensagens auxiliares
+.form-hint {
+  @include form.form-hint(true);
+}
+
+.form-error {
+  @include form.form-hint(false);
+}

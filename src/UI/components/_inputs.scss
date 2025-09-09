@@ -1,0 +1,56 @@
+// 🎯 Estilos base para campos nativos de formulário
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  font-family: var(--font-base);
+  font-size: var(--text-md);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: var(--border-thin) var(--border-style) var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  box-shadow: var(--shadow-none);
+  transition: var(--motion-transition-base);
+
+  &::placeholder {
+    color: var(--color-muted);
+    opacity: var(--opacity-60);
+  }
+
+  &:focus {
+    border-color: var(--border-color-focus);
+    box-shadow: var(--shadow-focus);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-alt);
+    cursor: not-allowed;
+    opacity: var(--opacity-60);
+  }
+}
+
+// 🖊️ Textarea ajustes específicos
+textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+// 🔽 Select ajustes específicos
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23555' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-sm) center;
+  background-size: var(--size-icon-sm);
+  padding-right: var(--spacing-xl);
+}
+
+// ❌ Input com erro (caso não use classe semântica)
+input:invalid {
+  border-color: var(--border-color-error);
+}

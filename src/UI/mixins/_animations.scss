@@ -1,0 +1,55 @@
+// 🔁 Fade in
+@mixin fade-in($duration: var(--motion-duration-medium), $timing: var(--motion-smooth)) {
+  animation: fadeIn $duration $timing forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: var(--opacity-0); }
+  to { opacity: var(--opacity-100); }
+}
+
+// 🔁 Fade out
+@mixin fade-out($duration: var(--motion-duration-medium), $timing: var(--motion-smooth)) {
+  animation: fadeOut $duration $timing forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: var(--opacity-100); }
+  to { opacity: var(--opacity-0); }
+}
+
+// 🔁 Slide in from left
+@mixin slide-in-left($distance: 100%, $duration: var(--motion-duration-medium), $timing: var(--motion-smooth)) {
+  transform: translateX(-$distance);
+  animation: slideInLeft $duration $timing forwards;
+}
+
+@keyframes slideInLeft {
+  to { transform: translateX(0); }
+}
+
+// 🔁 Slide in from right
+@mixin slide-in-right($distance: 100%, $duration: var(--motion-duration-medium), $timing: var(--motion-smooth)) {
+  transform: translateX($distance);
+  animation: slideInRight $duration $timing forwards;
+}
+
+@keyframes slideInRight {
+  to { transform: translateX(0); }
+}
+
+// 🔁 Scale in
+@mixin scale-in($duration: var(--motion-duration-medium), $timing: var(--motion-smooth)) {
+  animation: scaleIn $duration $timing forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: var(--opacity-0);
+  }
+  to {
+    transform: scale(1);
+    opacity: var(--opacity-100);
+  }
+}

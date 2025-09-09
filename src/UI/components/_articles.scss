@@ -1,5 +1,5 @@
 @use '../mixins/layout' as layout;
-@use '../mixins/containers' as containers;
+@use '../mixins/scroll' as scroll;
 
 // 📏 Tamanhos semânticos
 .article-sm {
@@ -16,7 +16,7 @@
 
 // 🔁 Comportamento de scroll interno
 .article--scroll {
-  @include containers.scroll-vertical(20rem);
+  @include scroll.scroll-vertical(20rem);
 }
 
 // 🎯 Alinhamento central opcional
