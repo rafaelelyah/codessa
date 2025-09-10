@@ -73,5 +73,10 @@
     "version": "0.8.0-alpha",
     "date": "2025-09-10T21:06:48.539Z",
     "note": "Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav"
+  },
+  {
+    "version": "0.8.1-alpha",
+    "date": "2025-09-10T21:10:20.404Z",
+    "note": "Ajustando página de documentação"
   }
 ]

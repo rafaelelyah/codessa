@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.8.1-alpha – Ajustando página de documentação
+_10/09/2025_
+
 ## v0.8.0-alpha – Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav
 _10/09/2025_
 
