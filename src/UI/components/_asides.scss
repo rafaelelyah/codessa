@@ -9,20 +9,13 @@
 
 // 🔧 Estilo base do elemento <aside>
 aside {
-  @include layout.layout-vertical;
   @include scroll.scroll-vertical(100vh);
-  @include elevation.elevation-lg;
-  @include radius.radius-lg;
-  @include z.z-index(sticky);
   @include type.typography-base;
-
   gap: var(--spacing-sm);
   padding-inline: var(--container-padding-inline);
   padding-block: var(--container-padding-block);
   background-color: var(--color-bg);
   transition: var(--motion-transition-base);
-  position: sticky;
-  top: 0;
 
   @include responsive.only-mobile {
     display: none;
@@ -79,4 +72,111 @@ aside .aside__content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+}
+
+aside.docs-aside {
+  @include type.typography-base;
+  background-color: var(--color-bg-alt);
+  padding: var(--spacing-lg);
+  transition: var(--motion-transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  position: sticky;
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  overflow-x: hidden;
+  z-index: var(--z-index-aside);
+
+  @include responsive.only-mobile {
+    display: none;
+  }
+
+  &:focus-visible {
+    @include states.state-focus;
+  }
+
+  &[data-size='md'] {
+    width: 320px;
+  }
+
+  &[data-size='sm'] {
+    width: 240px;
+  }
+
+  &[data-variant='bordered'] {
+    border-right: 1px solid var(--color-border);
+  }
+
+  &[data-variant='muted'] {
+    background-color: var(--color-bg);
+    color: var(--color-text-alt);
+  }
+
+  &[data-variant='transparent'] {
+    background-color: transparent;
+    color: var(--color-text);
+  }
+}
+
+.docs-menu {
+  gap: var(--spacing-sm);
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+
+    .menu-toggle {
+      font-weight: 600;
+      color: var(--color-link);
+      cursor: pointer;
+      text-align: left;
+      padding: var(--spacing-xs) 0;
+      background: none;
+      border: none;
+      width: 100%;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--color-link-hover);
+      }
+
+      &[aria-expanded='true']::after {
+        content: '▲';
+        float: right;
+      }
+
+      &[aria-expanded='false']::after {
+        content: '▼';
+        float: right;
+      }
+    }
+
+    .submenu {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      word-break: break-word;
+
+      &.is-open {
+        max-height: 500px; // valor alto para permitir expansão
+        padding-top: var(--spacing-xs);
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--color-link);
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--color-link-hover);
+        }
+
+        &:visited {
+          color: var(--color-link-visited);
+        }
+      }
+    }
+  }
 }

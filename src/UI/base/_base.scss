@@ -16,8 +16,8 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 100%;
-  max-width: var(--container-max-width);
+  width: var(--size-container-full);
+  max-width: var(--size-container-full);
   margin-inline: auto;
   padding-inline: var(--container-padding-inline);
 }
@@ -26,7 +26,6 @@ main {
 header,
 footer {
   width: 100%;
-  max-width: var(--container-max-width);
   margin-inline: auto;
   padding-inline: var(--container-padding-inline);
 }

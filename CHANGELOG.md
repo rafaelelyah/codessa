@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.8.0-alpha – Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav
+_10/09/2025_
+
 ## v0.7.0-alpha – Adicionando componentes estilizados para página principal do codessa, realizando teses de junções de mixins
 _09/09/2025_
 
