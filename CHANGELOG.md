@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.8.2-alpha – Ajustando página de documentação e endereçamento
+_10/09/2025_
+
 ## v0.8.1-alpha – Ajustando página de documentação
 _10/09/2025_
 
