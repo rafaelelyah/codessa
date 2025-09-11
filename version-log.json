@@ -278,5 +278,21 @@
       "nada"
     ],
     "notes": "nada"
+  },
+  {
+    "version": "0.9.29-alpha",
+    "date": "2025-09-11T14:22:32.244Z",
+    "commit": "Remoção da pasta public",
+    "title": "Remoção da pasta public",
+    "added": [
+      "Nada"
+    ],
+    "removed": [
+      "Pasta public"
+    ],
+    "changed": [
+      "nada"
+    ],
+    "notes": "Não"
   }
 ]

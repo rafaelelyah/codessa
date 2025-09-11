@@ -1,7 +1,8 @@
-![Release](https://img.shields.io/badge/release-0.9.28--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.29--alpha-orange.svg)
 
 ## 📚 Sumário
 
+- [v0.9.29-alpha – Remoção da pasta public](#v0929-alpha-remoo-da-pasta-public)
 - [v0.9.28-alpha – Ajuste Codessa RM](#v0928-alpha-ajuste-codessa-rm)
 - [v0.9.27-alpha – fdsa](#v0927-alpha-fdsa)
 - [v0.9.26-alpha – fdsa](#v0926-alpha-fdsa)
@@ -51,6 +52,20 @@
 - [v0.1.0 – Atualização](#v010-atualizao)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.29-alpha – Remoção da pasta public
+_11/09/2025_
+
+### ➕ Adicionado
+- Nada
+
+### ➖ Removido
+- Pasta public
+
+### 🔄 Alterado
+- nada
+
+> Não
 
 ## v0.9.28-alpha – Ajuste Codessa RM
 _11/09/2025_
