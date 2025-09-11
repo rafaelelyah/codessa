@@ -1,4 +1,4 @@
-![Release](https://img.shields.io/badge/release-0.9.25--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.26--alpha-orange.svg)
 
 ## 📚 Sumário
 

@@ -1,7 +1,8 @@
-![Release](https://img.shields.io/badge/release-0.9.25--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.26--alpha-orange.svg)
 
 ## 📚 Sumário
 
+- [v0.9.26-alpha – fdsa](#v0926-alpha-fdsa)
 - [v0.9.25-alpha – Não precisa](#v0925-alpha-no-precisa)
 - [v0.9.24-alpha – Atualização](#v0924-alpha-atualizao)
 - [v0.9.23-alpha – Atualização](#v0923-alpha-atualizao)
@@ -48,6 +49,20 @@
 - [v0.1.0 – Atualização](#v010-atualizao)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.26-alpha – fdsa
+_11/09/2025_
+
+### ➕ Adicionado
+- fads
+
+### ➖ Removido
+- fas
+
+### 🔄 Alterado
+- fas
+
+> fasd
 
 ## v0.9.25-alpha – Não precisa
 _11/09/2025_

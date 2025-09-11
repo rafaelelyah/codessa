@@ -6,7 +6,6 @@ cd /d %MODULE_PATH%
 
 :: Captura versão
 for /f "delims=" %%v in ('node -p "require('./version-log.json').version"') do set VERSION=%%v
-
 :: Captura mensagem de commit
 for /f "delims=" %%c in ('node -p "require('./version-log.json').commit"') do set COMMIT=%%c
 

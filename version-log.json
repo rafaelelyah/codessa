@@ -230,5 +230,21 @@
       "Nada"
     ],
     "notes": "Nada"
+  },
+  {
+    "version": "0.9.26-alpha",
+    "date": "2025-09-11T14:07:27.726Z",
+    "commit": "fdsaf",
+    "title": "fdsa",
+    "added": [
+      "fads"
+    ],
+    "removed": [
+      "fas"
+    ],
+    "changed": [
+      "fas"
+    ],
+    "notes": "fasd"
   }
 ]
