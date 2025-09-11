@@ -1,417 +1,194 @@
-![Versão](https://img.shields.io/badge/version-0.9.24--alpha-undefined.svg)
+![Release](https://img.shields.io/badge/release-0.9.25--alpha-orange.svg)
+
+## 📚 Sumário
+
+- [v0.9.25-alpha – Não precisa](#v0925-alpha-no-precisa)
+- [v0.9.24-alpha – Atualização](#v0924-alpha-atualizao)
+- [v0.9.23-alpha – Atualização](#v0923-alpha-atualizao)
+- [v0.9.22-alpha – Atualização](#v0922-alpha-atualizao)
+- [v0.9.21-alpha – Atualização](#v0921-alpha-atualizao)
+- [v0.9.20-alpha – Atualização](#v0920-alpha-atualizao)
+- [v0.9.19-alpha – Atualização](#v0919-alpha-atualizao)
+- [v0.9.18-alpha – Atualização](#v0918-alpha-atualizao)
+- [v0.9.17-alpha – Atualização](#v0917-alpha-atualizao)
+- [v0.9.16-alpha – Atualização](#v0916-alpha-atualizao)
+- [v0.9.15-alpha – Atualização](#v0915-alpha-atualizao)
+- [v0.9.14-alpha – Atualização](#v0914-alpha-atualizao)
+- [v0.9.13-alpha – Atualização](#v0913-alpha-atualizao)
+- [v0.9.12-alpha – Atualização](#v0912-alpha-atualizao)
+- [v0.9.11-alpha – Atualização](#v0911-alpha-atualizao)
+- [v0.9.10-alpha – Atualização](#v0910-alpha-atualizao)
+- [v0.9.9-alpha – Atualização](#v099-alpha-atualizao)
+- [v0.9.8-alpha – Atualização](#v098-alpha-atualizao)
+- [v0.9.7-alpha – Atualização](#v097-alpha-atualizao)
+- [v0.9.6-alpha – Atualização](#v096-alpha-atualizao)
+- [v0.9.5-alpha – Atualização](#v095-alpha-atualizao)
+- [v0.9.4-alpha – Atualização](#v094-alpha-atualizao)
+- [v0.9.4-alpha – Atualização](#v094-alpha-atualizao)
+- [v0.9.3-alpha – Atualização](#v093-alpha-atualizao)
+- [v0.9.2-alpha – Atualização](#v092-alpha-atualizao)
+- [v0.9.1-alpha – Atualização](#v091-alpha-atualizao)
+- [v0.9.0-alpha – Atualização](#v090-alpha-atualizao)
+- [v0.8.2-alpha – Atualização](#v082-alpha-atualizao)
+- [v0.8.1-alpha – Atualização](#v081-alpha-atualizao)
+- [v0.8.0-alpha – Atualização](#v080-alpha-atualizao)
+- [v0.7.0-alpha – Atualização](#v070-alpha-atualizao)
+- [v0.6.0-alpha – Atualização](#v060-alpha-atualizao)
+- [v0.5.0-alpha – Atualização](#v050-alpha-atualizao)
+- [v0.4.6 – Atualização](#v046-atualizao)
+- [v0.4.5 – Atualização](#v045-atualizao)
+- [v0.4.4 – Atualização](#v044-atualizao)
+- [v0.4.3 – Atualização](#v043-atualizao)
+- [v0.4.2 – Atualização](#v042-atualizao)
+- [v0.4.1 – Atualização](#v041-atualizao)
+- [v0.4.0 – Atualização](#v040-atualizao)
+- [v0.3.0 – Atualização](#v030-atualizao)
+- [v0.2.0 – Atualização](#v020-atualizao)
+- [v0.1.1 – Atualização](#v011-atualizao)
+- [v0.1.0 – Atualização](#v010-atualizao)
 
 # 📦 Changelog – Codessa Interface
 
-## v0.9.24-alpha – Outro teste
+## v0.9.25-alpha – Não precisa
 _11/09/2025_
 
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.23-alpha – Teste
-_11/09/2025_
-
-Incluído:
-- Teste
-
-Removido:
-- Teste
-
-Ajustado:
-- Teste
-
-Obs:
-Teste
-
-## v0.9.22-alpha – Teste com arquivo temporário
-_11/09/2025_
-
-Incluído:
-- teste
-
-Removido:
-- teste
-
-Ajustado:
-- teste
-
-Obs:
-
-## v0.9.21-alpha – Teste com arquivo temporário para enviar commit
-_11/09/2025_
-
-Incluído:
-- Teste
-
-Removido:
-- teste
-
-Ajustado:
-- testes
-
-Obs:
-tesets
-
-## v0.9.20-alpha – Teste
-_11/09/2025_
-
-Incluído:
-- teste
-
-Removido:
-- teste
-
-Ajustado:
-- teste
-
-Obs:
-
-## v0.9.19-alpha – teste
-_11/09/2025_
-
-Incluído:
-- teste
-
-Removido:
-- teste
-
-Ajustado:
-- test
-
-Obs:
-tes
-
-## v0.9.18-alpha – Outro teste
-_11/09/2025_
-
-Incluído:
-- teste
-
-Removido:
-- teste
-
-Ajustado:
-- teste
-
-Obs:
-teste
-
-## v0.9.17-alpha – Testando de novo
-_11/09/2025_
-
-Incluído:
-- de novo
-
-Removido:
-- de novo
-
-Ajustado:
-- e de novo
-
-Obs:
-
-## v0.9.16-alpha – Testando ajuste no commit
-_11/09/2025_
-
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.15-alpha – Ajustado então agora a estrutura de alteração de badges e do commit
-_11/09/2025_
-
-Incluído:
-- Tá quase lá
-
-Removido:
-- bora
-
-Ajustado:
-- bora
-
-Obs:
-e bora
-
-## v0.9.14-alpha – Acho que agora vai
-_11/09/2025_
-
-Incluído:
-- Alteração dos arquivos bat e sh
-
-Removido:
-- Bora
-
-Ajustado:
-- Agora vai
-
-Obs:
-E lá vamos nós, de novo
-
-## v0.9.13-alpha – E
-_11/09/2025_
-
-Incluído:
-- lá
-
-Removido:
-- vamos
-
-Ajustado:
-- nós
-
-Obs:
-Outra vez
-
-## v0.9.12-alpha – E lá vamos nós....
-_11/09/2025_
-
-Incluído:
-- lá vamos nós...
-
-Removido:
-- lá vamos nós...
-
-Ajustado:
-- lá vamos nós...
-
-Obs:
-E lá vamos nós...
-
-## v0.9.11-alpha – Tentando mais uma vez rodar o git commit automático
-_11/09/2025_
-
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.10-alpha – Ajustando commit automático para verificar os e rodar script necessário
-_11/09/2025_
-
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.9-alpha – Testando git push com push-release sh
-_11/09/2025_
-
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.8-alpha – Teste de fórmula de modularização do versionamento.
-_11/09/2025_
-
-Incluído:
-
-
-Removido:
-
-
-Ajustado:
-
-
-Obs:
-
-## v0.9.7-alpha – Teste de Commit automático
-_11/09/2025_
-
-Incluído:
+### ➕ Adicionado
 - Nada
 
-Removido:
+### ➖ Removido
 - Nada
 
-Ajustado:
+### 🔄 Alterado
 - Nada
 
-Obs:
-Nada
+> Nada
 
-## v0.9.6-alpha – Ajuste do SSH para separar ferramentas
+## v0.9.24-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- remoção das ferramentas de Release e Studio
-
-Ajustado:
-- Pasta docs com documentação e pasta public com arquivos de produção
-
-Obs:
-
-## v0.9.5-alpha – Ajuste e separação das ferramentas
+## v0.9.23-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- Ferramentas do Studio e Release
-
-Ajustado:
-- Documentação movida para pasta docs e arquivos de produção para pasta public
-
-Obs:
-
-## v0.9.4-alpha – Separação das ferramentas
+## v0.9.22-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- Arquivos do Studio e Release Manager
-
-Ajustado:
-- Alteração de documentação para pasta docs e arquivos de produção para pasta public.
-
-Obs:
-
-## v0.9.4-alpha – Separação das ferramentas
+## v0.9.21-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- Arquivos do Studio e Release Manager
-
-Ajustado:
-- Alteração de documentação para pasta docs e arquivos de produção para pasta public.
-
-Obs:
-
-## v0.9.3-alpha – Separação de ferramentas
+## v0.9.20-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- Remoção do Studio e Release
-
-Ajustado:
-- Documentação movida para pasta docs e arquivos de produção ajustados para pasta public.
-
-Obs:
-
-## v0.9.2-alpha – Separação de ferramentas
+## v0.9.19-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
-
-Removido:
-- Ferramentas de studio e release
-
-Ajustado:
-- documentação para a pasta docs
-
-Obs:
-
-## v0.9.1-alpha – Separação de ferramentas
+## v0.9.18-alpha – Atualização
 _11/09/2025_
 
-Incluído:
-- Nada
+## v0.9.17-alpha – Atualização
+_11/09/2025_
 
-Removido:
-- Nada
+## v0.9.16-alpha – Atualização
+_11/09/2025_
 
-Ajustado:
-- Separação das ferramentas de Studio e Release
+## v0.9.15-alpha – Atualização
+_11/09/2025_
 
-Obs:
+## v0.9.14-alpha – Atualização
+_11/09/2025_
 
-## v0.9.0-alpha – Adicionando componentes principais de tooltips, tags, tabs, tables, steppers, pagination, modals, loaders, lists, galleries, dropdows, code, breadcrumbs, badges e accordions
+## v0.9.13-alpha – Atualização
+_11/09/2025_
+
+## v0.9.12-alpha – Atualização
+_11/09/2025_
+
+## v0.9.11-alpha – Atualização
+_11/09/2025_
+
+## v0.9.10-alpha – Atualização
+_11/09/2025_
+
+## v0.9.9-alpha – Atualização
+_11/09/2025_
+
+## v0.9.8-alpha – Atualização
+_11/09/2025_
+
+## v0.9.7-alpha – Atualização
+_11/09/2025_
+
+## v0.9.6-alpha – Atualização
+_11/09/2025_
+
+## v0.9.5-alpha – Atualização
+_11/09/2025_
+
+## v0.9.4-alpha – Atualização
+_11/09/2025_
+
+## v0.9.4-alpha – Atualização
+_11/09/2025_
+
+## v0.9.3-alpha – Atualização
+_11/09/2025_
+
+## v0.9.2-alpha – Atualização
+_11/09/2025_
+
+## v0.9.1-alpha – Atualização
+_11/09/2025_
+
+## v0.9.0-alpha – Atualização
 _10/09/2025_
 
-## v0.8.2-alpha – Ajustando página de documentação e endereçamento
+## v0.8.2-alpha – Atualização
 _10/09/2025_
 
-## v0.8.1-alpha – Ajustando página de documentação
+## v0.8.1-alpha – Atualização
 _10/09/2025_
 
-## v0.8.0-alpha – Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav
+## v0.8.0-alpha – Atualização
 _10/09/2025_
 
-## v0.7.0-alpha – Adicionando componentes estilizados para página principal do codessa, realizando teses de junções de mixins
+## v0.7.0-alpha – Atualização
 _09/09/2025_
 
-## v0.6.0-alpha – feat: componentes aside, avatar e alert + ajustes em tokens e mixins - Criação do componente <aside> com variantes via data-* (size, variant, fixed)- Refatoração do layout para evitar sobreposição com header/main- Criação dos componentes avatar e alert com estrutura semântica e responsiva- Aplicação correta dos mixins: elevation, radius, scroll, z-index, typography- Correção nos tokens de cores semânticas (success, error, warning, info)- Ajuste nos mixins de radius (uso de radius-circle e radius padrão)- Correção nos breakpoints Sass e importação nos mixins de media/responsive- Organização dos mixins: scroll extraído de containers, responsive ajustado
+## v0.6.0-alpha – Atualização
 _09/09/2025_
 
-## v0.5.0-alpha – Adicionando arquivo MD de changelog para controle de versão
+## v0.5.0-alpha – Atualização
 _09/09/2025_
 
-## v0.4.6 – Alterando deploy e version para serem apenas um arquivo
+## v0.4.6 – Atualização
 _09/09/2025_
 
-## v0.4.5 – Alterando Configuração básica do encaminhamento para github pages
+## v0.4.5 – Atualização
 _09/09/2025_
 
-## v0.4.4 – Adicionando deploy com commit automático para github
+## v0.4.4 – Atualização
 _09/09/2025_
 
-## v0.4.3 – Adicionando novamente arquivo de deploy para github pages e alterando json para tal
+## v0.4.3 – Atualização
 _09/09/2025_
 
-## v0.4.2 – Alterando nome da documentação para usar deploy e github pages
+## v0.4.2 – Atualização
 _09/09/2025_
 
-## v0.4.1 – Ajustando base e normalize para conterem todos os principais elementos html, ajustando semântica e modularização dos componentes de sections, navs, headers, footers, cards, buttons e articles
+## v0.4.1 – Atualização
 _09/09/2025_
 
-## v0.4.0 – Adicionando tokens de radius, paddings, offset e border, ajustando grid-system, alterando mixings de grids, layout e containers e adicionando components section, navs, cards e articles
+## v0.4.0 – Atualização
 _08/09/2025_
 
-## v0.3.0 – Alterando tokens de lists, adicionando tokens de layout, adicionando componentes de sections, navs, headers e footers
+## v0.3.0 – Atualização
 _08/09/2025_
 
-## v0.2.0 – Adicionando principais tokens, criando mixings de botão padrão e primeiros componentes de botão
+## v0.2.0 – Atualização
 _07/09/2025_
 
-## v0.1.1 – Adicionando Vite purge
+## v0.1.1 – Atualização
 _07/09/2025_
 
-## v0.1.0 – Adicionando estruturas base de espaçamentos, cores e outros nos tokens
+## v0.1.0 – Atualização
 _07/09/2025_
 

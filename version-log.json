@@ -214,5 +214,21 @@
     "version": "0.9.24-alpha",
     "date": "2025-09-11T13:39:10.277Z",
     "note": "Outro teste\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.25-alpha",
+    "date": "2025-09-11T14:04:54.576Z",
+    "commit": "Alterando mais uma vez para ajustar commit automático",
+    "title": "Não precisa",
+    "added": [
+      "Nada"
+    ],
+    "removed": [
+      "Nada"
+    ],
+    "changed": [
+      "Nada"
+    ],
+    "notes": "Nada"
   }
 ]
