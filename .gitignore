@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+version-log.json
 
 # Build output
 /node_modules/
@@ -35,6 +36,8 @@ ehthumbs.db
 *.ntvs*
 *.njsproj
 *.sln
+push-release.sh
+push-release.bat
 
 # Editor config
 .vscode/*

@@ -1,13 +1,13 @@
-![Release](https://img.shields.io/badge/release-0.9.36--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.37--alpha-orange.svg)
 
 ## 📚 Sumário
 
 - [📚 Sumário](#sumário)
-- [🧱 Estrutura técnica](#estrutura-técnica)
-- [📚 Estrutura da documentação](#estrutura-da-documentação)
-- [🚀 Como começar](#como-começar)
-- [📄 Licença](#licença)
-- [💬 Contribuições](#contribuições)
+- [Estrutura técnica](#estrutura-técnica)
+- [Estrutura da documentação](#estrutura-da-documentação)
+- [Como começar](#como-começar)
+- [Licença](#licença)
+- [Contribuições](#contribuições)
 
 
 ## Estrutura técnica
