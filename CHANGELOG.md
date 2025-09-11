@@ -1,6 +1,21 @@
-![Versão](https://img.shields.io/badge/version-0.9.17--alpha-undefined.svg)
+![Versão](https://img.shields.io/badge/version-0.9.18--alpha-undefined.svg)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.18-alpha – Outro teste
+_11/09/2025_
+
+Incluído:
+- teste
+
+Removido:
+- teste
+
+Ajustado:
+- teste
+
+Obs:
+teste
 
 ## v0.9.17-alpha – Testando de novo
 _11/09/2025_

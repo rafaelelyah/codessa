@@ -4,7 +4,7 @@ set MODULE_PATH=%~dp0
 
 cd /d %MODULE_PATH%
 for /f "delims=" %%v in ('node -p "require('./package.json').version"') do set VERSION=%%v
-for /f "delims=" %%n in ('node -e "require('./version-log.json').note"') do set NOTE=%%n
+for /f "delims=" %%n in ('node -e "console.log(require('./version-log.json').note)"') do set NOTE=%%n
 
 if not exist .git (
   echo ❌ A pasta %MODULE_PATH% não é um repositório Git.
