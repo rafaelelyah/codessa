@@ -1,3 +1,5 @@
+![Versão](https://img.shields.io/badge/version-0.9.15--alpha-undefined.svg)
+
 ## 📚 Sumário
 
 - [📚 Sumário](#-sumrio)
@@ -7,8 +9,6 @@
 - [🚀 Como começar](#-como-comear)
 - [📄 Licença](#-licena)
 - [💬 Contribuições](#-contribuies)
-
-https://img.shields.io/badge/version-0.9.14--alpha-undefined.svg
 
 ## 🧱 Estrutura técnica
 

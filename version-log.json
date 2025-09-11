@@ -164,5 +164,10 @@
     "version": "0.9.14-alpha",
     "date": "2025-09-11T13:08:34.196Z",
     "note": "Acho que agora vai\n\nIncluído:\n- Alteração dos arquivos bat e sh\n\nRemovido:\n- Bora\n\nAjustado:\n- Agora vai\n\nObs:\nE lá vamos nós, de novo"
+  },
+  {
+    "version": "0.9.15-alpha",
+    "date": "2025-09-11T13:17:00.043Z",
+    "note": "Ajustado então agora a estrutura de alteração de badges e do commit\n\nIncluído:\n- Tá quase lá\n\nRemovido:\n- bora\n\nAjustado:\n- bora\n\nObs:\ne bora"
   }
 ]
