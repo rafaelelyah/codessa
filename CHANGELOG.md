@@ -1,8 +1,22 @@
-![Versão](https://img.shields.io/badge/version-0.9.4-alpha-blue.svg)
+![Versão](https://img.shields.io/badge/version-0.9.5-alpha-blue.svg)
 
-# 📦 Changelog Global – Codessa Studio
+# 📦 Changelog – Codessa Interface
 
-## Codessa Interface v0.9.4-alpha – Separação das ferramentas
+## v0.9.5-alpha – Ajuste e separação das ferramentas
+_11/09/2025_
+
+Incluído:
+- Nada
+
+Removido:
+- Ferramentas do Studio e Release
+
+Ajustado:
+- Documentação movida para pasta docs e arquivos de produção para pasta public
+
+Obs:
+
+## v0.9.4-alpha – Separação das ferramentas
 _11/09/2025_
 
 Incluído:
@@ -16,7 +30,7 @@ Ajustado:
 
 Obs:
 
-## undefined v0.9.4-alpha – Separação das ferramentas
+## v0.9.4-alpha – Separação das ferramentas
 _11/09/2025_
 
 Incluído:
@@ -30,7 +44,7 @@ Ajustado:
 
 Obs:
 
-## undefined v0.9.3-alpha – Separação de ferramentas
+## v0.9.3-alpha – Separação de ferramentas
 _11/09/2025_
 
 Incluído:
@@ -44,7 +58,7 @@ Ajustado:
 
 Obs:
 
-## undefined v0.9.2-alpha – Separação de ferramentas
+## v0.9.2-alpha – Separação de ferramentas
 _11/09/2025_
 
 Incluído:
@@ -58,7 +72,7 @@ Ajustado:
 
 Obs:
 
-## undefined v0.9.1-alpha – Separação de ferramentas
+## v0.9.1-alpha – Separação de ferramentas
 _11/09/2025_
 
 Incluído:
@@ -72,57 +86,57 @@ Ajustado:
 
 Obs:
 
-## undefined v0.9.0-alpha – Adicionando componentes principais de tooltips, tags, tabs, tables, steppers, pagination, modals, loaders, lists, galleries, dropdows, code, breadcrumbs, badges e accordions
+## v0.9.0-alpha – Adicionando componentes principais de tooltips, tags, tabs, tables, steppers, pagination, modals, loaders, lists, galleries, dropdows, code, breadcrumbs, badges e accordions
 _10/09/2025_
 
-## undefined v0.8.2-alpha – Ajustando página de documentação e endereçamento
+## v0.8.2-alpha – Ajustando página de documentação e endereçamento
 _10/09/2025_
 
-## undefined v0.8.1-alpha – Ajustando página de documentação
+## v0.8.1-alpha – Ajustando página de documentação
 _10/09/2025_
 
-## undefined v0.8.0-alpha – Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav
+## v0.8.0-alpha – Adicionando nova página de documentação para preparar o site, ajustando alguns mixins e tokens, adicionando primeiro js para Toggle Nav
 _10/09/2025_
 
-## undefined v0.7.0-alpha – Adicionando componentes estilizados para página principal do codessa, realizando teses de junções de mixins
+## v0.7.0-alpha – Adicionando componentes estilizados para página principal do codessa, realizando teses de junções de mixins
 _09/09/2025_
 
-## undefined v0.6.0-alpha – feat: componentes aside, avatar e alert + ajustes em tokens e mixins - Criação do componente <aside> com variantes via data-* (size, variant, fixed)- Refatoração do layout para evitar sobreposição com header/main- Criação dos componentes avatar e alert com estrutura semântica e responsiva- Aplicação correta dos mixins: elevation, radius, scroll, z-index, typography- Correção nos tokens de cores semânticas (success, error, warning, info)- Ajuste nos mixins de radius (uso de radius-circle e radius padrão)- Correção nos breakpoints Sass e importação nos mixins de media/responsive- Organização dos mixins: scroll extraído de containers, responsive ajustado
+## v0.6.0-alpha – feat: componentes aside, avatar e alert + ajustes em tokens e mixins - Criação do componente <aside> com variantes via data-* (size, variant, fixed)- Refatoração do layout para evitar sobreposição com header/main- Criação dos componentes avatar e alert com estrutura semântica e responsiva- Aplicação correta dos mixins: elevation, radius, scroll, z-index, typography- Correção nos tokens de cores semânticas (success, error, warning, info)- Ajuste nos mixins de radius (uso de radius-circle e radius padrão)- Correção nos breakpoints Sass e importação nos mixins de media/responsive- Organização dos mixins: scroll extraído de containers, responsive ajustado
 _09/09/2025_
 
-## undefined v0.5.0-alpha – Adicionando arquivo MD de changelog para controle de versão
+## v0.5.0-alpha – Adicionando arquivo MD de changelog para controle de versão
 _09/09/2025_
 
-## undefined v0.4.6 – Alterando deploy e version para serem apenas um arquivo
+## v0.4.6 – Alterando deploy e version para serem apenas um arquivo
 _09/09/2025_
 
-## undefined v0.4.5 – Alterando Configuração básica do encaminhamento para github pages
+## v0.4.5 – Alterando Configuração básica do encaminhamento para github pages
 _09/09/2025_
 
-## undefined v0.4.4 – Adicionando deploy com commit automático para github
+## v0.4.4 – Adicionando deploy com commit automático para github
 _09/09/2025_
 
-## undefined v0.4.3 – Adicionando novamente arquivo de deploy para github pages e alterando json para tal
+## v0.4.3 – Adicionando novamente arquivo de deploy para github pages e alterando json para tal
 _09/09/2025_
 
-## undefined v0.4.2 – Alterando nome da documentação para usar deploy e github pages
+## v0.4.2 – Alterando nome da documentação para usar deploy e github pages
 _09/09/2025_
 
-## undefined v0.4.1 – Ajustando base e normalize para conterem todos os principais elementos html, ajustando semântica e modularização dos componentes de sections, navs, headers, footers, cards, buttons e articles
+## v0.4.1 – Ajustando base e normalize para conterem todos os principais elementos html, ajustando semântica e modularização dos componentes de sections, navs, headers, footers, cards, buttons e articles
 _09/09/2025_
 
-## undefined v0.4.0 – Adicionando tokens de radius, paddings, offset e border, ajustando grid-system, alterando mixings de grids, layout e containers e adicionando components section, navs, cards e articles
+## v0.4.0 – Adicionando tokens de radius, paddings, offset e border, ajustando grid-system, alterando mixings de grids, layout e containers e adicionando components section, navs, cards e articles
 _08/09/2025_
 
-## undefined v0.3.0 – Alterando tokens de lists, adicionando tokens de layout, adicionando componentes de sections, navs, headers e footers
+## v0.3.0 – Alterando tokens de lists, adicionando tokens de layout, adicionando componentes de sections, navs, headers e footers
 _08/09/2025_
 
-## undefined v0.2.0 – Adicionando principais tokens, criando mixings de botão padrão e primeiros componentes de botão
+## v0.2.0 – Adicionando principais tokens, criando mixings de botão padrão e primeiros componentes de botão
 _07/09/2025_
 
-## undefined v0.1.1 – Adicionando Vite purge
+## v0.1.1 – Adicionando Vite purge
 _07/09/2025_
 
-## undefined v0.1.0 – Adicionando estruturas base de espaçamentos, cores e outros nos tokens
+## v0.1.0 – Adicionando estruturas base de espaçamentos, cores e outros nos tokens
 _07/09/2025_
 
