@@ -129,5 +129,10 @@
     "version": "0.9.7-alpha",
     "date": "2025-09-11T12:10:21.910Z",
     "note": "Teste de Commit automático\n\nIncluído:\n- Nada\n\nRemovido:\n- Nada\n\nAjustado:\n- Nada\n\nObs:\nNada"
+  },
+  {
+    "version": "0.9.8-alpha",
+    "date": "2025-09-11T12:19:31.324Z",
+    "note": "Teste de fórmula de modularização do versionamento.\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
   }
 ]

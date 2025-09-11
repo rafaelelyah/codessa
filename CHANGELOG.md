@@ -1,6 +1,20 @@
-![Versão](https://img.shields.io/badge/version-0.9.7-alpha-blue.svg)
+![Versão](https://img.shields.io/badge/version-0.9.8-alpha-blue.svg)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.8-alpha – Teste de fórmula de modularização do versionamento.
+_11/09/2025_
+
+Incluído:
+
+
+Removido:
+
+
+Ajustado:
+
+
+Obs:
 
 ## v0.9.7-alpha – Teste de Commit automático
 _11/09/2025_
