@@ -1,14 +1,15 @@
-![Release](https://img.shields.io/badge/release-0.9.37--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.38--alpha-orange.svg)
 
 ## 📚 Sumário
 
-- [📚 Sumário](#sumário)
 - [Estrutura técnica](#estrutura-técnica)
 - [Estrutura da documentação](#estrutura-da-documentação)
 - [Como começar](#como-começar)
+- [Autor](#autor)
 - [Licença](#licença)
 - [Contribuições](#contribuições)
 
+# Codessa Interface
 
 ## Estrutura técnica
 
@@ -69,10 +70,14 @@ Explicação da organização de pastas, arquivos Sass e boas práticas de arqui
 
 ---
 
+## Autor
+Desenvolvido por Rafael Elyah.
+
+---
+
 ## Licença
 
 Este módulo segue a licença definida no repositório principal do [Codessa Studio](https://github.com/rafaelelyah/codessa-studio).  
-As páginas incluídas em `/src/pages` e os templates em `/src/templates` são produtos premium e requerem licença para uso.
 
 ---
 
