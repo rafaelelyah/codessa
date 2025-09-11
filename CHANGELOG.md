@@ -1,6 +1,20 @@
-![Versão](https://img.shields.io/badge/version-0.9.15--alpha-undefined.svg)
+![Versão](https://img.shields.io/badge/version-0.9.16--alpha-undefined.svg)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.16-alpha – Testando ajuste no commit
+_11/09/2025_
+
+Incluído:
+
+
+Removido:
+
+
+Ajustado:
+
+
+Obs:
 
 ## v0.9.15-alpha – Ajustado então agora a estrutura de alteração de badges e do commit
 _11/09/2025_

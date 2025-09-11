@@ -2,7 +2,7 @@
 
 MODULE_PATH="$1"
 VERSION=$(node -p "require('./package.json').version")
-NOTE=$(node -e "console.log(require('./version-log.json').note || '')")
+NOTE=$(node -e "require('./version-log.json').note")
 
 cd "$MODULE_PATH" || {
   echo "❌ Não foi possível acessar a pasta $MODULE_PATH"
