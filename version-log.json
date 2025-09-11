@@ -174,5 +174,10 @@
     "version": "0.9.16-alpha",
     "date": "2025-09-11T13:22:56.419Z",
     "note": "Testando ajuste no commit\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.17-alpha",
+    "date": "2025-09-11T13:23:54.948Z",
+    "note": "Testando de novo\n\nIncluído:\n- de novo\n\nRemovido:\n- de novo\n\nAjustado:\n- e de novo\n\nObs:"
   }
 ]
