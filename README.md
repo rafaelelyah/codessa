@@ -1,17 +1,16 @@
-![Release](https://img.shields.io/badge/release-0.9.31--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.35--alpha-orange.svg)
 
 ## 📚 Sumário
 
-- [📚 Sumário](#sumrio)
-- [Estrutura técnica](#estrutura-tcnica)
-- [Filosofia visual](#filosofia-visual)
-- [📚 Estrutura da documentação](#estrutura-da-documentao)
-- [🚀 Como começar](#como-comear)
-- [📄 Licença](#licena)
-- [💬 Contribuições](#contribuies)
+- [📚 Sumário](#sumário)
+- [🧱 Estrutura técnica](#estrutura-técnica)
+- [📚 Estrutura da documentação](#estrutura-da-documentação)
+- [🚀 Como começar](#como-começar)
+- [📄 Licença](#licença)
+- [💬 Contribuições](#contribuições)
 
 
-## Estrutura técnica
+## 🧱 Estrutura técnica
 
 - **Tokens Sass organizados** por tipo: cores, espaçamentos, tipografia, bordas, sombras  
 - **Design atômico aplicado**: átomos, moléculas, organismos, templates e páginas  
@@ -22,7 +21,7 @@
 
 ---
 
-## Filosofia visual
+# 🎨 Filosofia visual
 
 Codessa Interface parte de uma **base de cores neutras e tipografia clara**, permitindo que cada projeto ganhe sua própria identidade visual.
 

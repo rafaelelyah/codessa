@@ -320,5 +320,63 @@
     "removed": [],
     "changed": [],
     "notes": ""
+  },
+  {
+    "version": "0.9.32-alpha",
+    "date": "2025-09-11T14:59:48.049Z",
+    "commit": "Tentando novamente",
+    "title": "novamente",
+    "added": [
+      "novamente"
+    ],
+    "removed": [
+      "novamente"
+    ],
+    "changed": [
+      "novamente"
+    ],
+    "notes": ""
+  },
+  {
+    "version": "0.9.33-alpha",
+    "date": "2025-09-11T15:01:13.985Z",
+    "commit": "teste",
+    "title": "teste",
+    "added": [
+      "teste"
+    ],
+    "removed": [
+      "teste"
+    ],
+    "changed": [
+      "tsets"
+    ],
+    "notes": ""
+  },
+  {
+    "version": "0.9.34-alpha",
+    "date": "2025-09-11T15:03:22.934Z",
+    "commit": "teste",
+    "title": "tesets",
+    "added": [
+      "testes"
+    ],
+    "removed": [
+      "ets"
+    ],
+    "changed": [
+      "tae"
+    ],
+    "notes": ""
+  },
+  {
+    "version": "0.9.35-alpha",
+    "date": "2025-09-11T15:04:01.224Z",
+    "commit": "ção",
+    "title": "",
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "notes": ""
   }
 ]
