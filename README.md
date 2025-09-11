@@ -1,4 +1,4 @@
-![Versão](https://img.shields.io/badge/version-0.9.18--alpha-undefined.svg)
+![Versão](https://img.shields.io/badge/version-0.9.19--alpha-undefined.svg)
 
 ## 📚 Sumário
 
