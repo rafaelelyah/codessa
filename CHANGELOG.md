@@ -1,6 +1,20 @@
-![Versão](https://img.shields.io/badge/version-0.9.5-alpha-blue.svg)
+![Versão](https://img.shields.io/badge/version-0.9.6-alpha-blue.svg)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.6-alpha – Ajuste do SSH para separar ferramentas
+_11/09/2025_
+
+Incluído:
+- Nada
+
+Removido:
+- remoção das ferramentas de Release e Studio
+
+Ajustado:
+- Pasta docs com documentação e pasta public com arquivos de produção
+
+Obs:
 
 ## v0.9.5-alpha – Ajuste e separação das ferramentas
 _11/09/2025_

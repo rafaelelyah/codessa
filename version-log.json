@@ -119,5 +119,10 @@
     "version": "0.9.5-alpha",
     "date": "2025-09-11T11:55:37.740Z",
     "note": "Ajuste e separação das ferramentas\n\nIncluído:\n- Nada\n\nRemovido:\n- Ferramentas do Studio e Release\n\nAjustado:\n- Documentação movida para pasta docs e arquivos de produção para pasta public\n\nObs:"
+  },
+  {
+    "version": "0.9.6-alpha",
+    "date": "2025-09-11T12:03:16.293Z",
+    "note": "Ajuste do SSH para separar ferramentas\n\nIncluído:\n- Nada\n\nRemovido:\n- remoção das ferramentas de Release e Studio\n\nAjustado:\n- Pasta docs com documentação e pasta public com arquivos de produção\n\nObs:"
   }
 ]
