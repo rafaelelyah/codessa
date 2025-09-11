@@ -209,5 +209,10 @@
     "version": "0.9.23-alpha",
     "date": "2025-09-11T13:38:07.765Z",
     "note": "Teste\n\nIncluído:\n- Teste\n\nRemovido:\n- Teste\n\nAjustado:\n- Teste\n\nObs:\nTeste"
+  },
+  {
+    "version": "0.9.24-alpha",
+    "date": "2025-09-11T13:39:10.277Z",
+    "note": "Outro teste\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
   }
 ]

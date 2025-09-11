@@ -12,7 +12,7 @@ node -e "const fs = require('fs'); const note = require('./version-log.json').no
 
 :: Lê a nota
 set /p NOTE=<note.txt
-del note.txt
+
 
 if not exist .git (
   echo ❌ A pasta %MODULE_PATH% não é um repositório Git.
@@ -36,5 +36,7 @@ git push origin main
 
 echo 📤 Enviando tags...
 git push origin --tags
+
+del note.txt
 
 echo ✅ Push concluído com sucesso para %MODULE_PATH%
