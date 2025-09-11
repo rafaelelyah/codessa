@@ -1,18 +1,20 @@
 {
-  "name": "rafaelelyah",
+  "name": "codessa-interface",
   "private": true,
-  "version": "0.9.0-alpha",
+  "version": "0.9.3-alpha",
+  "description": "Módulo visual do Codessa Studio — design system atômico com Sass, Vite e JS puro.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf docs",
-    "release": "node release.js"
+    "clean": "rm -rf public"
   },
   "engines": {
     "node": ">=18.0.0"
   },
+  "author": "Rafael Elyah",
+  "license": "MIT",
   "devDependencies": {
     "sass": "^1.90.0",
     "vite": "^7.1.0",

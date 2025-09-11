@@ -1,4 +1,48 @@
-# 📦 Changelog
+![Versão](https://img.shields.io/badge/version-0.9.3-alpha-blue.svg)
+
+# 📦 Changelog – Codessa Interface
+
+## v0.9.3-alpha – Separação de ferramentas
+_11/09/2025_
+
+Incluído:
+- Nada
+
+Removido:
+- Remoção do Studio e Release
+
+Ajustado:
+- Documentação movida para pasta docs e arquivos de produção ajustados para pasta public.
+
+Obs:
+
+## v0.9.2-alpha – Separação de ferramentas
+_11/09/2025_
+
+Incluído:
+- Nada
+
+Removido:
+- Ferramentas de studio e release
+
+Ajustado:
+- documentação para a pasta docs
+
+Obs:
+
+## v0.9.1-alpha – Separação de ferramentas
+_11/09/2025_
+
+Incluído:
+- Nada
+
+Removido:
+- Nada
+
+Ajustado:
+- Separação das ferramentas de Studio e Release
+
+Obs:
 
 ## v0.9.0-alpha – Adicionando componentes principais de tooltips, tags, tabs, tables, steppers, pagination, modals, loaders, lists, galleries, dropdows, code, breadcrumbs, badges e accordions
 _10/09/2025_
