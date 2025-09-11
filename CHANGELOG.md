@@ -1,6 +1,93 @@
-![Versão](https://img.shields.io/badge/version-0.9.8-alpha-blue.svg)
+https://img.shields.io/badge/version-0.9.14--alpha-undefined.svg
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.14-alpha – Acho que agora vai
+_11/09/2025_
+
+Incluído:
+- Alteração dos arquivos bat e sh
+
+Removido:
+- Bora
+
+Ajustado:
+- Agora vai
+
+Obs:
+E lá vamos nós, de novo
+
+## v0.9.13-alpha – E
+_11/09/2025_
+
+Incluído:
+- lá
+
+Removido:
+- vamos
+
+Ajustado:
+- nós
+
+Obs:
+Outra vez
+
+## v0.9.12-alpha – E lá vamos nós....
+_11/09/2025_
+
+Incluído:
+- lá vamos nós...
+
+Removido:
+- lá vamos nós...
+
+Ajustado:
+- lá vamos nós...
+
+Obs:
+E lá vamos nós...
+
+## v0.9.11-alpha – Tentando mais uma vez rodar o git commit automático
+_11/09/2025_
+
+Incluído:
+
+
+Removido:
+
+
+Ajustado:
+
+
+Obs:
+
+## v0.9.10-alpha – Ajustando commit automático para verificar os e rodar script necessário
+_11/09/2025_
+
+Incluído:
+
+
+Removido:
+
+
+Ajustado:
+
+
+Obs:
+
+## v0.9.9-alpha – Testando git push com push-release sh
+_11/09/2025_
+
+Incluído:
+
+
+Removido:
+
+
+Ajustado:
+
+
+Obs:
 
 ## v0.9.8-alpha – Teste de fórmula de modularização do versionamento.
 _11/09/2025_

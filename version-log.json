@@ -134,5 +134,35 @@
     "version": "0.9.8-alpha",
     "date": "2025-09-11T12:19:31.324Z",
     "note": "Teste de fórmula de modularização do versionamento.\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.9-alpha",
+    "date": "2025-09-11T12:44:00.098Z",
+    "note": "Testando git push com push-release sh\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.10-alpha",
+    "date": "2025-09-11T12:51:03.832Z",
+    "note": "Ajustando commit automático para verificar os e rodar script necessário\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.11-alpha",
+    "date": "2025-09-11T12:53:22.869Z",
+    "note": "Tentando mais uma vez rodar o git commit automático\n\nIncluído:\n\n\nRemovido:\n\n\nAjustado:\n\n\nObs:"
+  },
+  {
+    "version": "0.9.12-alpha",
+    "date": "2025-09-11T12:57:02.109Z",
+    "note": "E lá vamos nós....\n\nIncluído:\n- lá vamos nós...\n\nRemovido:\n- lá vamos nós...\n\nAjustado:\n- lá vamos nós...\n\nObs:\nE lá vamos nós..."
+  },
+  {
+    "version": "0.9.13-alpha",
+    "date": "2025-09-11T13:03:37.005Z",
+    "note": "E\n\nIncluído:\n- lá\n\nRemovido:\n- vamos\n\nAjustado:\n- nós\n\nObs:\nOutra vez"
+  },
+  {
+    "version": "0.9.14-alpha",
+    "date": "2025-09-11T13:08:34.196Z",
+    "note": "Acho que agora vai\n\nIncluído:\n- Alteração dos arquivos bat e sh\n\nRemovido:\n- Bora\n\nAjustado:\n- Agora vai\n\nObs:\nE lá vamos nós, de novo"
   }
 ]
