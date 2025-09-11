@@ -294,5 +294,21 @@
       "nada"
     ],
     "notes": "Não"
+  },
+  {
+    "version": "0.9.30-alpha",
+    "date": "2025-09-11T14:35:25.407Z",
+    "commit": "Ajuste no sumário dos arquivos MD.",
+    "title": "Sumários MD.",
+    "added": [
+      "inserção de normalização para títulos."
+    ],
+    "removed": [
+      "Nada"
+    ],
+    "changed": [
+      "Títulos do sarquivos md."
+    ],
+    "notes": ""
   }
 ]

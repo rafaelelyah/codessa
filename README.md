@@ -1,14 +1,14 @@
-![Release](https://img.shields.io/badge/release-0.9.29--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.30--alpha-orange.svg)
 
 ## 📚 Sumário
 
-- [📚 Sumário](#-sumrio)
-- [🧱 Estrutura técnica](#-estrutura-tcnica)
-- [🎨 Filosofia visual](#-filosofia-visual)
-- [📚 Estrutura da documentação](#-estrutura-da-documentao)
-- [🚀 Como começar](#-como-comear)
-- [📄 Licença](#-licena)
-- [💬 Contribuições](#-contribuies)
+- [📚 Sumário](#sumario)
+- [🧱 Estrutura técnica](#estrutura-tecnica)
+- [🎨 Filosofia visual](#filosofia-visual)
+- [📚 Estrutura da documentação](#estrutura-da-documentacao)
+- [🚀 Como começar](#como-comecar)
+- [📄 Licença](#licenca)
+- [💬 Contribuições](#contribuicoes)
 
 
 ## 🧱 Estrutura técnica
