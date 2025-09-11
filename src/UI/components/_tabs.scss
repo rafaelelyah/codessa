@@ -1,0 +1,59 @@
+@use '../mixins/states' as states;
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-xs);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--spacing-md);
+  padding-block: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    @include states.state-hover(var(--color-bg-hover), transparent);
+  }
+
+  &:focus-visible {
+    @include states.state-focus;
+  }
+
+  &.is-active {
+    @include states.state-active(var(--color-brand-6));
+    border-bottom: 2px solid var(--color-brand-6);
+    background-color: var(--color-bg-alt);
+  }
+
+  &.is-disabled {
+    @include states.state-disabled;
+  }
+
+  &.is-sm {
+    font-size: var(--font-size-xs);
+    padding-inline: var(--spacing-sm);
+    padding-block: var(--spacing-xxs);
+  }
+
+  &.is-lg {
+    font-size: var(--font-size-md);
+    padding-inline: var(--spacing-lg);
+    padding-block: var(--spacing-sm);
+  }
+
+  &.is-rounded {
+    border-radius: var(--radius-pill);
+  }
+}

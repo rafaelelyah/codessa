@@ -1,0 +1,25 @@
+// _components/code.scss
+
+@use '../mixins/codes' as code;
+
+.code-block {
+  @include code.code-block;
+
+  &.is-sm {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm);
+  }
+
+  &.is-lg {
+    font-size: var(--font-size-md);
+    padding: var(--spacing-lg);
+  }
+
+  &.is-dark {
+    @include code.code-block(var(--color-brand-6), var(--color-bg));
+  }
+
+  &.is-bordered {
+    border: 1px solid var(--color-border-strong);
+  }
+}

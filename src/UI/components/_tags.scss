@@ -1,0 +1,77 @@
+@use '../mixins/states' as states;
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding-inline: var(--spacing-md);
+  padding-block: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-muted);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &.is-clickable {
+    cursor: pointer;
+
+    @include states.state-hover(var(--color-bg-hover), var(--color-border));
+    &:focus-visible {
+      @include states.state-focus;
+    }
+  }
+
+  &.is-rounded {
+    border-radius: var(--radius-pill);
+  }
+
+  &.is-bold {
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-primary-bg);
+    color: var(--color-primary-text);
+  }
+
+  &.is-outline {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+
+  &.is-danger {
+    background-color: var(--color-danger-bg);
+    color: var(--color-danger-text);
+  }
+
+  &.is-success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+  }
+
+  &.is-sm {
+    font-size: var(--font-size-xs);
+    padding-inline: var(--spacing-sm);
+    padding-block: var(--spacing-xxs);
+  }
+
+  &.is-lg {
+    font-size: var(--font-size-md);
+    padding-inline: var(--spacing-lg);
+    padding-block: var(--spacing-sm);
+  }
+
+  &.is-disabled {
+    @include states.state-disabled;
+  }
+
+  &.is-selected {
+    @include states.state-selected(var(--color-brand-1), var(--color-brand-6));
+  }
+
+  &.is-active {
+    @include states.state-active(var(--color-brand-5));
+  }
+}

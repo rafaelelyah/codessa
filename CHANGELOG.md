@@ -1,5 +1,8 @@
 # 📦 Changelog
 
+## v0.9.0-alpha – Adicionando componentes principais de tooltips, tags, tabs, tables, steppers, pagination, modals, loaders, lists, galleries, dropdows, code, breadcrumbs, badges e accordions
+_10/09/2025_
+
 ## v0.8.2-alpha – Ajustando página de documentação e endereçamento
 _10/09/2025_
 

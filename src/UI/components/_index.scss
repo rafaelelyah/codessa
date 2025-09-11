@@ -5,6 +5,7 @@
 @forward 'lists';           // Listas de conteúdo: ordenadas, não ordenadas
 @forward 'tags';            // Elementos informativos tipo pill
 @forward 'badges';          // Indicadores visuais pequenos (status, contadores)
+@forward 'code';            // Blocos de código e snippets
 
 // Componentes de navegação — estrutura e hierarquia de acesso
 @forward 'navs';            // Menus de navegação: horizontal, vertical, tabs
