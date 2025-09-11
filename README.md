@@ -10,7 +10,7 @@
 - [💬 Contribuições](#contribuições)
 
 
-## 🧱 Estrutura técnica
+## Estrutura técnica
 
 - **Tokens Sass organizados** por tipo: cores, espaçamentos, tipografia, bordas, sombras  
 - **Design atômico aplicado**: átomos, moléculas, organismos, templates e páginas  
@@ -21,7 +21,7 @@
 
 ---
 
-# 🎨 Filosofia visual
+# Filosofia visual
 
 Codessa Interface parte de uma **base de cores neutras e tipografia clara**, permitindo que cada projeto ganhe sua própria identidade visual.
 
@@ -29,7 +29,7 @@ A estrutura Sass permite personalização total, com tokens visuais adaptáveis 
 
 ---
 
-## 📚 Estrutura da documentação
+## Estrutura da documentação
 
 Esta documentação está organizada em seções para facilitar o entendimento e a navegação:
 
@@ -56,7 +56,7 @@ Explicação da organização de pastas, arquivos Sass e boas práticas de arqui
 
 ---
 
-## 🚀 Como começar
+## Como começar
 
 1. Instale as dependências do projeto com `npm install`
 2. Inicie o ambiente de desenvolvimento com `npm run dev`
@@ -69,14 +69,14 @@ Explicação da organização de pastas, arquivos Sass e boas práticas de arqui
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este módulo segue a licença definida no repositório principal do [Codessa Studio](https://github.com/rafaelelyah/codessa-studio).  
 As páginas incluídas em `/src/pages` e os templates em `/src/templates` são produtos premium e requerem licença para uso.
 
 ---
 
-## 💬 Contribuições
+## Contribuições
 
 Sugestões, melhorias e correções são bem-vindas.  
 Você pode abrir uma issue ou enviar um pull request com suas propostas.
