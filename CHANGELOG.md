@@ -1,7 +1,8 @@
-![Release](https://img.shields.io/badge/release-0.9.35--alpha-orange.svg)
+![Release](https://img.shields.io/badge/release-0.9.36--alpha-orange.svg)
 
 ## 📚 Sumário
 
+- [v0.9.36-alpha – ção](#v0936-alpha-ção)
 - [v0.9.35-alpha – ção](#v0935-alpha-ção)
 - [v0.9.34-alpha – tesets](#v0934-alpha-tesets)
 - [v0.9.33-alpha – teste](#v0933-alpha-teste)
@@ -58,6 +59,9 @@
 - [v0.1.0 – Atualização](#v010-atualização)
 
 # 📦 Changelog – Codessa Interface
+
+## v0.9.36-alpha – ção
+_11/09/2025_
 
 ## v0.9.35-alpha – ção
 _11/09/2025_
