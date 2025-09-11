@@ -310,5 +310,15 @@
       "Títulos do sarquivos md."
     ],
     "notes": ""
+  },
+  {
+    "version": "0.9.31-alpha",
+    "date": "2025-09-11T14:57:05.819Z",
+    "commit": "Ajustando geração de sumários dos md.",
+    "title": "Ajustando geração de sumários dos md.",
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "notes": ""
   }
 ]
