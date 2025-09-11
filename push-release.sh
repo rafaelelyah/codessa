@@ -2,8 +2,11 @@
 MODULE_PATH="$(cd "$(dirname "$0")" && pwd)"
 cd "$MODULE_PATH"
 
-VERSION=$(node -p "require('./version-log.json').version")
-COMMIT=$(node -p "require('./version-log.json').commit")
+# 🔢 Captura versão do package.json
+VERSION=$(node -p "require('./package.json').version")
+
+# 📝 Captura commit do último item do version-log.json
+COMMIT=$(node -p "require('./version-log.json').slice(-1)[0].commit")
 
 if [ ! -d .git ]; then
   echo "❌ A pasta $MODULE_PATH não é um repositório Git."

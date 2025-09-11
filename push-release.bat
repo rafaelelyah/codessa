@@ -4,8 +4,10 @@ set MODULE_PATH=%~dp0
 
 cd /d %MODULE_PATH%
 
-:: Captura versão
+:: 🔢 Captura versão do package.json
 for /f "delims=" %%v in ('node -p "require('./package.json').version"') do set VERSION=%%v
+
+:: 📝 Captura commit do último item do version-log.json
 for /f "delims=" %%c in ('node -p "require('./version-log.json').slice(-1)[0].commit"') do set COMMIT=%%c
 
 

@@ -262,5 +262,21 @@
       "fda"
     ],
     "notes": "fas"
+  },
+  {
+    "version": "0.9.28-alpha",
+    "date": "2025-09-11T14:14:31.803Z",
+    "commit": "Finalmente, após muuuuitos testes, ajustado commit automatico a partir do Codessa Release Manager",
+    "title": "Ajuste Codessa RM",
+    "added": [
+      "arquivos realese bat e sh"
+    ],
+    "removed": [
+      "nada"
+    ],
+    "changed": [
+      "nada"
+    ],
+    "notes": "nada"
   }
 ]
