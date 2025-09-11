@@ -7,10 +7,12 @@ cd /d %MODULE_PATH%
 :: Captura versão
 for /f "delims=" %%v in ('node -p "require('./package.json').version"') do set VERSION=%%v
 
-:: Captura nota e transforma em linha única
-node -e "console.log(require('./version-log.json').note.replace(/\r?\n/g, ' · '))" > note.txt
-set /p NOTE=<note.txt
+:: Gera note.txt com conteúdo da nota
+node -e "const fs = require('fs'); const note = require('./version-log.json').note || ''; fs.writeFileSync('note.txt', note.replace(/\r?\n/g, ' · '));"
 
+:: Lê a nota
+set /p NOTE=<note.txt
+del note.txt
 
 if not exist .git (
   echo ❌ A pasta %MODULE_PATH% não é um repositório Git.
@@ -34,7 +36,5 @@ git push origin main
 
 echo 📤 Enviando tags...
 git push origin --tags
-
-del note.txt
 
 echo ✅ Push concluído com sucesso para %MODULE_PATH%
