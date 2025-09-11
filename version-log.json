@@ -103,5 +103,16 @@
     "version": "0.9.3-alpha",
     "date": "2025-09-11T11:48:18.586Z",
     "note": "Separação de ferramentas\n\nIncluído:\n- Nada\n\nRemovido:\n- Remoção do Studio e Release\n\nAjustado:\n- Documentação movida para pasta docs e arquivos de produção ajustados para pasta public.\n\nObs:"
+  },
+  {
+    "version": "0.9.4-alpha",
+    "date": "2025-09-11T11:52:09.471Z",
+    "note": "Separação das ferramentas\n\nIncluído:\n- Nada\n\nRemovido:\n- Arquivos do Studio e Release Manager\n\nAjustado:\n- Alteração de documentação para pasta docs e arquivos de produção para pasta public.\n\nObs:"
+  },
+  {
+    "module": "interface",
+    "version": "0.9.4-alpha",
+    "date": "2025-09-11T11:52:11.529Z",
+    "note": "Separação das ferramentas\n\nIncluído:\n- Nada\n\nRemovido:\n- Arquivos do Studio e Release Manager\n\nAjustado:\n- Alteração de documentação para pasta docs e arquivos de produção para pasta public.\n\nObs:"
   }
 ]
