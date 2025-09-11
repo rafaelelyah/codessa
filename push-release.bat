@@ -5,9 +5,9 @@ set MODULE_PATH=%~dp0
 cd /d %MODULE_PATH%
 
 :: Captura versão
-for /f "delims=" %%v in ('node -p "require('./version-log.json').version"') do set VERSION=%%v
-:: Captura mensagem de commit
-for /f "delims=" %%c in ('node -p "require('./version-log.json').commit"') do set COMMIT=%%c
+for /f "delims=" %%v in ('node -p "require('./package.json').version"') do set VERSION=%%v
+for /f "delims=" %%c in ('node -p "require('./version-log.json').slice(-1)[0].commit"') do set COMMIT=%%c
+
 
 if not exist .git (
   echo ❌ A pasta %MODULE_PATH% não é um repositório Git.
