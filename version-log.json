@@ -199,5 +199,10 @@
     "version": "0.9.21-alpha",
     "date": "2025-09-11T13:34:02.286Z",
     "note": "Teste com arquivo temporário para enviar commit\n\nIncluído:\n- Teste\n\nRemovido:\n- teste\n\nAjustado:\n- testes\n\nObs:\ntesets"
+  },
+  {
+    "version": "0.9.22-alpha",
+    "date": "2025-09-11T13:35:00.016Z",
+    "note": "Teste com arquivo temporário\n\nIncluído:\n- teste\n\nRemovido:\n- teste\n\nAjustado:\n- teste\n\nObs:"
   }
 ]
