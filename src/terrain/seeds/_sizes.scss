@@ -27,10 +27,40 @@
   --size-thumbnail-md: 96px;
   --size-thumbnail-lg: 128px;
 
-  // 📦 Tamanhos de container (opcional)
+  // 📦 Tamanhos de container
   --size-container-sm: 320px;
   --size-container-md: 640px;
   --size-container-lg: 960px;
   --size-container-xl: 1280px;
   --size-container-full: 100vw;
+
+  // 📏 Alturas semânticas para seções
+  --height-section-sm: 25vh;
+  --height-section-md: 50vh;
+  --height-section-full: 100vh;
+
+  // 📏 Alturas para header
+  --height-header-sm: 4rem;
+  --height-header-md: 6rem;
+  --height-header-lg: 8rem;
+
+  // 📏 Alturas para footer
+  --height-footer-sm: 4rem;
+  --height-footer-md: 6rem;
+  --height-footer-lg: 8rem;
+
+  // 📏 Alturas semânticas para navs
+  --height-nav-sm: 3.5rem;
+  --height-nav-md: 5rem;
+  --height-nav-lg: 6.5rem;
+
+  // 📏 Alturas para artigos
+  --height-article-sm: 12rem;
+  --height-article-md: 16rem;
+  --height-article-lg: 24rem;
+
+  // 📏 Alturas para cards
+  --height-card-sm: 12rem;
+  --height-card-md: 16rem;
+  --height-card-lg: 24rem;
 }

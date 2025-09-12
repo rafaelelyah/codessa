@@ -1,4 +1,4 @@
-import '../UI/main.scss';
+import '../terrain/main.scss';
 import { initExpandableNav } from './navToggle.js';
 
 document.querySelectorAll('[data-nav-expandable]').forEach(nav => {

@@ -11,8 +11,8 @@
     <title>Codessa - Beautiful Framework</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script type="module" crossorigin src="/src/core/main.js"></script>
-    <link rel="stylesheet" crossorigin href="/src/UI/main.scss">
+    <script type="module" crossorigin src="/src/sparks/main.js"></script>
+    <link rel="stylesheet" crossorigin href="/src/terrain/main.scss">
     
 </head>
 <body>
@@ -23,6 +23,7 @@
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#features">Recursos</a></li>
                 <li><a href="#contact">Contato</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
                 <li><a href="documentation/">Documentação</a></li>
             </ul>
         </nav>
@@ -119,6 +120,126 @@
   </button>
 </form>
 
+    </section>
+
+    <!-- Seção de Exemplos dos Componentes de Mídia -->
+    <section id="exemplos" class="section-content">
+        <h2>Exemplos de Componentes de Mídia</h2>
+        <p>Demonstração dos novos componentes de mídia do Codessa Interface</p>
+
+        <!-- Figures -->
+        <h3>Figures</h3>
+        <figure class="figure is-medium">
+            <div class="figure-media">
+                <img src="https://picsum.photos/400/300?random=1" alt="Imagem de exemplo">
+            </div>
+            <figcaption class="figure-caption">
+                Figura básica com legenda
+            </figcaption>
+        </figure>
+
+        <!-- Vídeos -->
+        <h3>Vídeos</h3>
+        <div class="video is-medium">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+        </div>
+
+        <!-- Áudios -->
+        <h3>Áudios</h3>
+        <div class="audio">
+            <div class="audio-artwork">
+                <img src="https://picsum.photos/100/100?random=2" alt="Capa do álbum">
+            </div>
+            <div class="audio-info">
+                <div class="audio-title">Música de Exemplo</div>
+                <div class="audio-artist">Artista Desconhecido</div>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                        Seu navegador não suporta áudio HTML5.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagens -->
+        <h3>Imagens</h3>
+        <div style="display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap;">
+            <div class="image is-small is-rounded is-shadowed">
+                <img src="https://picsum.photos/100/100?random=3" alt="Pequena">
+            </div>
+            <div class="image is-medium is-rounded is-shadowed">
+                <img src="https://picsum.photos/200/200?random=4" alt="Média">
+            </div>
+            <div class="image is-large is-rounded is-shadowed">
+                <img src="https://picsum.photos/300/300?random=5" alt="Grande">
+            </div>
+        </div>
+
+        <!-- Embeds -->
+        <h3>Embeds</h3>
+        <div class="embed is-medium">
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Carrossel -->
+        <h3>Carrossel</h3>
+        <div class="carousel is-medium">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-content">
+                            <img src="https://picsum.photos/400/300?random=6" alt="Slide 1">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-content">
+                            <img src="https://picsum.photos/400/300?random=7" alt="Slide 2">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-content">
+                            <img src="https://picsum.photos/400/300?random=8" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls is-prev">
+                    <button class="carousel-button is-prev"></button>
+                </div>
+                <div class="carousel-controls is-next">
+                    <button class="carousel-button is-next"></button>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="carousel-indicator is-active"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeria de Imagens -->
+        <h3>Galeria de Imagens</h3>
+        <div class="image-group is-grid-4">
+            <div class="image is-rounded is-shadowed">
+                <img src="https://picsum.photos/200/200?random=9" alt="Imagem 1">
+            </div>
+            <div class="image is-rounded is-shadowed">
+                <img src="https://picsum.photos/200/200?random=10" alt="Imagem 2">
+            </div>
+            <div class="image is-rounded is-shadowed">
+                <img src="https://picsum.photos/200/200?random=11" alt="Imagem 3">
+            </div>
+            <div class="image is-rounded is-shadowed">
+                <img src="https://picsum.photos/200/200?random=12" alt="Imagem 4">
+            </div>
+        </div>
     </section>
     </main>
     <footer class="footer-center">

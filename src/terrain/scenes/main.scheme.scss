@@ -1,0 +1,313 @@
+// ========================================
+// MAIN SCHEME - Esquema principal do design system
+// ========================================
+
+// Importa todas as seeds (tokens base)
+@use '../seeds/index' as *;
+
+// ========================================
+// CORES SEMÂNTICAS
+// ========================================
+
+:root {
+  // Backgrounds
+  --bg-primary: var(--color-neutral-10);
+  --bg-secondary: var(--color-neutral-20);
+  --bg-subtle: var(--color-neutral-20);
+  --bg-muted: var(--color-neutral-40);
+  --bg-accent: var(--color-standard-10);
+  --bg-brand: var(--color-standard-60);
+  --bg-success: var(--color-context-4);
+  --bg-error: var(--color-context-1);
+  --bg-warning: var(--color-context-3);
+  --bg-info: var(--color-context-2);
+
+  // Text colors
+  --text-primary: var(--color-neutral-100);
+  --text-secondary: var(--color-neutral-80);
+  --text-muted: var(--color-neutral-60);
+  --text-subtle: var(--color-neutral-40);
+  --text-inverse: var(--color-neutral-10);
+  --text-brand: var(--color-standard-60);
+  --text-success: var(--color-context-4);
+  --text-error: var(--color-context-1);
+  --text-warning: var(--color-context-3);
+  --text-info: var(--color-context-2);
+
+  // Border colors
+  --border-primary: var(--color-neutral-40);
+  --border-secondary: var(--color-neutral-20);
+  --border-muted: var(--color-neutral-20);
+  --border-brand: var(--color-standard-60);
+  --border-success: var(--color-context-4);
+  --border-error: var(--color-context-1);
+  --border-warning: var(--color-context-3);
+  --border-info: var(--color-context-2);
+
+  // Interactive states
+  --interactive-primary: var(--color-standard-60);
+  --interactive-primary-hover: var(--color-standard-70);
+  --interactive-primary-active: var(--color-standard-80);
+  --interactive-secondary: var(--color-neutral-60);
+  --interactive-secondary-hover: var(--color-neutral-80);
+  --interactive-secondary-active: var(--color-neutral-100);
+
+  // Focus states
+  --focus-ring: var(--color-standard-60);
+  --focus-ring-offset: 2px;
+  --focus-ring-width: 2px;
+
+  // Link states
+  --link-color: var(--color-standard-60);
+  --link-hover: var(--color-standard-70);
+  --link-visited: var(--color-standard-80);
+  --link-active: var(--color-standard-100);
+
+  // Status colors
+  --status-success: var(--color-context-4);
+  --status-success-bg: var(--color-context-4);
+  --status-success-border: var(--color-context-4);
+  --status-success-text: var(--color-context-4);
+
+  --status-error: var(--color-context-1);
+  --status-error-bg: var(--color-context-1);
+  --status-error-border: var(--color-context-1);
+  --status-error-text: var(--color-context-1);
+
+  --status-warning: var(--color-context-3);
+  --status-warning-bg: var(--color-context-3);
+  --status-warning-border: var(--color-context-3);
+  --status-warning-text: var(--color-context-3);
+
+  --status-info: var(--color-context-2);
+  --status-info-bg: var(--color-context-2);
+  --status-info-border: var(--color-context-2);
+  --status-info-text: var(--color-context-2);
+}
+
+// ========================================
+// TIPOGRAFIA SEMÂNTICA
+// ========================================
+
+:root {
+  // Font families
+  --font-primary: var(--font-base);
+  --font-secondary: var(--font-aux);
+  --font-mono: var(--font-mono);
+
+  // Font sizes
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-md);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-xxl: var(--text-xxl);
+
+  // Font weights
+  --font-light: var(--font-weight-light);
+  --font-normal: var(--font-weight-regular);
+  --font-medium: var(--font-weight-medium);
+  --font-bold: var(--font-weight-bold);
+
+  // Line heights
+  --leading-tight: var(--line-height-tight);
+  --leading-normal: var(--line-height-base);
+  --leading-relaxed: var(--line-height-loose);
+}
+
+// ========================================
+// ESPAÇAMENTOS SEMÂNTICOS
+// ========================================
+
+:root {
+  // Spacing scale
+  --space-0: var(--spacing-none);
+  --space-1: var(--spacing-xxs);
+  --space-2: var(--spacing-xs);
+  --space-3: var(--spacing-sm);
+  --space-4: var(--spacing-md);
+  --space-5: var(--spacing-lg);
+  --space-6: var(--spacing-xl);
+  --space-7: var(--spacing-xxl);
+
+  // Component spacing
+  --space-component-xs: var(--spacing-xs);
+  --space-component-sm: var(--spacing-sm);
+  --space-component-md: var(--spacing-md);
+  --space-component-lg: var(--spacing-lg);
+  --space-component-xl: var(--spacing-xl);
+
+  // Layout spacing
+  --space-layout-xs: var(--spacing-sm);
+  --space-layout-sm: var(--spacing-md);
+  --space-layout-md: var(--spacing-lg);
+  --space-layout-lg: var(--spacing-xl);
+  --space-layout-xl: var(--spacing-xxl);
+}
+
+// ========================================
+// BORDAS E RADIUS SEMÂNTICOS
+// ========================================
+
+:root {
+  // Border widths
+  --border-0: var(--border-none);
+  --border-1: var(--border-thin);
+  --border-2: var(--border-base);
+  --border-4: var(--border-thick);
+
+  // Border styles
+  --border-solid: var(--border-style);
+  --border-dashed: var(--border-style-dashed);
+  --border-dotted: var(--border-style-dotted);
+  --border-double: var(--border-style-double);
+  --border-none: var(--border-style-none);
+
+  // Border radius
+  --radius-none: var(--radius-none);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-pill: var(--radius-pill);
+  --radius-circle: var(--radius-circle);
+}
+
+// ========================================
+// SOMBRAS SEMÂNTICAS
+// ========================================
+
+:root {
+  --shadow-none: var(--shadow-none);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-xxl: var(--shadow-xxl);
+  --shadow-brand: var(--shadow-brand);
+  --shadow-focus: var(--shadow-focus);
+}
+
+// ========================================
+// Z-INDEX SEMÂNTICO
+// ========================================
+
+:root {
+  --z-negative: var(--z-index-negative);
+  --z-0: var(--z-index-base);
+  --z-10: var(--z-index-low);
+  --z-20: var(--z-index-default);
+  --z-30: var(--z-index-dropdown);
+  --z-40: var(--z-index-sticky);
+  --z-50: var(--z-index-fixed);
+  --z-60: var(--z-index-modal);
+  --z-70: var(--z-index-popover);
+  --z-80: var(--z-index-toast);
+  --z-90: var(--z-index-overlay);
+  --z-max: var(--z-index-max);
+}
+
+// ========================================
+// OPACIDADE SEMÂNTICA
+// ========================================
+
+:root {
+  --opacity-0: var(--opacity-0);
+  --opacity-10: var(--opacity-10);
+  --opacity-20: var(--opacity-20);
+  --opacity-30: var(--opacity-30);
+  --opacity-40: var(--opacity-40);
+  --opacity-50: var(--opacity-50);
+  --opacity-60: var(--opacity-60);
+  --opacity-70: var(--opacity-70);
+  --opacity-80: var(--opacity-80);
+  --opacity-90: var(--opacity-90);
+  --opacity-100: var(--opacity-100);
+}
+
+// ========================================
+// TAMANHOS SEMÂNTICOS
+// ========================================
+
+:root {
+  // Icon sizes
+  --icon-xs: var(--size-icon-xs);
+  --icon-sm: var(--size-icon-sm);
+  --icon-md: var(--size-icon-md);
+  --icon-lg: var(--size-icon-lg);
+  --icon-xl: var(--size-icon-xl);
+
+  // Avatar sizes
+  --avatar-sm: var(--size-avatar-sm);
+  --avatar-md: var(--size-avatar-md);
+  --avatar-lg: var(--size-avatar-lg);
+  --avatar-xl: var(--size-avatar-xl);
+
+  // Button sizes
+  --button-sm: var(--size-button-sm);
+  --button-md: var(--size-button-md);
+  --button-lg: var(--size-button-lg);
+
+  // Input sizes
+  --input-sm: var(--size-input-sm);
+  --input-md: var(--size-input-md);
+  --input-lg: var(--size-input-lg);
+
+  // Container sizes
+  --container-sm: var(--size-container-sm);
+  --container-md: var(--size-container-md);
+  --container-lg: var(--size-container-lg);
+  --container-xl: var(--size-container-xl);
+  --container-full: var(--size-container-full);
+}
+
+// ========================================
+// ANIMAÇÕES SEMÂNTICAS
+// ========================================
+
+:root {
+  // Durations
+  --duration-fast: var(--motion-duration-fast);
+  --duration-normal: var(--motion-duration-medium);
+  --duration-slow: var(--motion-duration-slow);
+
+  // Easing functions
+  --ease-in: var(--motion-ease-in);
+  --ease-out: var(--motion-ease-out);
+  --ease-in-out: var(--motion-ease-in-out);
+  --ease-linear: var(--motion-linear);
+  --ease-smooth: var(--motion-smooth);
+
+  // Delays
+  --delay-short: var(--motion-delay-short);
+  --delay-long: var(--motion-delay-long);
+
+  // Transitions
+  --transition-base: var(--motion-transition-base);
+  --transition-fast: var(--motion-transition-fast);
+}
+
+// ========================================
+// LAYOUT SEMÂNTICO
+// ========================================
+
+:root {
+  // Breakpoints
+  --breakpoint-xs: var(--breakpoint-xs);
+  --breakpoint-sm: var(--breakpoint-sm);
+  --breakpoint-md: var(--breakpoint-md);
+  --breakpoint-lg: var(--breakpoint-lg);
+  --breakpoint-xl: var(--breakpoint-xl);
+  --breakpoint-xxl: var(--breakpoint-xxl);
+
+  // Grid
+  --grid-cols: var(--grid-columns);
+  --grid-gap: var(--grid-gap-md);
+  --grid-gap-sm: var(--grid-gap-sm);
+  --grid-gap-lg: var(--grid-gap-lg);
+
+  // Container
+  --container-max: var(--container-max-width);
+  --container-padding: var(--container-padding-inline);
+}

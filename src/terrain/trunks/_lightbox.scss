@@ -1,0 +1,400 @@
+// ========================================
+// LIGHTBOX - Modal para visualização ampliada de mídia
+// ========================================
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  
+  // Estado ativo
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  // Container do conteúdo
+  &-container {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+  }
+  
+  // Conteúdo da lightbox
+  &-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img, video, iframe {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-xl);
+    }
+  }
+  
+  // Botão de fechar
+  &-close {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    
+    &:hover {
+      background-color: white;
+      transform: scale(1.1);
+    }
+    
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.2rem;
+      height: 2px;
+      background-color: var(--color-text);
+      border-radius: 1px;
+    }
+    
+    &::before {
+      transform: rotate(45deg);
+    }
+    
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  // Navegação entre itens
+  &-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    
+    &:hover {
+      background-color: white;
+      transform: translateY(-50%) scale(1.1);
+    }
+    
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    
+    &.is-prev {
+      left: -4rem;
+    }
+    
+    &.is-next {
+      right: -4rem;
+    }
+    
+    // Seta esquerda
+    &.is-prev::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: 0.8rem solid var(--color-text);
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      margin-right: 0.2rem;
+    }
+    
+    // Seta direita
+    &.is-next::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 0.8rem solid var(--color-text);
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      margin-left: 0.2rem;
+    }
+  }
+  
+  // Indicadores de posição
+  &-indicators {
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--spacing-xs);
+    z-index: 2;
+  }
+  
+  // Indicador individual
+  &-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      transform: scale(1.2);
+    }
+    
+    &.is-active {
+      background-color: white;
+      transform: scale(1.3);
+    }
+  }
+  
+  // Informações do item
+  &-info {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    
+    .lightbox-title {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .lightbox-description {
+      font-size: var(--text-sm);
+      opacity: 0.8;
+    }
+    
+    .lightbox-counter {
+      font-size: var(--text-sm);
+      opacity: 0.6;
+      margin-top: var(--spacing-xs);
+    }
+  }
+  
+  // Controles de mídia
+  &-controls {
+    position: absolute;
+    bottom: var(--spacing-md);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-pill);
+    z-index: 2;
+  }
+  
+  // Botão de controle
+  &-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    &.is-active {
+      color: var(--color-brand-5);
+    }
+  }
+  
+  // Barra de progresso para vídeos
+  &-progress {
+    width: 10rem;
+    height: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    cursor: pointer;
+    
+    &-bar {
+      height: 100%;
+      background-color: var(--color-brand-5);
+      width: 0%;
+      transition: width 0.1s ease;
+    }
+  }
+  
+  // Tempo do vídeo
+  &-time {
+    color: white;
+    font-size: var(--text-sm);
+    font-family: var(--font-mono);
+    min-width: 4rem;
+    text-align: center;
+  }
+  
+  // Overlay de loading
+  &-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-brand-5);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 3;
+  }
+  
+  // Overlay de erro
+  &-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 3;
+    
+    &::before {
+      content: '⚠️';
+      font-size: 3rem;
+      display: block;
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .lightbox-error-message {
+      font-size: var(--text-lg);
+      opacity: 0.8;
+    }
+  }
+  
+  // Variantes de tamanho
+  &.is-small {
+    .lightbox-container {
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+  }
+  
+  &.is-large {
+    .lightbox-container {
+      max-width: 95vw;
+      max-height: 95vh;
+    }
+  }
+  
+  &.is-fullscreen {
+    .lightbox-container {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  }
+  
+  // Estados
+  &.is-loading {
+    .lightbox-loading {
+      display: block;
+    }
+  }
+  
+  &.is-error {
+    .lightbox-error {
+      display: block;
+    }
+  }
+  
+  // Responsividade
+  @media (max-width: 768px) {
+    .lightbox-container {
+      max-width: 95vw;
+      max-height: 95vh;
+    }
+    
+    .lightbox-close {
+      top: -2.5rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    
+    .lightbox-nav {
+      width: 2.5rem;
+      height: 2.5rem;
+      
+      &.is-prev {
+        left: -3rem;
+      }
+      
+      &.is-next {
+        right: -3rem;
+      }
+    }
+    
+    .lightbox-info {
+      bottom: -2.5rem;
+    }
+    
+    .lightbox-indicators {
+      bottom: -2.5rem;
+    }
+  }
+}
+
+// Trigger para abrir lightbox
+.lightbox-trigger {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+// Animação de loading
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

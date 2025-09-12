@@ -1,0 +1,70 @@
+// ========================================
+// COLOR SEEDS - Valores base de cores do Codessa
+// ========================================
+
+:root {
+  // ========================================
+  // BRAND COLORS - Cores de marca
+  // ========================================
+  
+  // Brand Standard
+  --color-standard-100: #d91f26;
+  --color-standard-80: #e14c51;
+  --color-standard-70: #e46267;
+  --color-standard-60: #e8797d;
+  --color-standard-40: #f0a5a8;
+  --color-standard-20: #f7d2d4;
+  --color-standard-10: #fbe8e9;
+
+  // Brand Deep
+  --color-deep-100: #b31a20;
+  --color-deep-80: #c2484d;
+  --color-deep-70: #ca5e62;
+  --color-deep-60: #d17679;
+  --color-deep-40: #e1a3a6;
+  --color-deep-20: #f0d1d2;
+  --color-deep-10: #f7e8e8;
+
+  // Brand Soft
+  --color-soft-100: #ed1b34;
+  --color-soft-80: #f1495d;
+  --color-soft-70: #f25f71;
+  --color-soft-60: #f47685;
+  --color-soft-40: #f8a4ae;
+  --color-soft-20: #fbd1d6;
+  --color-soft-10: #fde8ea;
+
+  // ========================================
+  // NEUTRAL COLORS - Escala de cinzas
+  // ========================================
+  
+  --color-neutral-100: #d91f26;
+  --color-neutral-80: #3d3d3d;
+  --color-neutral-70: #555555;
+  --color-neutral-60: #6e6e6e;
+  --color-neutral-40: #9e9e9e;
+  --color-neutral-20: #cfcfcf;
+  --color-neutral-10: #e6e6e6;
+
+  // ========================================
+  // CONTEXT COLORS - Cores para estados e feedback
+  // ========================================
+  
+  // Cores Primárias (3)
+  --color-context-1: #ff0000;  // Vermelho
+  --color-context-2: #0000ff;  // Azul
+  --color-context-3: #ffff00;  // Amarelo
+
+  // Cores Secundárias (3)
+  --color-context-4: #00ff00;  // Verde
+  --color-context-5: #ff00ff;  // Magenta
+  --color-context-6: #ffa500;  // Laranja
+
+  // Cores Terciárias (6)
+  --color-context-7: #00ffff;  // Ciano
+  --color-context-8: #800080;  // Roxo
+  --color-context-9: #ffc0cb;  // Rosa
+  --color-context-10: #adff2f; // Verde-amarelo
+  --color-context-11: #ff4500; // Vermelho-laranja
+  --color-context-12: #4169e1; // Azul-real
+}

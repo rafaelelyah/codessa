@@ -1,0 +1,18 @@
+// Seeds visuais — valores base brutos do design system
+@forward 'colors';         // Paleta de cores base e variantes
+@forward 'typography';     // Fontes, tamanhos, pesos, alturas de linha
+@forward 'spacings';       // Espaçamentos e offsets
+@forward 'borders';        // Espessuras e estilos de borda
+@forward 'radius';         // Radius padronizados para bordas e componentes
+@forward 'zindex';         // Hierarquia de empilhamento (camadas)
+@forward 'opacity';        // Níveis de transparência para estados visuais
+@forward 'shadows';        // Sombras reutilizáveis para elevação
+@forward 'paddings';       // Paddings base
+@forward 'sizes';          // Tamanhos e alturas para componentes
+
+// Seeds de layout — estrutura e responsividade
+@forward 'breakpoints';    // Tamanhos de tela para media queries
+@forward 'grid-systems';   // Configuração de colunas, gutters, containers
+
+// Seeds funcionais — valores para animações e transições
+@forward 'motion';         // Duração e easing para animações e transições

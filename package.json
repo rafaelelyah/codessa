@@ -1,7 +1,7 @@
 {
   "name": "codessa-interface",
   "private": true,
-  "version": "0.9.38-alpha",
+  "version": "3.0.0-alpha",
   "description": "Módulo visual do Codessa Studio — design system atômico com Sass, Vite e JS puro.",
   "type": "module",
   "scripts": {

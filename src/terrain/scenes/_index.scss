@@ -1,0 +1,10 @@
+// ========================================
+// SCHEMES - Esquemas de tema do design system
+// ========================================
+
+// Esquema principal (padrão)
+@forward 'main.scheme';
+
+// Temas específicos
+@forward 'light.theme.scheme';
+@forward 'dark.theme.scheme';

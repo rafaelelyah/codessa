@@ -9,9 +9,11 @@
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
 
-  // Gaps derivados
-  --nav-gap-horizontal: var(--spacing-md);
-  --nav-gap-vertical: var(--spacing-sm);
-  --list-gap-horizontal: var(--spacing-sm);
-  --list-gap-vertical: var(--spacing-sm);
+  // Offsets
+  --offset-none: 0;
+  --offset-xs: 0.5rem;
+  --offset-sm: 1rem;
+  --offset-md: 1.5rem;
+  --offset-lg: 2rem;
+  --offset-xl: 3rem;
 }

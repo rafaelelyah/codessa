@@ -19,6 +19,7 @@
 @forward 'scroll';          // Estilos de scrollbar customizados
 @forward 'grids';           // Grid flexível baseado nos tokens
 @forward 'media';           // Media queries com breakpoints
+@forward 'media-queries';   // Mixins específicos para mídia responsiva
 @forward 'responsive';      // Estilos que se adaptam ao viewport
 @forward 'layout';          // Estrutura do Layout: header, footer, main
 @forward 'z-index';         // Níveis de z-index semânticos

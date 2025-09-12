@@ -28,6 +28,13 @@
 @forward 'accordions';      // Conteúdo expansível e colapsável
 @forward 'alerts';          // Feedback visual: sucesso, erro, aviso, info
 @forward 'galleries';       // Exibição de imagens ou conteúdo visual
+@forward 'figures';         // Elementos de mídia com legendas (figure, figcaption)
+@forward 'videos';          // Players de vídeo responsivos com controles
+@forward 'audios';          // Players de áudio com controles personalizados
+@forward 'images';          // Imagens com variantes e responsividade
+@forward 'embeds';          // Iframes e conteúdo incorporado (YouTube, Vimeo, etc.)
+@forward 'carousels';       // Carrosséis de mídia e conteúdo
+@forward 'lightbox';        // Modal para visualização ampliada de mídia
 @forward 'tables';          // Tabelas com cabeçalho, zebra, responsividade
 @forward 'tooltips';        // Dicas flutuantes em hover/focus
 @forward 'steppers';        // Navegação em etapas (ex: checkout, formulários)

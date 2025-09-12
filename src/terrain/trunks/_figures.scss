@@ -1,0 +1,230 @@
+// ========================================
+// FIGURES - Elementos de mídia com legendas
+// ========================================
+
+.figure {
+  display: block;
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+  
+  // Container da imagem/vídeo
+  &-media {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg-alt);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+      box-shadow: var(--shadow-md);
+    }
+    
+    // Imagem dentro da figure
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    // Vídeo dentro da figure
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    // Áudio dentro da figure
+    audio {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  // Legenda da figure
+  &-caption {
+    margin-top: var(--spacing-sm);
+    padding: 0 var(--spacing-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--line-height-relaxed);
+    
+    // Estilos para legendas com destaque
+    &.is-emphasized {
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text);
+    }
+    
+    // Legenda com fundo
+    &.is-highlighted {
+      background-color: var(--color-bg-subtle);
+      padding: var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--color-brand-5);
+    }
+  }
+  
+  // Variantes de tamanho
+  &.is-small {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &.is-medium {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &.is-large {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &.is-full {
+    max-width: 100%;
+  }
+  
+  // Variantes de estilo
+  &.is-bordered {
+    .figure-media {
+      border: 1px solid var(--color-border);
+    }
+  }
+  
+  &.is-rounded {
+    .figure-media {
+      border-radius: var(--radius-lg);
+    }
+  }
+  
+  &.is-pill {
+    .figure-media {
+      border-radius: var(--radius-pill);
+    }
+  }
+  
+  &.is-shadowed {
+    .figure-media {
+      box-shadow: var(--shadow-md);
+    }
+  }
+  
+  &.is-floating {
+    .figure-media {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+  }
+  
+  // Estados
+  &.is-loading {
+    .figure-media {
+      background-color: var(--color-bg-subtle);
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin: -1rem 0 0 -1rem;
+        border: 2px solid var(--color-border);
+        border-top-color: var(--color-brand-5);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+    }
+  }
+  
+  &.is-error {
+    .figure-media {
+      background-color: var(--color-error-bg);
+      border: 1px solid var(--color-error-border);
+      
+      &::before {
+        content: '⚠️';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        opacity: 0.5;
+      }
+    }
+  }
+  
+  // Responsividade
+  @media (max-width: 768px) {
+    margin: var(--spacing-md) 0;
+    
+    &.is-large,
+    &.is-medium {
+      max-width: 100%;
+    }
+  }
+}
+
+// Animação de loading
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Grupos de figures (galeria)
+.figure-group {
+  display: grid;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  
+  // Layout em grid
+  &.is-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  
+  &.is-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  &.is-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  &.is-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  // Layout em carrossel
+  &.is-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    
+    .figure {
+      flex: 0 0 auto;
+      width: 20rem;
+      scroll-snap-align: start;
+    }
+  }
+  
+  // Responsividade
+  @media (max-width: 768px) {
+    &.is-grid-2,
+    &.is-grid-3,
+    &.is-grid-4 {
+      grid-template-columns: 1fr;
+    }
+    
+    &.is-carousel .figure {
+      width: 15rem;
+    }
+  }
+}
