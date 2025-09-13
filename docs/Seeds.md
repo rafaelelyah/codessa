@@ -18,7 +18,7 @@ Este documento descreve os fundamentos visuais e funcionais do Codessa Ecosystem
 
 ## Convenções
 
-- Os tokens seguem a estrutura `--nome-funcional-nível`, com níveis de `0` a `7`
+- Os Seeds seguem a estrutura `--nome-funcional-nível`, com níveis de `0` a `7`
 - Os valores são derivados de escalas matemáticas e semânticas
 - Espelhos Sass (`$map`) são utilizados para lógica condicional e geração de utilitários
 
