@@ -1,0 +1,177 @@
+// ========================================
+// TEXTUAL SPROUTS
+// ========================================
+
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// HEADINGS
+// ========================================
+// Sprouts para composição de títulos semânticos.
+// Permitem controle de tamanho, peso e espaçamento.
+
+@mixin heading($size: xl, $weight: bold, $spacing: sm) {
+  font-size: var(--font-size-#{$size});
+  font-weight: var(--font-weight-#{$weight});
+  line-height: var(--line-height-tight);
+  margin-block-end: var(--space-layout-#{$spacing});
+}
+
+// Heading com uppercase e espaçamento extra
+@mixin heading-uppercase($size: md, $spacing: sm) {
+  font-size: var(--font-size-#{$size});
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-block-end: var(--space-layout-#{$spacing});
+}
+
+// ========================================
+// PARAGRAPHS
+// ========================================
+// Sprouts para composição de parágrafos e textos corridos.
+// Permitem controle de tamanho, espaçamento e legibilidade.
+
+@mixin paragraph($size: md, $spacing: md) {
+  font-size: var(--font-size-#{$size});
+  line-height: var(--line-height-relaxed);
+  margin-block-end: var(--space-layout-#{$spacing});
+}
+
+// Parágrafo com cor secundária
+@mixin paragraph-muted($size: md, $spacing: md) {
+  font-size: var(--font-size-#{$size});
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-muted);
+  margin-block-end: var(--space-layout-#{$spacing});
+}
+
+// ========================================
+// LINKS
+// ========================================
+// Sprouts para composição visual de links.
+// Permitem controle de cor, decoração, estados e acessibilidade.
+
+@mixin link-base(
+  $color: var(--color-link),
+  $hover-color: var(--color-link-hover),
+  $visited-color: var(--color-link-visited),
+  $active-color: var(--color-link-active),
+  $transition: var(--motion-transition-fast),
+  $decoration: underline
+) {
+  color: $color;
+  text-decoration: $decoration;
+  transition: color $transition;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $visited-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+}
+
+// Link sem sublinhado — estilo limpo
+@mixin link-clean(
+  $color: var(--color-link),
+  $hover-color: var(--color-link-hover),
+  $transition: var(--motion-transition-fast)
+) {
+  color: $color;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+}
+
+// ========================================
+// FLUID TYPE
+// ========================================
+// Sprouts para composição de tipografia fluida.
+// Permitem adaptação de tamanho conforme viewport.
+
+@mixin fluid-type($min-size: 1rem, $max-size: 2rem) {
+  font-size: clamp(#{$min-size}, 2vw, #{$max-size});
+}
+
+// ========================================
+// TRUNCATION
+// ========================================
+// Sprouts para truncamento de texto.
+// Permitem controle de overflow e número de linhas.
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-multiline-truncate($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: #{$lines};
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// ========================================
+// TEXT HELPERS
+// ========================================
+// Sprouts utilitários para composição textual.
+// Incluem alinhamento, transformação e espaçamento.
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+@mixin text-muted {
+  color: var(--color-text-muted);
+}
+
+// ========================================
+// CODE BLOCKS
+// ========================================
+// Sprouts para composição de blocos de código.
+// Permitem controle de fonte, cor, espaçamento e legibilidade.
+
+@mixin code-block($bg: var(--color-surface-code), $padding: sm) {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: $bg;
+  padding: var(--space-layout-#{$padding});
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  white-space: pre;
+  line-height: var(--line-height-tight);
+}
+
+@mixin inline-code($bg: var(--color-surface-code), $padding-x: xs, $padding-y: 2px) {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: $bg;
+  padding: $padding-y var(--space-layout-#{$padding-x});
+  border-radius: var(--radius-xs);
+}

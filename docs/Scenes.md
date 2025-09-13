@@ -1,5 +1,5 @@
 # Codessa Ecosystem — Scenes Documentation
-Este documento descreve a arquitetura visual do Codessa Ecosystem a partir das scenes. Scenes representam contextos visuais compostos por tokens semânticos derivados dos seeds. Elas definem como a interface se comporta em diferentes temas, densidades e ambientes, garantindo consistência, adaptabilidade e elegância.
+Este documento descreve a arquitetura visual do Codessa Ecosystem a partir das scenes. Scenes representam contextos visuais compostos por variáveis semânticos derivados dos seeds. Elas definem como a interface se comporta em diferentes temas, densidades e ambientes, garantindo consistência, adaptabilidade e elegância.
 
 ---
 
@@ -13,10 +13,10 @@ Este documento descreve a arquitetura visual do Codessa Ecosystem a partir das s
 - [Boas Práticas](#boas-práticas)
 
 ## Base
-A scene.base define o contrato semântico principal do sistema. Ela organiza os tokens visuais derivados dos seeds em categorias como cor, tipografia, espaçamento, borda, motion, layout e hierarquia. Todas as variantes de scene herdam e sobrescrevem a partir dela.
+A scene.base define o contrato semântico principal do sistema. Ela organiza os variáveis visuais derivados dos seeds em categorias como cor, tipografia, espaçamento, borda, motion, layout e hierarquia. Todas as variantes de scene herdam e sobrescrevem a partir dela.
 
 ## Temas
-Scenes temáticas definem o comportamento visual da interface em contextos claros ou escuros. Elas sobrescrevem tokens como bg-*, text-*, border-*, interactive-* e gradient-*.
+Scenes temáticas definem o comportamento visual da interface em contextos claros ou escuros. Elas sobrescrevem variáveis como bg-*, text-*, border-*, interactive-* e gradient-*.
 
 #### `scene.base.light`
 Visual claro, com fundo neutro claro e texto escuro. Ideal para ambientes com alta luminosidade ou interfaces tradicionais.
@@ -31,7 +31,7 @@ Visual escuro, com fundo neutro escuro e texto claro. Ideal para ambientes notur
 <body data-theme="light">
 ```
 ## Densidades
-Scenes de densidade definem o espaçamento e tamanho tipográfico da interface. Elas sobrescrevem tokens como padding-*, margin-*, gap-*, text-*, leading-* e container-*.
+Scenes de densidade definem o espaçamento e tamanho tipográfico da interface. Elas sobrescrevem variáveis como padding-*, margin-*, gap-*, text-*, leading-* e container-*.
 
 #### `scene.base.compact`
 Interface densa, com espaçamentos reduzidos e tipografia menor. Indicada para dashboards, ambientes produtivos ou contextos com alta concentração de informação.

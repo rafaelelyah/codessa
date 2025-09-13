@@ -1,17 +1,14 @@
-// 📏 Oculta visualmente mas mantém acessível
-@mixin visually-hidden {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+// ========================================
+// UTILS SPROUTS
+// ========================================
 
-// 🧼 Reset básico de elemento
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// RESETS
+// ========================================
+
+// Remove estilos padrão de elementos
 @mixin reset {
   margin: 0;
   padding: 0;
@@ -19,30 +16,54 @@
   background: none;
   font: inherit;
   color: inherit;
+  text-decoration: none;
 }
 
-// 🧩 Centraliza com margin auto
-@mixin center-block {
-  display: block;
-  margin-inline: auto;
+// ========================================
+// UNSTYLED ELEMENTS
+// ========================================
+
+// Remove estilo visual de links
+@mixin link-reset {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-// 🧲 Full size
-@mixin full-size {
-  width: 100%;
-  height: 100%;
+// Remove estilo visual de listas
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-// 🧱 Box sizing border-box
-@mixin box {
-  box-sizing: border-box;
-}
+// ========================================
+// ACCESSIBILITY HELPERS
+// ========================================
 
-// 🧭 Absolute fill
-@mixin absolute-fill {
+// Esconde elemento visualmente, mas mantém acessível
+@mixin visually-hidden {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ========================================
+// DEBUG HELPERS
+// ========================================
+
+// Aplica borda vermelha para debug visual
+@mixin debug-outline {
+  outline: 1px solid red;
 }

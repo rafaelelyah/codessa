@@ -1,50 +1,53 @@
-@use '../tokens/breakpoints' as bp;
+// ========================================
+// MEDIA SPROUTS
+// ========================================
 
-// 📱 Mobile muito pequeno
-@mixin media-xs {
-  @media (min-width: #{bp.$breakpoint-xs}) {
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// BREAKPOINTS
+// ========================================
+
+// Aplica estilos acima de determinado breakpoint
+@mixin media-up($breakpoint) {
+  @media (min-width: var(--breakpoint-#{$breakpoint})) {
     @content;
   }
 }
 
-// 📱 Mobile padrão
-@mixin media-sm {
-  @media (min-width: #{bp.$breakpoint-sm}) {
+// Aplica estilos abaixo de determinado breakpoint
+@mixin media-down($breakpoint) {
+  @media (max-width: var(--breakpoint-#{$breakpoint})) {
     @content;
   }
 }
 
-// 📱 Tablet
-@mixin media-md {
-  @media (min-width: #{bp.$breakpoint-md}) {
-    @content;
-  }
-}
-
-// 💻 Desktop
-@mixin media-lg {
-  @media (min-width: #{bp.$breakpoint-lg}) {
-    @content;
-  }
-}
-
-// 💻 Telas grandes
-@mixin media-xl {
-  @media (min-width: #{bp.$breakpoint-xl}) {
-    @content;
-  }
-}
-
-// 🖥️ Telas extra largas
-@mixin media-xxl {
-  @media (min-width: #{bp.$breakpoint-xxl}) {
-    @content;
-  }
-}
-
-// 🔁 Intervalo entre dois breakpoints
+// Aplica estilos entre dois breakpoints
 @mixin media-between($min, $max) {
-  @media (min-width: #{$min}) and (max-width: #{$max}) {
+  @media (min-width: var(--breakpoint-#{$min})) and (max-width: var(--breakpoint-#{$max})) {
     @content;
   }
+}
+
+// ========================================
+// MEDIA CONTAINERS
+// ========================================
+
+// Container responsivo com largura máxima e padding lateral
+@mixin media-container($width: lg) {
+  max-width: var(--width-container-#{$width});
+  margin-inline: auto;
+  padding-inline: var(--space-layout-md);
+}
+
+// ========================================
+// ASPECT RATIOS
+// ========================================
+
+// Define proporção fixa para elementos de mídia
+@mixin aspect-ratio($ratio: 16/9) {
+  aspect-ratio: #{$ratio};
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }

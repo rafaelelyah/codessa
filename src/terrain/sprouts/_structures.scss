@@ -1,54 +1,50 @@
+// ========================================
+// STRUCTURE SPROUTS
+// ========================================
+
 @use '../scenes/base.scene' as *;
 
 // ========================================
-// Containers
+// CONTAINERS
 // ========================================
 
 // Container semântico com tamanho customizável
 @mixin container($size: full) {
-  width: var(--width-container-#{$size}, 100%);
-  max-width: var(--width-container-xxl, 1440px);
-  min-width: var(--width-container-xs, 240px);
+  width: var(--width-container-#{$size});
+  max-width: var(--width-container-xxl);
+  min-width: var(--width-container-xs);
   margin-inline: auto;
-  padding-inline: var(--container-padding, 1rem);
+  padding-inline: var(--container-padding);
 }
 
-// Container fluido (ocupa toda a largura do elemento pai)
+// Container fluido — ocupa toda a largura do elemento pai
 @mixin container-fluid {
-  width: var(--width-container-full, 100%);
+  width: var(--width-container-full);
   margin-inline: auto;
-  padding-inline: var(--container-padding, 1rem);
+  padding-inline: var(--container-padding);
 }
 
-// Container restrito (centralizado e com largura máxima)
-@mixin container-restricted($size: md) {
-  max-width: var(--width-container-#{$size}, 640px);
-  width: var(--width-container-full, 100%);
-  margin-inline: auto;
-  padding-inline: var(--container-padding, 1rem);
-}
-
-// Container com espaçamento vertical
+// Container com espaçamento vertical entre blocos
 @mixin container-spacing($space: xl) {
-  margin-block-end: var(--space-layout-#{$space}, 2rem);
+  margin-block-end: var(--space-layout-#{$space});
 }
 
 // ========================================
-// Sections
+// SECTIONS
 // ========================================
 
-// Section com altura semântica
+// Seção com altura semântica
 @mixin section($size: full) {
-  min-height: var(--height-container-#{$size}, 100vh);
-  width: var(--width-container-full, 100%);
+  min-height: var(--height-container-#{$size});
+  width: var(--width-container-full);
 }
 
-// Section com espaçamento vertical
+// Seção com espaçamento vertical
 @mixin section-spacing($space: xl) {
-  margin-block-end: var(--space-layout-#{$space}, 2rem);
+  margin-block-end: var(--space-layout-#{$space});
 }
 
-// Section centralizada
+// Seção centralizada vertical e horizontalmente
 @mixin section-center {
   display: flex;
   flex-direction: column;
@@ -56,76 +52,46 @@
   justify-content: center;
 }
 
-// Section com padding interno
+// Seção com padding interno
 @mixin section-padding($space: md) {
-  padding-block: var(--space-layout-#{$space}, 1rem);
-  padding-inline: var(--container-padding, 1rem);
+  padding-block: var(--space-layout-#{$space});
+  padding-inline: var(--container-padding);
 }
 
 // ========================================
-// Grids
+// GRIDS
 // ========================================
 
-// Grid responsivo com número de colunas e espaçamento customizável
+// Grid responsivo com colunas e espaçamento
 @mixin grid($cols: 12, $gap: md) {
   display: grid;
   grid-template-columns: repeat(#{$cols}, 1fr);
-  gap: var(--grid-gap-#{$gap}, 1rem);
-  width: var(--width-container-full, 100%);
-  max-width: var(--width-container-xxl, 1440px);
+  gap: var(--grid-gap-#{$gap});
+  width: var(--width-container-full);
+  max-width: var(--width-container-xxl);
 }
 
-// Grid com espaçamento vertical entre linhas
+// Espaçamento vertical entre linhas
 @mixin grid-row-gap($gap: md) {
-  row-gap: var(--grid-gap-#{$gap}, 1rem);
+  row-gap: var(--grid-gap-#{$gap});
 }
 
-// Grid com espaçamento horizontal entre colunas
+// Espaçamento horizontal entre colunas
 @mixin grid-col-gap($gap: md) {
-  column-gap: var(--grid-gap-#{$gap}, 1rem);
+  column-gap: var(--grid-gap-#{$gap});
 }
 
-// Grid alinhado ao centro
+// Grid com alinhamento central
 @mixin grid-center {
   justify-items: center;
   align-items: center;
 }
 
 // ========================================
-// Wrappers
+// ALIGNMENTS
 // ========================================
 
-// Wrapper de conteúdo centralizado e com largura restrita
-@mixin content-wrapper($size: md) {
-  max-width: var(--width-container-#{$size}, 640px);
-  width: var(--width-container-full, 100%);
-  margin-inline: auto;
-  padding-inline: var(--container-padding, 1rem);
-}
-
-// Wrapper fluido (ocupa toda a largura do elemento pai)
-@mixin wrapper-fluid {
-  width: var(--width-container-full, 100%);
-  margin-inline: auto;
-  padding-inline: var(--container-padding, 1rem);
-}
-
-// Wrapper com espaçamento vertical
-@mixin wrapper-spacing($space: xl) {
-  margin-block-end: var(--space-layout-#{$space}, 2rem);
-}
-
-// Wrapper com padding interno
-@mixin wrapper-padding($space: md) {
-  padding-block: var(--space-layout-#{$space}, 1rem);
-  padding-inline: var(--container-padding, 1rem);
-}
-
-// ========================================
-// Alignments
-// ========================================
-
-// Alinhamento horizontal e vertical central (flex)
+// Alinhamento horizontal e vertical ao centro
 @mixin align-center {
   display: flex;
   align-items: center;
@@ -156,14 +122,14 @@
   align-items: flex-end;
 }
 
-// Espaçamento entre itens (flex)
+// Espaçamento entre extremos
 @mixin align-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-// Espaçamento distribuído (flex)
+// Espaçamento distribuído
 @mixin align-around {
   display: flex;
   justify-content: space-around;
@@ -171,23 +137,23 @@
 }
 
 // ========================================
-// Columns
+// COLUMNS
 // ========================================
 
-// Coluna flexível (ocupa espaço disponível)
+// Coluna flexível com controle de crescimento
 @mixin column-flex($grow: 1, $basis: 0) {
   flex-grow: #{$grow};
   flex-basis: #{$basis};
   min-width: 0;
 }
 
-// Coluna fixa (com largura semântica)
+// Coluna fixa com largura semântica
 @mixin column-fixed($size: md) {
-  width: var(--width-container-#{$size}, 640px);
-  flex: 0 0 var(--width-container-#{$size}, 640px);
+  width: var(--width-container-#{$size});
+  flex: 0 0 var(--width-container-#{$size});
 }
 
-// Coluna auto (ajusta à largura do conteúdo)
+// Coluna auto — ajusta à largura do conteúdo
 @mixin column-auto {
   width: auto;
   flex: 0 0 auto;
@@ -195,10 +161,10 @@
 
 // Coluna com espaçamento lateral
 @mixin column-spacing($space: md) {
-  padding-inline: var(--space-layout-#{$space}, 1rem);
+  padding-inline: var(--space-layout-#{$space});
 }
 
-// Colunas alinhadas ao centro
+// Conjunto de colunas alinhadas ao centro
 @mixin columns-center {
   display: flex;
   justify-content: center;
@@ -206,64 +172,66 @@
 }
 
 // ========================================
-// Spacings
+// SPACINGS
 // ========================================
 
-// Espaçamento vertical entre seções ou elementos
+// Espaçamento vertical
 @mixin spacing-block($space: md) {
-  margin-block: var(--space-layout-#{$space}, 1rem);
+  margin-block: var(--space-layout-#{$space});
 }
 
-// Espaçamento horizontal entre elementos
+// Espaçamento horizontal
 @mixin spacing-inline($space: md) {
-  margin-inline: var(--space-layout-#{$space}, 1rem);
+  margin-inline: var(--space-layout-#{$space});
 }
 
 // Espaçamento superior
 @mixin spacing-top($space: md) {
-  margin-block-start: var(--space-layout-#{$space}, 1rem);
+  margin-block-start: var(--space-layout-#{$space});
 }
 
 // Espaçamento inferior
 @mixin spacing-bottom($space: md) {
-  margin-block-end: var(--space-layout-#{$space}, 1rem);
+  margin-block-end: var(--space-layout-#{$space});
 }
 
 // Espaçamento à esquerda
 @mixin spacing-left($space: md) {
-  margin-inline-start: var(--space-layout-#{$space}, 1rem);
+  margin-inline-start: var(--space-layout-#{$space});
 }
 
 // Espaçamento à direita
 @mixin spacing-right($space: md) {
-  margin-inline-end: var(--space-layout-#{$space}, 1rem);
+  margin-inline-end: var(--space-layout-#{$space});
 }
 
-// Espaçamento interno (padding) vertical
+// Padding vertical
 @mixin padding-block($space: md) {
-  padding-block: var(--space-layout-#{$space}, 1rem);
+  padding-block: var(--space-layout-#{$space});
 }
 
-// Espaçamento interno (padding) horizontal
+// Padding horizontal
 @mixin padding-inline($space: md) {
-  padding-inline: var(--space-layout-#{$space}, 1rem);
+  padding-inline: var(--space-layout-#{$space});
 }
 
 // ========================================
-// Helpers
+// HELPERS
 // ========================================
 
-// Helper para esconder visualmente (acessibilidade)
+// Esconde visualmente o elemento
 @mixin visually-hidden {
   position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
-// Helper clearfix (limpa floats)
+// Clearfix — limpa floats
 @mixin clearfix {
   &::after {
     content: "";
@@ -272,30 +240,17 @@
   }
 }
 
-// Helper para overflow oculto
+// Oculta overflow
 @mixin overflow-hidden {
   overflow: hidden;
 }
 
-// Helper para largura total
+// Largura total
 @mixin full-width {
-  width: var(--width-container-full, 100%);
+  width: var(--width-container-full);
 }
 
-// Helper para altura total
+// Altura total
 @mixin full-height {
-  min-height: var(--height-container-full, 100vh);
+  min-height: var(--height-container-full);
 }
-
-// Helper para centralizar texto
-@mixin text-center {
-  text-align: center;
-}
-
-// Helper para reset de lista
-@mixin list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-

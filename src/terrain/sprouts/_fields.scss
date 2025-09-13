@@ -1,4 +1,15 @@
-// 🧾 Estilos base para campos de formulário
+// ========================================
+// FIELDS SPROUTS
+// ========================================
+
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// FIELD BASE
+// ========================================
+// Estilo base para campos de formulário.
+// Aplica tipografia, espaçamento, cores, bordas e estados.
+
 @mixin field-base(
   $bg: var(--color-bg),
   $color: var(--color-text),
@@ -41,5 +52,93 @@
     color: var(--color-text-alt);
     cursor: not-allowed;
     opacity: var(--opacity-60);
+  }
+}
+
+// ========================================
+// FIELD SIZES
+// ========================================
+// Tamanhos semânticos para campos de formulário.
+
+@mixin field-size($size) {
+  @if $size == sm {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--text-sm);
+  } @else if $size == md {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--text-md);
+  } @else if $size == lg {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--text-lg);
+  }
+}
+
+// ========================================
+// FIELD STATES
+// ========================================
+// Estilos visuais para estados semânticos: erro, sucesso, desabilitado.
+
+@mixin field-state($status) {
+  @if $status == error {
+    border: var(--border-thin) var(--border-style) var(--border-color-error);
+    background-color: var(--color-error-bg);
+    color: var(--color-error-text);
+  } @else if $status == success {
+    border: var(--border-thin) var(--border-style) var(--border-color-success);
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+  } @else if $status == disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+// ========================================
+// LABELS & HINTS
+// ========================================
+// Estilos para labels e mensagens auxiliares.
+
+@mixin field-label($size) {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+
+  @if $size == sm {
+    font-size: var(--text-sm);
+  } @else if $size == md {
+    font-size: var(--text-md);
+  } @else if $size == lg {
+    font-size: var(--text-lg);
+  }
+}
+
+@mixin field-hint($muted: true) {
+  font-size: var(--text-xs);
+
+  @if $muted {
+    color: var(--color-muted);
+  } @else {
+    color: var(--color-error);
+  }
+}
+
+// ========================================
+// FIELD GROUPS
+// ========================================
+// Estrutura de agrupamento de campos: stack, inline ou grid.
+
+@mixin field-group($layout) {
+  @if $layout == stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  } @else if $layout == inline {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    align-items: center;
+  } @else if $layout == grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
   }
 }

@@ -1,227 +1,77 @@
+// ========================================
+// BEHAVIORS SPROUTS
+// ========================================
+
 @use '../scenes/base.scene' as *;
 
 // ========================================
-// Animations
+// TRANSITIONS
 // ========================================
 
-// Fade in
-@mixin fade-in($duration: var(--duration-normal), $ease: var(--ease-out)) {
-  animation: fadeIn $duration $ease forwards;
+// Transição suave para propriedades visuais
+@mixin transition-base($props: all, $duration: var(--motion-duration-base), $ease: ease-in-out) {
+  transition: $props $duration $ease;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-// Fade out
-@mixin fade-out($duration: var(--duration-normal), $ease: var(--ease-in)) {
-  animation: fadeOut $duration $ease forwards;
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-// Slide in from bottom
-@mixin slide-up($distance: 1rem, $duration: var(--duration-normal), $ease: var(--ease-out)) {
-  animation: slideUp $duration $ease forwards;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(#{$distance});
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-// Scale in
-@mixin scale-in($duration: var(--duration-normal), $ease: var(--ease-out)) {
-  animation: scaleIn $duration $ease forwards;
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-// Pulse (leve oscilação de escala)
-@mixin pulse($duration: var(--duration-slow)) {
-  animation: pulseAnim $duration infinite ease-in-out;
-}
-
-@keyframes pulseAnim {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-// ========================================
-// Transitions
-// ========================================
-
-// Transição base para propriedades visuais
-@mixin transition-base($props: all, $duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: #{$props} $duration $ease;
-}
-
-// Transição rápida
+// Transição rápida para interações
 @mixin transition-fast($props: all) {
-  transition: #{$props} var(--duration-fast) var(--ease-smooth);
+  transition: $props var(--motion-duration-fast) ease-in-out;
 }
 
-// Transição suave de opacidade
-@mixin transition-opacity($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: opacity $duration $ease;
-}
-
-// Transição suave de transformações
-@mixin transition-transform($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: transform $duration $ease;
-}
-
-// Transição suave de cor
-@mixin transition-color($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: color $duration $ease;
-}
-
-// Transição suave de background
-@mixin transition-bg($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: background-color $duration $ease;
-}
-
-// Transição suave de borda
-@mixin transition-border($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
-  transition: border-color $duration $ease;
+// Transição lenta para elementos decorativos
+@mixin transition-slow($props: all) {
+  transition: $props var(--motion-duration-slow) ease-in-out;
 }
 
 // ========================================
-// States
+// ANIMATIONS
 // ========================================
 
-// Estado hover com cor de fundo semântica
-@mixin hover-bg($color: var(--interactive-primary-hover)) {
-  &:hover {
-    background-color: #{$color};
+// Fade in simples
+@mixin animation-fade-in($duration: var(--motion-duration-base)) {
+  animation: fade-in $duration ease-in-out forwards;
+}
+
+// Fade out simples
+@mixin animation-fade-out($duration: var(--motion-duration-base)) {
+  animation: fade-out $duration ease-in-out forwards;
+}
+
+// Keyframes para fade-in
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-}
-
-// Estado hover com cor de texto semântica
-@mixin hover-text($color: var(--text-brand)) {
-  &:hover {
-    color: #{$color};
-  }
-}
-
-// Estado focus com anel de foco
-@mixin focus-ring {
-  &:focus {
-    outline: var(--focus-ring-width, 2px) solid var(--focus-ring, #000);
-    outline-offset: var(--focus-ring-offset, 2px);
-  }
-}
-
-// Estado active com cor de fundo semântica
-@mixin active-bg($color: var(--interactive-primary-active)) {
-  &:active {
-    background-color: #{$color};
-  }
-}
-
-// Estado disabled com opacidade reduzida
-@mixin disabled {
-  opacity: var(--opacity-40, 0.4);
-  pointer-events: none;
-  cursor: not-allowed;
-}
-
-// Estado visited para links
-@mixin visited-link($color: var(--link-visited)) {
-  &:visited {
-    color: #{$color};
-  }
-}
-
-// Estado hover para links
-@mixin hover-link($color: var(--link-hover)) {
-  &:hover {
-    color: #{$color};
-  }
-}
-
-// Estado active para links
-@mixin active-link($color: var(--link-active)) {
-  &:active {
-    color: #{$color};
-  }
-}
-
-// ========================================
-// Interactions
-// ========================================
-
-// Efeito ripple (simples, baseado em pseudo-elemento)
-@mixin ripple($color: var(--interactive-primary)) {
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background-color: #{$color};
-    opacity: 0.3;
-    transform: scale(0);
-    animation: rippleAnim var(--duration-fast) ease-out;
-    pointer-events: none;
-  }
-}
-
-@keyframes rippleAnim {
   to {
-    transform: scale(4);
+    opacity: 1;
+  }
+}
+
+// Keyframes para fade-out
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
     opacity: 0;
   }
 }
 
-// Efeito de pressão (leve escala ao clicar)
-@mixin press-effect($scale: 0.96) {
-  &:active {
-    transform: scale(#{$scale});
-  }
+// ========================================
+// EFFECTS
+// ========================================
+
+// Efeito de escala ao interagir
+@mixin effect-scale($scale: 1.05) {
+  transform: scale($scale);
 }
 
-// Efeito de toque (leve sombra ao hover)
-@mixin tap-shadow($shadow: var(--shadow-sm)) {
-  &:hover {
-    box-shadow: #{$shadow};
-  }
+// Efeito de opacidade reduzida
+@mixin effect-muted($opacity: 0.6) {
+  opacity: $opacity;
 }
 
-// Efeito de foco interativo com sombra
-@mixin focus-shadow($shadow: var(--shadow-focus)) {
-  &:focus {
-    box-shadow: #{$shadow};
-  }
-}
-
-// Efeito de interação com opacidade reduzida
-@mixin interaction-muted {
-  &:hover {
-    opacity: var(--opacity-80);
-  }
-
-  &:active {
-    opacity: var(--opacity-60);
-  }
+// Efeito de blur visual
+@mixin effect-blur($amount: 4px) {
+  filter: blur($amount);
 }

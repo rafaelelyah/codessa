@@ -1,0 +1,94 @@
+// ========================================
+// INTERACTIONS SPROUTS
+// ========================================
+
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// BUTTONS
+// ========================================
+
+// Estilo base para botões semânticos
+@mixin button-base(
+  $bg: var(--color-primary),
+  $color: var(--color-on-primary),
+  $radius: var(--radius-sm),
+  $padding-y: var(--spacing-sm),
+  $padding-x: var(--spacing-md),
+  $font-size: var(--text-md),
+  $transition: var(--motion-transition-fast)
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size;
+  font-weight: var(--font-weight-medium);
+  color: $color;
+  background-color: $bg;
+  border: none;
+  border-radius: $radius;
+  padding: $padding-y $padding-x;
+  cursor: pointer;
+  transition: background-color $transition, transform $transition;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+  }
+
+  &:disabled {
+    background-color: var(--color-disabled-bg);
+    color: var(--color-disabled-text);
+    cursor: not-allowed;
+    opacity: var(--opacity-60);
+  }
+}
+
+// ========================================
+// INTERACTIVE FIELDS
+// ========================================
+
+// Estilo para campos com feedback visual ao interagir
+@mixin field-interactive {
+  transition: border-color var(--motion-transition-fast);
+
+  &:hover {
+    border-color: var(--color-border-hover);
+  }
+
+  &:focus {
+    border-color: var(--color-border-focus);
+    box-shadow: var(--shadow-focus);
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: var(--opacity-60);
+    cursor: not-allowed;
+  }
+}
+
+// ========================================
+// NAVIGATION STATES
+// ========================================
+
+// Estilo para itens de navegação ativos
+@mixin nav-active($color: var(--color-primary)) {
+  color: $color;
+  font-weight: var(--font-weight-bold);
+  border-bottom: var(--border-thick) solid $color;
+}
+
+// Estilo para itens de navegação em hover
+@mixin nav-hover($color: var(--color-primary-hover)) {
+  color: $color;
+  text-decoration: underline;
+}
