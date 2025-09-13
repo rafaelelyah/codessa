@@ -1,10 +1,14 @@
 // ========================================
-// SCHEMES - Esquemas de tema do design system
+// BASE.SCENES INDEX — Encaminha todas as variantes da cena base
 // ========================================
 
-// Esquema principal (padrão)
-@forward 'main.scheme';
+// Cena principal
+@forward './base.scene';
 
-// Temas específicos
-@forward 'light.theme.scheme';
-@forward 'dark.theme.scheme';
+// Temas visuais
+@forward './base.scene.dark';
+@forward './base.scene.light';
+
+// Densidades visuais
+@forward './base.scene.compact';
+@forward './base.scene.spacious';

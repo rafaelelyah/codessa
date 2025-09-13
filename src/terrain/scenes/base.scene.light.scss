@@ -1,89 +1,38 @@
 // ========================================
-// LIGHT THEME SCHEME - Tema claro
+// BASE SCENE LIGHT
 // ========================================
 
 @use 'base.scene' as *;
 
 [data-theme="light"] {
-  // Backgrounds
-  --bg-primary: var(--color-neutral-10);
-  --bg-secondary: var(--color-neutral-20);
-  --bg-subtle: var(--color-neutral-20);
-  --bg-muted: var(--color-neutral-40);
-  --bg-accent: var(--color-standard-10);
-  --bg-brand: var(--color-standard-60);
-  --bg-success: var(--color-context-4);
-  --bg-error: var(--color-context-1);
-  --bg-warning: var(--color-context-3);
-  --bg-info: var(--color-context-2);
 
-  // Text colors
-  --text-primary: var(--color-neutral-100);
-  --text-secondary: var(--color-neutral-80);
-  --text-muted: var(--color-neutral-60);
-  --text-subtle: var(--color-neutral-40);
-  --text-inverse: var(--color-neutral-10);
-  --text-brand: var(--color-standard-60);
-  --text-success: var(--color-context-4);
-  --text-error: var(--color-context-1);
-  --text-warning: var(--color-context-3);
-  --text-info: var(--color-context-2);
+  // Fundo claro, texto escuro
+  --bg-primary: var(--color-neutral-7);
+  --bg-secondary: var(--color-neutral-6);
+  --bg-muted: var(--color-neutral-5);
+  --bg-subtle: var(--color-neutral-4);
 
-  // Border colors
-  --border-primary: var(--color-neutral-40);
-  --border-secondary: var(--color-neutral-20);
-  --border-muted: var(--color-neutral-20);
-  --border-brand: var(--color-standard-60);
-  --border-success: var(--color-context-4);
-  --border-error: var(--color-context-1);
-  --border-warning: var(--color-context-3);
-  --border-info: var(--color-context-2);
+  --text-primary: var(--color-neutral-1);
+  --text-secondary: var(--color-neutral-2);
+  --text-muted: var(--color-neutral-3);
+  --text-subtle: var(--color-neutral-4);
+  --text-inverse: var(--color-neutral-7);
 
-  // Interactive states
-  --interactive-primary: var(--color-standard-60);
-  --interactive-primary-hover: var(--color-standard-70);
-  --interactive-primary-active: var(--color-standard-80);
-  --interactive-secondary: var(--color-neutral-60);
-  --interactive-secondary-hover: var(--color-neutral-80);
-  --interactive-secondary-active: var(--color-neutral-100);
+  // Bordas suaves
+  --border-primary: var(--color-neutral-5);
+  --border-secondary: var(--color-neutral-4);
 
-  // Focus states
-  --focus-ring: var(--color-standard-60);
+  // Interações com leveza
+  --interactive-primary: var(--color-standard-1);
+  --interactive-hover: var(--color-standard-2);
+  --interactive-active: var(--color-standard-3);
 
-  // Link states
-  --link-color: var(--color-standard-60);
-  --link-hover: var(--color-standard-70);
-  --link-visited: var(--color-standard-80);
-  --link-active: var(--color-standard-100);
+  // Gradientes mais suaves
+  --gradient-primary: var(--gradient-brand-1);
+  --gradient-secondary: var(--gradient-brand-3);
+  --gradient-accent: var(--gradient-brand-5);
 
-  // Status colors
-  --status-success: var(--color-context-4);
-  --status-success-bg: var(--color-context-4);
-  --status-success-border: var(--color-context-4);
-  --status-success-text: var(--color-context-4);
+  // Foco com contraste leve
+  --focus-ring: var(--color-standard-1);
 
-  --status-error: var(--color-context-1);
-  --status-error-bg: var(--color-context-1);
-  --status-error-border: var(--color-context-1);
-  --status-error-text: var(--color-context-1);
-
-  --status-warning: var(--color-context-3);
-  --status-warning-bg: var(--color-context-3);
-  --status-warning-border: var(--color-context-3);
-  --status-warning-text: var(--color-context-3);
-
-  --status-info: var(--color-context-2);
-  --status-info-bg: var(--color-context-2);
-  --status-info-border: var(--color-context-2);
-  --status-info-text: var(--color-context-2);
-
-  // Shadows (opcional, se quiser ajustar para claro)
-  --shadow-xs: var(--shadow-xs);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-xl: var(--shadow-xl);
-  --shadow-xxl: var(--shadow-xxl);
-  --shadow-brand: var(--shadow-brand);
-  --shadow-focus: var(--shadow-focus);
 }

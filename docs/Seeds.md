@@ -1,10 +1,9 @@
 # Codessa Ecosystem — Seeds Documentation
-
 Este documento descreve os fundamentos visuais e funcionais do Codessa Ecosystem. Os arquivos de seeds representam os pilares do sistema de design, organizados por função e propósito. Cada seed define uma camada semântica que orienta a construção de interfaces consistentes, escaláveis e elegantes.
 
 ---
 
-## Índice de Seeds
+## Índice
 
 - [Scale](#scale)
 - [Palette](#palette)
@@ -13,6 +12,7 @@ Este documento descreve os fundamentos visuais e funcionais do Codessa Ecosystem
 - [Outline](#outline)
 - [Spacing](#spacing)
 - [Type](#type)
+- [Boas Práticas](#boas-práticas)
 
 ---
 
@@ -23,12 +23,12 @@ Este documento descreve os fundamentos visuais e funcionais do Codessa Ecosystem
 - Espelhos Sass (`$map`) são utilizados para lógica condicional e geração de utilitários
 
 ## `Scale`
-O seed scale define a base matemática do sistema de design do Codessa Ecosystem. Ele estabelece proporções modulares que servem como referência para todos os outros tokens — como tamanhos, espaçamentos, containers, tipografia e animações.
+O seed scale define a base matemática do sistema de design do Codessa Ecosystem. Ele estabelece proporções modulares que servem como referência para todas as outras variáveis — como tamanhos, espaçamentos, containers, tipografia e animações.
 
 ### Propósito
 - Criar uma escala visual coerente e progressiva
 - Permitir consistência entre componentes e seções da interface
-- Servir como fundamento para tokens derivados, como size, macro, micro, medium, etc.
+- Servir como fundamento para variáveis derivados, como size, macro, micro, medium, etc.
 
 ### Estrutura
 A escala é dividida em blocos semânticos:
@@ -176,3 +176,11 @@ O type é composto por quatro grupos principais:
 - Criação de hierarquia visual entre títulos, textos e descrições
 - Controle de ritmo e legibilidade em blocos de conteúdo
 - Geração de sprouts para estilização textual semântica
+
+## Boas Práticas
+- Seeds são fundamentos semânticos, não estilos prontos — devem ser usados como base para construir scenes, sprouts e trunks
+- Evite aplicar seeds diretamente em componentes — prefira compor variáveis intermediárias nas scenes ou nos trunks
+- Seeds podem ser combinados livremente — a arquitetura do Codessa Ecosystem permite personalização extrema, inclusive a criação de novos seeds
+- Use os espelhos Sass ($map) para lógica condicional, geração de utilitários e adaptação visual
+- Mantenha a nomenclatura funcional e progressiva (--nome-funcional-nível) para garantir legibilidade e escalabilidade
+- Seeds não são imutáveis — podem ser estendidos, adaptados ou substituídos conforme o contexto do produto ou marca
