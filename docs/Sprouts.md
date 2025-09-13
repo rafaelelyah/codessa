@@ -33,7 +33,7 @@ Sprout voltado para composição estrutural da interface. Define containers, se�
 - Spacings
 - Helpers
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `width.container.*`
 - `height.container.*`
 - `space.layout.*`
@@ -56,7 +56,7 @@ Sprout voltado para composição de elementos de navegação. Define menus, brea
 - Navigation Dividers
 - Navigation Scrollable
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `space.layout.*`
 - `height.container.*`
 - `width.container.*`
@@ -82,7 +82,7 @@ Sprout voltado para composição textual da interface. Define estilos para headi
 - Text Helpers
 - Code Blocks
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `font-size.*`
 - `font-weight.*`
 - `line-height.*`
@@ -110,7 +110,7 @@ Sprout voltado para composição de campos de formulário. Define estilos base p
 - Labels & Hints
 - Field Groups
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `color.bg`, `color.text`, `color.border`
 - `color.error.*`, `color.success.*`, `color.text-alt`, `color.bg-alt`, `color.muted`
 - `font-base`, `font-weight.medium`
@@ -134,7 +134,7 @@ Sprout voltado para composição responsiva e elementos de mídia. Define breakp
 - Media Containers
 - Aspect Ratios
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `breakpoint.*`
 - `width.container.*`
 - `space.layout.md`
@@ -151,7 +151,7 @@ Sprout voltado para transições, animações e efeitos visuais. Define comporta
 - Animations
 - Effects
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `motion-duration.base`
 - `motion-duration.fast`
 - `motion-duration.slow`
@@ -171,7 +171,7 @@ Sprout voltado para elementos interativos da interface. Define estilos para bot�
 - Interactive Fields
 - Navigation States
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `color.primary`, `color.primary-hover`, `color.on-primary`
 - `color.disabled-bg`, `color.disabled-text`
 - `color.border-hover`, `color.border-focus`
@@ -198,7 +198,7 @@ Sprout voltado para resets, elementos não estilizados e helpers funcionais. Def
 - Accessibility Helpers
 - Debug Helpers
 
-**Tokens envolvidos:**
+**Variáveis envolvidas:**
 - `color.inherit`
 - `font.inherit`
 - `text-decoration.none`
