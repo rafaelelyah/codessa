@@ -1,0 +1,110 @@
+// ========================================
+// SPACING SEEDS — Espaçamentos e estrutura de grid
+// ========================================
+
+:root {
+
+  // ========================================
+  // PADDING SCALE — Espaço interno
+  // ========================================
+  --padding-0: 0;
+  --padding-1: var(--size-micro-1);   // 0.25rem
+  --padding-2: var(--size-micro-2);   // 0.5rem
+  --padding-3: var(--size-micro-3);   // 0.75rem
+  --padding-4: var(--size-micro-4);   // 1rem
+  --padding-5: var(--size-micro-6);   // 1.5rem
+  --padding-6: var(--size-micro-8);   // 2rem
+  --padding-7: var(--size-medium-1);  // 2rem
+
+  // ========================================
+  // MARGIN SCALE — Espaço externo
+  // ========================================
+  --margin-0: 0;
+  --margin-1: var(--size-micro-1);
+  --margin-2: var(--size-micro-2);
+  --margin-3: var(--size-micro-3);
+  --margin-4: var(--size-micro-4);
+  --margin-5: var(--size-micro-6);
+  --margin-6: var(--size-micro-8);
+  --margin-7: var(--size-medium-1);
+
+  // ========================================
+  // GAP SCALE — Espaçamento entre colunas/linhas
+  // ========================================
+  --gap-0: 0;
+  --gap-1: var(--size-micro-1);
+  --gap-2: var(--size-micro-2);
+  --gap-3: var(--size-micro-3);
+  --gap-4: var(--size-micro-4);
+  --gap-5: var(--size-micro-6);
+  --gap-6: var(--size-micro-8);
+  --gap-7: var(--size-medium-1);
+
+  // ========================================
+  // COLUMNS — Número de colunas padrão
+  // ========================================
+  --columns-1: 1;
+  --columns-2: 2;
+  --columns-3: 3;
+  --columns-4: 4;
+  --columns-5: 5;
+  --columns-6: 6;
+  --columns-7: 12;
+
+  // ========================================
+  // OFFSET SCALE — Deslocamentos visuais
+  // ========================================
+  --offset-0: 0;
+  --offset-1: var(--size-micro-1);
+  --offset-2: var(--size-micro-2);
+  --offset-3: var(--size-micro-3);
+  --offset-4: var(--size-micro-4);
+  --offset-5: var(--size-micro-6);
+  --offset-6: var(--size-micro-8);
+  --offset-7: var(--size-medium-1);
+
+}
+
+// ========================================
+// SPACING MAPS — Espelhos Sass para lógica
+// ========================================
+
+$padding: (
+  1: var(--padding-1),
+  2: var(--padding-2),
+  3: var(--padding-3),
+  4: var(--padding-4),
+  5: var(--padding-5),
+  6: var(--padding-6),
+  7: var(--padding-7)
+);
+
+$margin: (
+  1: var(--margin-1),
+  2: var(--margin-2),
+  3: var(--margin-3),
+  4: var(--margin-4),
+  5: var(--margin-5),
+  6: var(--margin-6),
+  7: var(--margin-7)
+);
+
+$gap: (
+  1: var(--gap-1),
+  2: var(--gap-2),
+  3: var(--gap-3),
+  4: var(--gap-4),
+  5: var(--gap-5),
+  6: var(--gap-6),
+  7: var(--gap-7)
+);
+
+$offset: (
+  1: var(--offset-1),
+  2: var(--offset-2),
+  3: var(--offset-3),
+  4: var(--offset-4),
+  5: var(--offset-5),
+  6: var(--offset-6),
+  7: var(--offset-7)
+);

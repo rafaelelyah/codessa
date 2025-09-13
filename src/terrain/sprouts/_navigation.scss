@@ -1,0 +1,128 @@
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// Navigation & Menus
+// ========================================
+
+// Reset de lista/menu
+@mixin nav-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Navegação horizontal
+@mixin nav-horizontal($gap: md) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-layout-#{$gap}, 1rem);
+  align-items: center;
+}
+
+// Navegação vertical
+@mixin nav-vertical($gap: md) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-layout-#{$gap}, 1rem);
+  align-items: flex-start;
+}
+
+// Navegação com altura customizável
+@mixin nav-bar($height: sm) {
+  height: var(--height-container-#{$height}, 4rem);
+  width: var(--width-container-full, 100%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-layout-md, 1rem);
+}
+
+// Menu responsivo
+@mixin nav-responsive($breakpoint: md) {
+  @media (max-width: var(--breakpoint-#{$breakpoint}, 640px)) {
+    flex-direction: column;
+    gap: var(--space-layout-sm, 0.5rem);
+  }
+}
+
+// Lista ordenada com contador customizado
+@mixin nav-ordered {
+  list-style: decimal inside;
+  padding-left: 1.5rem;
+}
+
+// Lista desordenada (bullet customizado)
+@mixin nav-unordered {
+  list-style: disc inside;
+  padding-left: 1.5rem;
+}
+
+// Lista com ícones
+@mixin nav-icon($icon-size: md) {
+  li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-layout-xs, 0.5rem);
+    &::before {
+      content: '';
+      display: inline-block;
+      width: var(--size-icon-#{$icon-size}, 16px);
+      height: var(--size-icon-#{$icon-size}, 16px);
+      background: currentColor;
+      border-radius: 50%;
+    }
+  }
+}
+
+// ========================================
+// Breadcrumbs
+// ========================================
+
+@mixin breadcrumbs($separator: '/') {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-layout-xs, 0.5rem);
+  li {
+    &::after {
+      content: "#{$separator}";
+      margin-inline: var(--space-layout-xs, 0.5rem);
+    }
+    &:last-child::after {
+      content: '';
+      margin: 0;
+    }
+  }
+}
+
+// ========================================
+// Tabs
+// ========================================
+
+@mixin tabs-horizontal($gap: md) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-layout-#{$gap}, 1rem);
+  border-bottom: 1px solid var(--border-muted, #eee);
+}
+
+@mixin tabs-vertical($gap: md) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-layout-#{$gap}, 1rem);
+  border-right: 1px solid var(--border-muted, #eee);
+}
+
+// ========================================
+// Pagination
+// ========================================
+
+@mixin pagination($gap: sm) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-layout-#{$gap}, 0.5rem);
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+

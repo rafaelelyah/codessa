@@ -1,0 +1,45 @@
+// ========================================
+// OUTLINE SEEDS — Bordas e curvaturas
+// ========================================
+
+:root {
+
+  // ========================================
+  // BORDER WIDTH — Escala de espessura
+  // ========================================
+  --border-0: 0;
+  --border-1: var(--size-micro-1);   // 0.25rem
+  --border-2: var(--size-micro-2);   // 0.5rem
+  --border-3: var(--size-micro-3);   // 0.75rem
+  --border-4: var(--size-micro-4);   // 1rem
+  --border-5: var(--size-micro-6);   // 1.5rem
+  --border-6: var(--size-micro-8);   // 2rem
+  --border-7: var(--size-medium-1);  // 2rem
+
+  // ========================================
+  // BORDER STYLE — Tipos de traço
+  // ========================================
+  --border-style-0: none;
+  --border-style-1: solid;
+  --border-style-2: dashed;
+  --border-style-3: dotted;
+  --border-style-4: double;
+
+  // ========================================
+  // BORDER RADIUS — Escala de curvatura
+  // ========================================
+  --radius-0: 0;
+  --radius-1: var(--size-micro-1);   // 0.25rem
+  --radius-2: var(--size-micro-2);   // 0.5rem
+  --radius-3: var(--size-micro-3);   // 0.75rem
+  --radius-4: var(--size-micro-4);   // 1rem
+  --radius-5: var(--size-micro-6);   // 1.5rem
+  --radius-6: var(--size-micro-8);   // 2rem
+  --radius-7: 9999px;                // pill
+
+  // ========================================
+  // SPECIAL RADIUS — Formas geométricas
+  // ========================================
+  --radius-circle: 50%;
+
+}

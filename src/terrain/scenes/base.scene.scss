@@ -1,5 +1,5 @@
 // ========================================
-// MAIN SCHEME - Esquema principal do design system
+// Esquema principal do design system
 // ========================================
 
 // Importa todas as seeds (tokens base)
@@ -83,13 +83,45 @@
   --status-info-bg: var(--color-context-2);
   --status-info-border: var(--color-context-2);
   --status-info-text: var(--color-context-2);
-}
 
-// ========================================
-// TIPOGRAFIA SEMÂNTICA
-// ========================================
+  // Shadows
+  --shadow-none: var(--shadow-none);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-xxl: var(--shadow-xxl);
+  --shadow-brand: var(--shadow-brand);
+  --shadow-focus: var(--shadow-focus);
 
-:root {
+  // Z-index
+  --z-negative: var(--z-index-negative);
+  --z-0: var(--z-index-base);
+  --z-10: var(--z-index-low);
+  --z-20: var(--z-index-default);
+  --z-30: var(--z-index-dropdown);
+  --z-40: var(--z-index-sticky);
+  --z-50: var(--z-index-fixed);
+  --z-60: var(--z-index-modal);
+  --z-70: var(--z-index-popover);
+  --z-80: var(--z-index-toast);
+  --z-90: var(--z-index-overlay);
+  --z-max: var(--z-index-max);
+
+  // Opacity
+  --opacity-0: var(--opacity-0);
+  --opacity-10: var(--opacity-10);
+  --opacity-20: var(--opacity-20);
+  --opacity-30: var(--opacity-30);
+  --opacity-40: var(--opacity-40);
+  --opacity-50: var(--opacity-50);
+  --opacity-60: var(--opacity-60);
+  --opacity-70: var(--opacity-70);
+  --opacity-80: var(--opacity-80);
+  --opacity-90: var(--opacity-90);
+  --opacity-100: var(--opacity-100);
+
   // Font families
   --font-primary: var(--font-base);
   --font-secondary: var(--font-aux);
@@ -113,13 +145,7 @@
   --leading-tight: var(--line-height-tight);
   --leading-normal: var(--line-height-base);
   --leading-relaxed: var(--line-height-loose);
-}
 
-// ========================================
-// ESPAÇAMENTOS SEMÂNTICOS
-// ========================================
-
-:root {
   // Spacing scale
   --space-0: var(--spacing-none);
   --space-1: var(--spacing-xxs);
@@ -143,13 +169,7 @@
   --space-layout-md: var(--spacing-lg);
   --space-layout-lg: var(--spacing-xl);
   --space-layout-xl: var(--spacing-xxl);
-}
 
-// ========================================
-// BORDAS E RADIUS SEMÂNTICOS
-// ========================================
-
-:root {
   // Border widths
   --border-0: var(--border-none);
   --border-1: var(--border-thin);
@@ -171,66 +191,7 @@
   --radius-xl: var(--radius-xl);
   --radius-pill: var(--radius-pill);
   --radius-circle: var(--radius-circle);
-}
 
-// ========================================
-// SOMBRAS SEMÂNTICAS
-// ========================================
-
-:root {
-  --shadow-none: var(--shadow-none);
-  --shadow-xs: var(--shadow-xs);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-xl: var(--shadow-xl);
-  --shadow-xxl: var(--shadow-xxl);
-  --shadow-brand: var(--shadow-brand);
-  --shadow-focus: var(--shadow-focus);
-}
-
-// ========================================
-// Z-INDEX SEMÂNTICO
-// ========================================
-
-:root {
-  --z-negative: var(--z-index-negative);
-  --z-0: var(--z-index-base);
-  --z-10: var(--z-index-low);
-  --z-20: var(--z-index-default);
-  --z-30: var(--z-index-dropdown);
-  --z-40: var(--z-index-sticky);
-  --z-50: var(--z-index-fixed);
-  --z-60: var(--z-index-modal);
-  --z-70: var(--z-index-popover);
-  --z-80: var(--z-index-toast);
-  --z-90: var(--z-index-overlay);
-  --z-max: var(--z-index-max);
-}
-
-// ========================================
-// OPACIDADE SEMÂNTICA
-// ========================================
-
-:root {
-  --opacity-0: var(--opacity-0);
-  --opacity-10: var(--opacity-10);
-  --opacity-20: var(--opacity-20);
-  --opacity-30: var(--opacity-30);
-  --opacity-40: var(--opacity-40);
-  --opacity-50: var(--opacity-50);
-  --opacity-60: var(--opacity-60);
-  --opacity-70: var(--opacity-70);
-  --opacity-80: var(--opacity-80);
-  --opacity-90: var(--opacity-90);
-  --opacity-100: var(--opacity-100);
-}
-
-// ========================================
-// TAMANHOS SEMÂNTICOS
-// ========================================
-
-:root {
   // Icon sizes
   --icon-xs: var(--size-icon-xs);
   --icon-sm: var(--size-icon-sm);
@@ -255,18 +216,24 @@
   --input-lg: var(--size-input-lg);
 
   // Container sizes
-  --container-sm: var(--size-container-sm);
-  --container-md: var(--size-container-md);
-  --container-lg: var(--size-container-lg);
-  --container-xl: var(--size-container-xl);
-  --container-full: var(--size-container-full);
-}
+  --width-container-xs: var(--width-container-xs);
+  --width-container-sm: var(--width-container-sm);
+  --width-container-md: var(--width-container-md);
+  --width-container-lg: var(--width-container-lg);
+  --width-container-xl: var(--width-container-xl);
+  --width-container-xxl: var(--width-container-xxl);
+  --width-container-full: var(--width-container-full);
 
-// ========================================
-// ANIMAÇÕES SEMÂNTICAS
-// ========================================
+  --height-container-xs: var(--height-container-xs);
+  --height-container-sm: var(--height-container-sm);
+  --height-container-md: var(--height-container-md);
+  --height-container-lg: var(--height-container-lg);
+  --height-container-xl: var(--height-container-xl);
+  --height-container-xxl: var(--height-container-xxl);
+  --height-container-full: var(--height-container-full);
+  --height-container-half: var(--height-container-half);
+  --height-container-quarter: var(--height-container-quarter);
 
-:root {
   // Durations
   --duration-fast: var(--motion-duration-fast);
   --duration-normal: var(--motion-duration-medium);
@@ -286,13 +253,7 @@
   // Transitions
   --transition-base: var(--motion-transition-base);
   --transition-fast: var(--motion-transition-fast);
-}
 
-// ========================================
-// LAYOUT SEMÂNTICO
-// ========================================
-
-:root {
   // Breakpoints
   --breakpoint-xs: var(--breakpoint-xs);
   --breakpoint-sm: var(--breakpoint-sm);

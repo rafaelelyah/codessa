@@ -1,0 +1,227 @@
+@use '../scenes/base.scene' as *;
+
+// ========================================
+// Animations
+// ========================================
+
+// Fade in
+@mixin fade-in($duration: var(--duration-normal), $ease: var(--ease-out)) {
+  animation: fadeIn $duration $ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+// Fade out
+@mixin fade-out($duration: var(--duration-normal), $ease: var(--ease-in)) {
+  animation: fadeOut $duration $ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+// Slide in from bottom
+@mixin slide-up($distance: 1rem, $duration: var(--duration-normal), $ease: var(--ease-out)) {
+  animation: slideUp $duration $ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(#{$distance});
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Scale in
+@mixin scale-in($duration: var(--duration-normal), $ease: var(--ease-out)) {
+  animation: scaleIn $duration $ease forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Pulse (leve oscilação de escala)
+@mixin pulse($duration: var(--duration-slow)) {
+  animation: pulseAnim $duration infinite ease-in-out;
+}
+
+@keyframes pulseAnim {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+// ========================================
+// Transitions
+// ========================================
+
+// Transição base para propriedades visuais
+@mixin transition-base($props: all, $duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: #{$props} $duration $ease;
+}
+
+// Transição rápida
+@mixin transition-fast($props: all) {
+  transition: #{$props} var(--duration-fast) var(--ease-smooth);
+}
+
+// Transição suave de opacidade
+@mixin transition-opacity($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: opacity $duration $ease;
+}
+
+// Transição suave de transformações
+@mixin transition-transform($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: transform $duration $ease;
+}
+
+// Transição suave de cor
+@mixin transition-color($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: color $duration $ease;
+}
+
+// Transição suave de background
+@mixin transition-bg($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: background-color $duration $ease;
+}
+
+// Transição suave de borda
+@mixin transition-border($duration: var(--duration-normal), $ease: var(--ease-smooth)) {
+  transition: border-color $duration $ease;
+}
+
+// ========================================
+// States
+// ========================================
+
+// Estado hover com cor de fundo semântica
+@mixin hover-bg($color: var(--interactive-primary-hover)) {
+  &:hover {
+    background-color: #{$color};
+  }
+}
+
+// Estado hover com cor de texto semântica
+@mixin hover-text($color: var(--text-brand)) {
+  &:hover {
+    color: #{$color};
+  }
+}
+
+// Estado focus com anel de foco
+@mixin focus-ring {
+  &:focus {
+    outline: var(--focus-ring-width, 2px) solid var(--focus-ring, #000);
+    outline-offset: var(--focus-ring-offset, 2px);
+  }
+}
+
+// Estado active com cor de fundo semântica
+@mixin active-bg($color: var(--interactive-primary-active)) {
+  &:active {
+    background-color: #{$color};
+  }
+}
+
+// Estado disabled com opacidade reduzida
+@mixin disabled {
+  opacity: var(--opacity-40, 0.4);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+// Estado visited para links
+@mixin visited-link($color: var(--link-visited)) {
+  &:visited {
+    color: #{$color};
+  }
+}
+
+// Estado hover para links
+@mixin hover-link($color: var(--link-hover)) {
+  &:hover {
+    color: #{$color};
+  }
+}
+
+// Estado active para links
+@mixin active-link($color: var(--link-active)) {
+  &:active {
+    color: #{$color};
+  }
+}
+
+// ========================================
+// Interactions
+// ========================================
+
+// Efeito ripple (simples, baseado em pseudo-elemento)
+@mixin ripple($color: var(--interactive-primary)) {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #{$color};
+    opacity: 0.3;
+    transform: scale(0);
+    animation: rippleAnim var(--duration-fast) ease-out;
+    pointer-events: none;
+  }
+}
+
+@keyframes rippleAnim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+// Efeito de pressão (leve escala ao clicar)
+@mixin press-effect($scale: 0.96) {
+  &:active {
+    transform: scale(#{$scale});
+  }
+}
+
+// Efeito de toque (leve sombra ao hover)
+@mixin tap-shadow($shadow: var(--shadow-sm)) {
+  &:hover {
+    box-shadow: #{$shadow};
+  }
+}
+
+// Efeito de foco interativo com sombra
+@mixin focus-shadow($shadow: var(--shadow-focus)) {
+  &:focus {
+    box-shadow: #{$shadow};
+  }
+}
+
+// Efeito de interação com opacidade reduzida
+@mixin interaction-muted {
+  &:hover {
+    opacity: var(--opacity-80);
+  }
+
+  &:active {
+    opacity: var(--opacity-60);
+  }
+}

@@ -1,0 +1,89 @@
+// ========================================
+// DARK THEME SCHEME - Tema escuro
+// ========================================
+
+@use 'base.scene' as *;
+
+[data-theme="dark"] {
+  // Backgrounds
+  --bg-primary: var(--color-neutral-100);
+  --bg-secondary: var(--color-neutral-80);
+  --bg-subtle: var(--color-neutral-70);
+  --bg-muted: var(--color-neutral-60);
+  --bg-accent: var(--color-standard-100);
+  --bg-brand: var(--color-standard-100);
+  --bg-success: var(--color-context-4);
+  --bg-error: var(--color-context-1);
+  --bg-warning: var(--color-context-3);
+  --bg-info: var(--color-context-2);
+
+  // Text colors
+  --text-primary: var(--color-neutral-10);
+  --text-secondary: var(--color-neutral-20);
+  --text-muted: var(--color-neutral-40);
+  --text-subtle: var(--color-neutral-60);
+  --text-inverse: var(--color-neutral-100);
+  --text-brand: var(--color-standard-10);
+  --text-success: var(--color-context-4);
+  --text-error: var(--color-context-1);
+  --text-warning: var(--color-context-3);
+  --text-info: var(--color-context-2);
+
+  // Border colors
+  --border-primary: var(--color-neutral-80);
+  --border-secondary: var(--color-neutral-70);
+  --border-muted: var(--color-neutral-60);
+  --border-brand: var(--color-standard-100);
+  --border-success: var(--color-context-4);
+  --border-error: var(--color-context-1);
+  --border-warning: var(--color-context-3);
+  --border-info: var(--color-context-2);
+
+  // Interactive states
+  --interactive-primary: var(--color-standard-100);
+  --interactive-primary-hover: var(--color-standard-80);
+  --interactive-primary-active: var(--color-standard-60);
+  --interactive-secondary: var(--color-neutral-40);
+  --interactive-secondary-hover: var(--color-neutral-20);
+  --interactive-secondary-active: var(--color-neutral-10);
+
+  // Focus states
+  --focus-ring: var(--color-standard-100);
+
+  // Link states
+  --link-color: var(--color-standard-10);
+  --link-hover: var(--color-standard-20);
+  --link-visited: var(--color-standard-40);
+  --link-active: var(--color-standard-60);
+
+  // Status colors
+  --status-success: var(--color-context-4);
+  --status-success-bg: var(--color-context-4);
+  --status-success-border: var(--color-context-4);
+  --status-success-text: var(--color-context-4);
+
+  --status-error: var(--color-context-1);
+  --status-error-bg: var(--color-context-1);
+  --status-error-border: var(--color-context-1);
+  --status-error-text: var(--color-context-1);
+
+  --status-warning: var(--color-context-3);
+  --status-warning-bg: var(--color-context-3);
+  --status-warning-border: var(--color-context-3);
+  --status-warning-text: var(--color-context-3);
+
+  --status-info: var(--color-context-2);
+  --status-info-bg: var(--color-context-2);
+  --status-info-border: var(--color-context-2);
+  --status-info-text: var(--color-context-2);
+
+  // Shadows (opcional, se quiser ajustar para escuro)
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-xxl: var(--shadow-xxl);
+  --shadow-brand: var(--shadow-brand);
+  --shadow-focus: var(--shadow-focus);
+}
