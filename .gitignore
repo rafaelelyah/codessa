@@ -1,0 +1,82 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+version-log.json
+
+# Build output
+/node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
+*.local
+
+# Previews e imagens geradas
+**/src/previews/*.png
+**/src/previews/*.jpg
+**/src/previews/*.jpeg
+
+# Arquivos temporários e de sistema
+Thumbs.db
+ehthumbs.db
+.DS_Store
+*.bak
+*.tmp
+*.orig
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Editor config
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Arquivos de release (ajuste conforme necessário)
+release/*.log
+release/*.tmp
+
+# Arquivos internos
+ROADMAP-interno.md
+
+# Node.js
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Ambiente
+.env
+.env.*
+
+# Logs
+*.log
+
+# IDE/config
+.idea/
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Pastas grandes
+Apps/
+Branding/
+Old Versions/
