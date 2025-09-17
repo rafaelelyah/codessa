@@ -79,4 +79,7 @@ ehthumbs.db
 # Pastas grandes
 Apps/
 Branding/
-Old Versions/
+
+# Documentação interna
+project-docs/Github Project/
+project-docs/WORK-LOG/

@@ -1,69 +1,184 @@
-![Status](https://img.shields.io/badge/status-planning-blue.svg)
+![Status](https://img.shields.io/badge/status-development-orange.svg)
+![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-# Codessa
+<div align="center">
+  <h1>Codessa</h1>
+  <p><strong>Ecossistema Modular para Projetos Criativos</strong></p>
+  <p>Uma suíte completa de ferramentas integradas para desenvolvimento web, design systems e gestão de projetos criativos</p>
+</div>
 
-## Sumário
-- [Visão Geral](#visão-geral)
-- [Módulos do Ecossistema](#módulos-do-ecossistema)
-  - [Growing](#codessa-growing)
-  - [Flow](#codessa-flow)
-  - [Bloom](#codessa-bloom)
-  - [Canopy](#codessa-canopy)
-  - [Meadow](#codessa-meadow)
-  - [Nest](#codessa-nest)
-- [Documentação por Módulo](#documentação-por-módulo)
-- [Autor](#autor)
-- [Licença](#licença)
-- [Contribuições](#contribuições)
+---
 
-## Visão geral
+## **Visão Geral**
 
-Codessa é um ecossistema modular e altamente personalizável para projetos criativos, integrando ferramentas visuais, de gestão, publicação e distribuição. Cada módulo pode ser utilizado separadamente ou em conjunto, e o sistema foi projetado para permitir integração pontual entre funcionalidades dos módulos conforme a necessidade do usuário.
+**Codessa** é um ecossistema modular e altamente personalizável que integra ferramentas visuais, de gestão, publicação e distribuição. Cada módulo pode ser utilizado separadamente ou em conjunto, criando uma experiência de desenvolvimento fluida e escalável.
 
-O usuário pode ativar apenas os recursos que deseja, como por exemplo:
-- Usar o Bloom para portfólio e ativar o submódulo de vendas do Canopy para comercializar obras.
-- Usar o Meadow para cursos e ativar o checkout do Canopy para vender acesso.
-- Integrar wiki do Meadow ao Bloom para tutoriais.
+### **Arquitetura Trunk-first Validada**
+- ✅ **Growing** como base visual unificada
+- ✅ **Flow** como orquestrador central
+- ✅ **Integração pontual** entre módulos
+- ✅ **APIs expostas** para extensibilidade
 
-Todos os módulos expõem APIs, componentes e funcionalidades que podem ser integradas em outros módulos, mantendo identidade visual via Growing e orquestração central via Flow. O Nest serve como hub de assets e integrações externas para todo o ecossistema.
+### **Casos de Uso**
+- **Portfólio + E-commerce:** Bloom + Canopy para vender obras digitais
+- **Cursos Online:** Meadow + Canopy para monetizar conhecimento
+- **Wiki + Portfólio:** Meadow + Bloom para documentação criativa
+- **Gestão Completa:** Flow orquestrando todos os módulos
 
-## Módulos do ecossistema
+---
 
-### Em desenvolvimento
+## **Módulos do Ecossistema**
 
-- **Codessa Growing**  
-  Design System modular — base Sass, componentes semânticos e arquitetura atômica. Growing serve de base visual para todos os outros módulos.
+### **Em Desenvolvimento Ativo**
 
-### Em planejamento
+| Módulo | Status | Descrição | Stack |
+|--------|--------|-----------|-------|
+| **Growing** | ✅ **Base Completa** | Design System modular com arquitetura Trunk-first + Sprout-driven | Sass, CSS |
+| **Flow** | ✅ **Estrutura Base** | Gestor de projetos com APIs e conectores | Python, FastAPI |
 
-- **Codessa Flow**  
-  Gestor visual e funcional de projetos criativos — quadros, timelines, escopos, documentação, versionamento e orquestração de integrações entre módulos.
+### **Em Planejamento**
 
-- **Codessa Bloom**  
-  Plataforma de portfólio multimídia — publicação de projetos, obras, blogs, artigos, narrativas visuais, com possibilidade de integrar módulos de venda do Canopy.
+| Módulo | Status | Descrição | Integração |
+|--------|--------|-----------|------------|
+| **Bloom** | 📋 **Planejado** | Plataforma de portfólio multimídia | Growing + Flow |
+| **Canopy** | 📋 **Planejado** | E-commerce modular | Growing + Flow |
+| **Meadow** | 📋 **Planejado** | CMS para cursos e documentação | Flow + Canopy |
+| **Nest** | 📋 **Planejado** | Hub de assets e deploy | Todos os módulos |
 
-- **Codessa Canopy**  
-  Plataforma de e-commerce modular — lojas, vitrines digitais, checkout, pagamentos, podendo ser integrado pontualmente em outros módulos.
+---
 
-- **Codessa Meadow**  
-  Plataforma de biblioteca, wiki e cursos — documentação, tutoriais, ensino online, podendo integrar módulos de venda ou portfólio.
+## **Arquitetura Técnica**
 
-- **Codessa Nest**  
-  Hub de assets e integrações externas — distribuição e gestão de imagens, vídeos, documentos, além de conectar o ecossistema a serviços externos.
+### **Growing (Base Visual)**
+```scss
+// Arquitetura Trunk-first validada
+terrain/
+├── seeds/     // Valores fundamentais
+├── soils/     // Semântica visual
+├── foundation/ // Resets e configurações
+├── trunks/    // Componentes (sob demanda)
+├── sprouts/  // Mixins otimizados
+└── trees/     // Desenvolvimento seletivo
+```
 
-## Documentação por módulo
+### **Flow (Backend)**
+```python
+# Estrutura modular implementada
+flow/
+├── api/       // Routes e endpoints
+├── core/      // Lógica de negócio
+├── database/  // Models e conexões
+├── modules/   // Funcionalidades específicas
+└── connectors/ // Integrações externas
+```
 
-Cada módulo possui seu próprio `README.md` com instruções específicas de uso, estrutura técnica e visão funcional.  
-As ferramentas podem utilizar diferentes stacks (Vite, Node, Sass, Python, etc.), e os comandos variam conforme o módulo.
+---
 
-## Autor
-Desenvolvido por Rafael Elyah.
+## **Métricas de Progresso**
 
-## Licença
+<div align="center">
+
+| Métrica | Status | Progresso |
+|---------|--------|-----------|
+| **Módulos Ativos** | 2/6 | 33% |
+| **Arquitetura** | ✅ Completa | 100% |
+| **Documentação** | ✅ Abrangente | 85% |
+| **Testes** | 🔄 Em desenvolvimento | 20% |
+| **Integração** | 📋 Planejada | 10% |
+
+</div>
+
+---
+
+## **Documentação**
+
+### **Documentação Pública**
+- [**ROADMAP**](./project-docs/ROADMAP.md) - Visão geral, conexões entre módulos e marcos de desenvolvimento
+- [**Plano de Negócios**](./project-docs/Plano-de-Negocios.md) - Estratégia comercial e visão de produto
+
+### **Documentação por Módulo**
+Cada módulo possui documentação técnica específica em seu diretório:
+
+- [**Growing**](./Apps/growing/README.md) - Design system e arquitetura Trunk-first
+- [**Flow**](./Apps/flow/README.md) - Backend, APIs e conectores
+- [**Bloom**](./Apps/bloom/README.md) - Portfólio e publicação multimídia
+- [**Canopy**](./Apps/canopy/README.md) - E-commerce e vitrines digitais
+- [**Meadow**](./Apps/meadow/README.md) - CMS, cursos e documentação
+- [**Nest**](./Apps/nest/README.md) - Assets, deploy e integrações
+
+---
+
+## **Tecnologias Utilizadas**
+
+<div align="center">
+
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+</div>
+
+---
+
+## **Próximos Marcos**
+
+### **Q4 2025 - Foundation & Core**
+- ✅ Growing: Arquitetura base implementada
+- ✅ Flow: Estrutura base implementada
+- 🔄 Integração Growing ↔ Flow
+
+### **Q1 2026 - Expansion**
+- 📋 Bloom: Componentes base
+- 📋 Canopy: Build tools
+- 📋 Meadow: Interface admin
+
+### **Q2 2026 - Ecosystem**
+- 📋 Nest: Deployment solutions
+- 📋 Integração completa entre módulos
+
+---
+
+## **Como Contribuir**
+
+### **Para Desenvolvedores**
+1. Fork o repositório
+2. Crie uma branch para sua feature
+3. Faça commit das mudanças
+4. Abra um Pull Request
+
+### **Para Designers**
+- Contribua com o design system do Growing
+- Sugira melhorias na experiência do usuário
+- Ajude na documentação visual
+
+### **Para Testadores**
+- Teste os módulos em desenvolvimento
+- Reporte bugs e sugestões
+- Valide integrações entre módulos
+
+---
+
+## **Contato & Suporte**
+
+- **Email:** [contato@codessa.dev](mailto:contato@codessa.dev)
+- **GitHub:** [github.com/rafaelelyah/codessa](https://github.com/rafaelelyah/codessa)
+- **Discord:** [Servidor Codessa](https://discord.gg/codessa)
+
+---
+
+## **Licença**
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
-## Contribuições
+---
 
-Sugestões, melhorias e correções são bem-vindas.  
-Você pode abrir uma issue ou enviar um pull request com suas propostas.
+<div align="center">
+
+**Desenvolvido com por [Rafael Elyah](https://github.com/rafaelelyah)**
+
+*Construindo o futuro do desenvolvimento criativo, um módulo por vez.*
+
+</div>
